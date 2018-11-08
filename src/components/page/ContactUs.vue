@@ -101,14 +101,7 @@ export default {
       // ”ddesc”: 需求描述    string  
       // ”dReply”: 是否已回复  0 否  1 是    int
       var that = this;
-      var url = '';
-      var str = window.location.origin;
-      if(str.indexOf('localhost')>-1){
-        url = 'http://t-www.susongzizhu.cn/'
-      }else{
-        url = window.location.origin
-      }
-      axios.post(url + '/exp/UpdatelfDemand.do', {
+      axios.post(common.globalUrl + '/exp/UpdatelfDemand.do', {
         "lfdid": 0,
         "dName": that.clientName,
         "dMobile": that.clientTel,

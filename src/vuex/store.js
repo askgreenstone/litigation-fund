@@ -12,10 +12,35 @@ const state = {
 	loginFlag: false,
   userTel: '',
   userPwd: '',
-  username: '',
-  ownUri: ''
+  username: 'qiaof',
+  ownUri: '',
+  globalUrl: '',
+  globalMshare: ''
 }
 const mutations = {
+  // 获取http请求url
+  getGlobalUrl: function(){
+    var str = window.location.origin;
+    var that = this;
+    // console.log(str);
+    if(str.indexOf('localhost')>-1){
+      // state.globalUrl = 'http://t-www.susongzizhu.cn/'
+      return 'abc'
+    }else{
+      state.globalUrl = window.location.origin
+    }
+  },
+  // 获取transfer请求url
+  getGlobalMshare: function(){
+    var str = window.location.origin;
+    var that = this;
+    // console.log(str);
+    if(str.indexOf('localhost')>-1){
+      state.globalMshare = 'http://t-transfer.green-stone.cn/'
+    }else{
+      state.globalMshare = 'http://transfer.green-stone.cn/'
+    }
+  },
 	// 显示登录框，禁止页面滚动
   showLogin: function(){
     state.loginFlag = true;

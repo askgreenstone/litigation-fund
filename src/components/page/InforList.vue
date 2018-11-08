@@ -133,16 +133,8 @@ export default {
       // ”dStandard”: 标的   string
       // ”ddesc”: 需求描述    string  
       // ”dReply”: 是否已回复  0 否  1 是    int
-      var url = '';
-      var str = window.location.origin;
-      var that = this;
-      if(str.indexOf('localhost')>-1){
-        url = 'http://t-www.susongzizhu.cn/'
-      }else{
-        url = location.origin
-      }
       // console.log(that);
-      axios.get(url+'/exp/QuerylfDemand.do?page='+page+'&count=5')
+      axios.get(common.globalUrl+'exp/QuerylfDemand.do?page='+page+'&count=5')
       .then(function (response) {
         // console.log(response.data);
         that.commandList = response.data.lfdl;
@@ -162,16 +154,8 @@ export default {
       // console.log(lfdid);
       var that = this;
       var confirm = window.confirm('确定要删除么？');
-      var url = '';
-      var str = window.location.origin;
-      // console.log(str);
-      if(str.indexOf('localhost')>-1){
-        url = 'http://t-www.susongzizhu.cn/'
-      }else{
-        url = location.origin
-      }
       if(confirm){
-        axios.post(url+'/exp/DellfDemand.do',{
+        axios.post(common.globalUrl+'exp/DellfDemand.do',{
           "lfdid": lfdid
         })
         .then(function(response){

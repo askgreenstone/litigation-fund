@@ -18,32 +18,32 @@
         <div class="imgTitle">封面图片上传</div>
         <div class="imgUpload">
           <div class="imgLeft">
-            <img v-if="imgUrl" v-bind:src="imgUrl">
+            <img v-if="nPicture" v-bind:src="nImgUrl">
             <img v-else src="../../assets/images/team.png">
           </div>
           <div class="imgRight">
-            <div class="chooseImg">选择图片<input type="file" accept="image/jpeg,image/jpg,image/png,image/gif" @change="resetImg($event)"></div>
-            <div class="uploadImg">上传</div>
+            <div class="chooseImg">选择图片<input type="file" id="choose_img" accept="image/jpeg,image/jpg,image/png,image/gif" @change="resetImg($event)"></div>
+            <div class="uploadImg" @click="uploadImg">上传</div>
           </div>
           
         </div>
       </div>
       <div class="imgTitle">编辑内容</div>
       <div class="contentTitle">
-        <input type="text" name="" placeholder="请输入标题">
+        <input type="text" name="nTitle" v-model="nTitle" placeholder="请输入标题">
       </div>
       <div class="annexBox">
-      <div class="annexTitle">上传附件<input type="file" accept=".pdf" @change="resetAnnex($event)"> </div>
-        <div class="annexFile" v-if="fileName">
+      <div class="annexTitle">上传附件<input type="file" id="choose_file" accept=".pdf" @change="resetAnnex($event)"> </div>
+        <div class="annexFile" v-if="nDocName">
           <span class="annexFileImg"><img src="../../assets/images/annex.png"></span>
-          <span class="annexFileName" >{{fileName}}<span class="annexFileSize">({{fileSize}})</span></span>
+          <span class="annexFileName" >{{nDocName}}<span class="annexFileSize">({{fileSize}})</span></span>
           <span class="annexFileDelete" @click="clearAnnex">删除</span>
         </div>
       </div>
       <div class="content">
-        <textarea placeholder="请输入内容"></textarea>
+        <textarea placeholder="请输入内容" v-model="nContent"></textarea>
       </div>
-      <div class="submit">发布</div>
+      <div class="submit" @click="gotoUpload">发布</div>
     </div>
     <!-- 首页底部 -->
     <Bottom></Bottom>
@@ -55,34 +55,105 @@
 <script>
 import TopNavBlack from '@/components/common/TopNavBlack'
 import Bottom from '@/components/common/Bottom'
+import {mapState,mapMutations} from 'vuex';
+import store from '@/vuex/store';
+import axios from 'axios';
+
 export default {
   name: 'BlogEdit',
+  store,
   data () {
     return {
-      imgUrl: '',
-      fileName: '',
-      fileSize: ''
+      lfnid : 0,
+      nTitle : '',
+      nContent : '',
+      nPicture : '',
+      nImgUrl: '',
+      nDocName : '',
+      baiduDocID : '',
+      extDocType : '',
+      dts: ''
     }
+  },
+  computed: {
+    ...mapState(['username']),
   },
   methods: {
     init: function(){
-      // console.log(this.fileName);
+      console.log(common.globalUrl);
+    },
+    // lfnid : 诉讼基金新闻ID      int
+    // nTitle :  标题     String
+    // nContent :  内容        String
+    // nPicture :  图片    String
+    // nDocName :  附件名    String
+    // baiduDocID :  百度附件ID    String
+    // extDocType :  附件扩展名    String
+    // 获取某条新闻详细信息
+    getInforDetail: function(lfnid){
+      var that = this;
+      axios.get(common.globalUrl + '/exp/QuerylfNewsDetail.do?lfnid='+lfnid)
+      .then(function(response){
+        console.log(response.data);
+        var data = response.data;
+        that.nTitle = data.nTitle;
+        that.nContent = that.textareaToStr(data.nContent);
+        that.nPicture = data.nPicture;
+        that.nImgUrl = common.globalMshare + data.nPicture;
+        that.nDocName = data.nDocName;
+        that.baiduDocID = data.baiduDocID;
+        that.extDocType = data.extDocType;
+        that.dts = new Date(data.ts).Format('yyyy-MM-dd hh:mm');
+      })
+      .catch(function(error){
+        alert('网络连接错误或服务器异常!!！')
+      })
     },
     // 获取上传文件名和大小
     resetAnnex: function(e){
       // console.log(e);
-      this.fileName = e.target.files[0].name;
+      var that = this;
+      var f = document.getElementById('choose_file').files[0],
+          r = new FileReader();
+      if (!f){
+        alert('请先选择文件！');
+        return;
+      } 
+      r.onloadend = function(e) {
+          var data = e.target.result;
+          var fd = new FormData();
+          fd.append('fileToUpload', f);
+          fd.append('filename', f.name);
+          console.log(fd);
+          console.log(fd.fileToUpload);
+          axios.post(common.globalUrl + 'data/UploadBaiDuDoc.do',fd)
+          .then(function(response){
+            console.log(response.data);
+            if(response.data.c === 1000){
+              that.baiduDocID = response.data.bdid;
+              that.extDocType = response.data.bdt;
+            }
+          })
+          .catch(function(error){
+            alert('网络连接错误或服务器异常！')
+          })
+      };
+      r.readAsDataURL(f);
+      this.nDocName = e.target.files[0].name;
       this.fileSize = (e.target.files[0].size/1000/1000).toFixed(1)+'M';
     },
     // 清空上传文件
     clearAnnex: function(){
-      this.fileName = '';
+      this.nDocName = '';
+      this.fileSize = '';
+      this.baiduDocID = '';
+      this.extDocType = '';
     },
     // 获取上传图片路径
     resetImg: function(e){
       // console.log(e.target.files);
       // console.log(e.target.value);
-      this.imgUrl = this.getObjectURL(e.target.files[0]);
+      this.nImgUrl = this.getObjectURL(e.target.files[0]);
     },
     // 获取文件绝对路径
     getObjectURL:function (file) {  
@@ -95,10 +166,109 @@ export default {
            url = window.webkitURL.createObjectURL(file);  
        }  
        return url;  
+    },
+    // 上传图片
+    uploadImg: function(){
+      var that = this;
+      // console.log(str);
+      var f = document.getElementById('choose_img').files[0],
+          r = new FileReader();
+      console.log('f,r:'+f,r);
+      console.log(f);
+      if(!f){
+        alert('请先选择图片！');
+        return;
+      }
+      r.onloadend = function(e) {
+        var data = e.target.result;
+        var fd = new FormData();
+        fd.append('fileToUpload', f);
+        fd.append('filename', f.name);
+        console.log(fd);
+        axios.post(common.globalUrl + 'data/upload',fd)
+        .then(function(response){
+          console.log(response.data);
+          if(response.data.c === 1000){
+            that.nImgUrl = common.globalMshare + response.data.on;
+            that.nPicture = response.data.on;
+            alert('上传成功！')
+          }
+        })
+        .catch(function(error){
+          alert('网络连接错误或服务器异常！')
+        })
+      };
+      r.readAsDataURL(f);
+    },
+    // textarea转换保留空格和换行
+    textareaTo: function(str){
+      var reg=new RegExp("\n","g");
+      var regSpace=new RegExp(" ","g");
+      str = str.replace(reg,"<br>");
+      str = str.replace(regSpace,"&nbsp;");
+      return str;
+    },
+    // textarea保留空格和换行
+    textareaToStr: function(str){
+      var reg=new RegExp("<br>","g");
+      var regSpace=new RegExp("&nbsp;","g");
+      str = str.replace(reg,"\n");
+      str = str.replace(regSpace," ");
+      return str;
+    },
+    // 提交上传标题，附件，内容
+    gotoUpload: function(){
+      var that = this;
+      if(!this.nPicture){
+        alert('请上传图片！');
+        return;
+      }else if(!this.nTitle){
+        alert('请输入文章标题！');
+        return;
+      }else if(!this.nContent){
+        alert('请输入内容！');
+        return;
+      }
+      console.log(this.nPicture);
+      console.log(this.nTitle);
+      console.log(this.nDocName);
+      console.log(this.baiduDocID);
+      console.log(this.extDocType);
+      console.log(this.nContent);
+      console.log(this.textareaTo(this.nContent));
+      // lfnid : 诉讼基金新闻ID      int
+      // nTitle :  标题     String
+      // nContent :  内容        String
+      // nPicture :  图片    String
+      // nDocName :  附件名    String
+      // baiduDocID :  百度附件ID    String
+      // extDocType :  附件扩展名    String
+      axios.post(common.globalUrl + 'exp/UpdatelfNews.do',{
+        lfnid : that.lfnid,
+        nTitle : that.nTitle,
+        nContent : that.textareaTo(that.nContent),
+        nPicture : that.nPicture,
+        nDocName : that.nDocName,
+        baiduDocID : that.baiduDocID,
+        extDocType : that.extDocType,
+      })
+      .then(function(response){
+        console.log(response.data);
+        if(response.data.c === 1000){
+          alert('发布成功！')
+        }
+      })
+      .catch(function(error){
+        alert('网络连接错误或服务器异常！')
+      })
     }
   },
   mounted:function(){
     this.init();
+    var lfnid = this.$route.query.lfnid;
+    this.lfnid = lfnid;
+    if(!lfnid) return;
+    this.getInforDetail(lfnid);
   },
   components:{
     TopNavBlack,
@@ -231,6 +401,7 @@ export default {
   margin-bottom: 10px;
 }
 .contentTitle input{
+  width: 100%;
   border: none;
   outline: none;
   text-indent: 15px;
@@ -309,6 +480,7 @@ export default {
   font-family: 'Normal';
   color: #333;
   font-size: 13px;
+  cursor: pointer;
 }
 .content{
   width: 856px;
@@ -323,7 +495,7 @@ export default {
   border: none;
   resize: none;
   outline: none;
-  text-indent: 15px;
+  text-indent: 28px;
   font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;

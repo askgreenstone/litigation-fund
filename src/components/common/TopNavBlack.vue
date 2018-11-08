@@ -30,14 +30,13 @@
         <img v-if="bgColor == 'white'" src="../../assets/images/logo.png"/>
         <img v-else src="../../assets/images/logoBlank.png"/>
       </router-link>
-      <!-- 此处有两个隐藏菜单（团队和博客），内容待定，同样还有TopNav.vue文件需要修改 -->
       <ul class="topNav">
         <router-link to="/" tag="li" exact >首页</router-link>
         <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
         <router-link to="/Funding" tag="li" exact >诉讼资助</router-link>
         <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
         <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
-        <router-link to="/Blog" style="display:none" tag="li" >绿石研究院</router-link>
+        <router-link to="/Blog" tag="li" >绿石研究院</router-link>
         <router-link to="/Scenarios" tag="li" exact >应用场景</router-link>
         <router-link to="/Contact" tag="li" >联系我们</router-link>
       </ul>
