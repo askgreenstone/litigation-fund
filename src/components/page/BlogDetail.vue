@@ -83,7 +83,7 @@ export default {
       var that = this;
       axios.get(common.globalUrl + '/exp/QuerylfNewsDetail.do?lfnid='+lfnid)
       .then(function(response){
-        console.log(response.data);
+        // console.log(response.data);
         var data = response.data;
         that.nTitle = data.nTitle;
         that.nContent = that.textareaTo(data.nContent);
@@ -99,9 +99,9 @@ export default {
       })
     },
     initBaiduDoc: function(bdid){
-      console.log(bdid);
+      // console.log(bdid);
       var docId = bdid.substring(0,bdid.indexOf('_'));
-      console.log(docId);
+      // console.log(docId);
       var option = {
           docId: docId,
           token: 'TOKEN',

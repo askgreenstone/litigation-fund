@@ -18,7 +18,7 @@
         <div class="imgTitle">封面图片上传</div>
         <div class="imgUpload">
           <div class="imgLeft">
-            <img v-if="nPicture" v-bind:src="nImgUrl">
+            <img v-if="nImgUrl" v-bind:src="nImgUrl">
             <img v-else src="../../assets/images/team.png">
           </div>
           <div class="imgRight">
@@ -36,7 +36,7 @@
       <div class="annexTitle">上传附件<input type="file" id="choose_file" accept=".pdf" @change="resetAnnex($event)"> </div>
         <div class="annexFile" v-if="nDocName">
           <span class="annexFileImg"><img src="../../assets/images/annex.png"></span>
-          <span class="annexFileName" >{{nDocName}}<span class="annexFileSize">({{fileSize}})</span></span>
+          <span class="annexFileName" >{{nDocName}}</span>
           <span class="annexFileDelete" @click="clearAnnex">删除</span>
         </div>
       </div>
@@ -80,7 +80,7 @@ export default {
   },
   methods: {
     init: function(){
-      console.log(common.globalUrl);
+      // console.log(common.globalUrl);
     },
     // lfnid : 诉讼基金新闻ID      int
     // nTitle :  标题     String
@@ -94,7 +94,7 @@ export default {
       var that = this;
       axios.get(common.globalUrl + '/exp/QuerylfNewsDetail.do?lfnid='+lfnid)
       .then(function(response){
-        console.log(response.data);
+        // console.log(response.data);
         var data = response.data;
         that.nTitle = data.nTitle;
         that.nContent = that.textareaToStr(data.nContent);
@@ -124,11 +124,11 @@ export default {
           var fd = new FormData();
           fd.append('fileToUpload', f);
           fd.append('filename', f.name);
-          console.log(fd);
-          console.log(fd.fileToUpload);
-          axios.post(common.globalUrl + 'data/UploadBaiDuDoc.do',fd)
+          // console.log(fd);
+          // console.log(fd.fileToUpload);
+          axios.post(common.globalUrl + '/data/UploadBaiDuDoc.do',fd)
           .then(function(response){
-            console.log(response.data);
+            // console.log(response.data);
             if(response.data.c === 1000){
               that.baiduDocID = response.data.bdid;
               that.extDocType = response.data.bdt;
@@ -140,12 +140,10 @@ export default {
       };
       r.readAsDataURL(f);
       this.nDocName = e.target.files[0].name;
-      this.fileSize = (e.target.files[0].size/1000/1000).toFixed(1)+'M';
     },
     // 清空上传文件
     clearAnnex: function(){
       this.nDocName = '';
-      this.fileSize = '';
       this.baiduDocID = '';
       this.extDocType = '';
     },
@@ -173,8 +171,8 @@ export default {
       // console.log(str);
       var f = document.getElementById('choose_img').files[0],
           r = new FileReader();
-      console.log('f,r:'+f,r);
-      console.log(f);
+      // console.log('f,r:'+f,r);
+      // console.log(f);
       if(!f){
         alert('请先选择图片！');
         return;
@@ -184,10 +182,10 @@ export default {
         var fd = new FormData();
         fd.append('fileToUpload', f);
         fd.append('filename', f.name);
-        console.log(fd);
-        axios.post(common.globalUrl + 'data/upload',fd)
+        // console.log(fd);
+        axios.post(common.globalUrl + '/data/upload',fd)
         .then(function(response){
-          console.log(response.data);
+          // console.log(response.data);
           if(response.data.c === 1000){
             that.nImgUrl = common.globalMshare + response.data.on;
             that.nPicture = response.data.on;
@@ -229,13 +227,13 @@ export default {
         alert('请输入内容！');
         return;
       }
-      console.log(this.nPicture);
-      console.log(this.nTitle);
-      console.log(this.nDocName);
-      console.log(this.baiduDocID);
-      console.log(this.extDocType);
-      console.log(this.nContent);
-      console.log(this.textareaTo(this.nContent));
+      // console.log(this.nPicture);
+      // console.log(this.nTitle);
+      // console.log(this.nDocName);
+      // console.log(this.baiduDocID);
+      // console.log(this.extDocType);
+      // console.log(this.nContent);
+      // console.log(this.textareaTo(this.nContent));
       // lfnid : 诉讼基金新闻ID      int
       // nTitle :  标题     String
       // nContent :  内容        String
@@ -243,7 +241,7 @@ export default {
       // nDocName :  附件名    String
       // baiduDocID :  百度附件ID    String
       // extDocType :  附件扩展名    String
-      axios.post(common.globalUrl + 'exp/UpdatelfNews.do',{
+      axios.post(common.globalUrl + '/exp/UpdatelfNews.do',{
         lfnid : that.lfnid,
         nTitle : that.nTitle,
         nContent : that.textareaTo(that.nContent),
@@ -253,9 +251,12 @@ export default {
         extDocType : that.extDocType,
       })
       .then(function(response){
-        console.log(response.data);
+        // console.log(response.data);
         if(response.data.c === 1000){
-          alert('发布成功！')
+          alert('发布成功！');
+          that.$router.push({//你需要接受路由的参数再跳转
+            path: '/Blog'
+          });
         }
       })
       .catch(function(error){
@@ -462,15 +463,6 @@ export default {
   margin-right: 45px;
   font-family: 'Normal';
   color: #333;
-  font-size: 13px;
-}
-.annexFileSize{
-  width: auto;
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  font-family: 'Normal';
-  color: #808080;
   font-size: 13px;
 }
 .annexFileDelete{

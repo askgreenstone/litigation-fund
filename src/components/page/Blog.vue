@@ -15,7 +15,7 @@
     <!-- 搜索框，新建按钮，团队介绍 -->
     <div class="searchBox">
       <div class="search">
-        <input type="text" name="search" class="searchInput" v-model="keyword" placeholder="请输入关键词" >
+        <input type="text" name="search" class="searchInput" v-model="keyword" placeholder="请输入关键词" @input="searchClear">
         <span class="searchBtn" @click="searchNews">搜索</span>
         <router-link tag="span" to="/Blog/BlogEdit" v-if="username" class="searchBtn">新建</router-link>
       </div>
@@ -150,7 +150,7 @@ export default {
       // console.log(that);
       axios.get(common.globalUrl+'/exp/QuerylfNews.do?page=0&count=5&keyWord='+that.keyword)
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         that.newsList = response.data.lfnl;
         that.pages = Math.ceil(response.data.num/5);
         // console.log('pages:'+that.pages);
@@ -164,6 +164,15 @@ export default {
       .catch(function (error) {
         alert('网络连接错误或服务器异常！');
       });
+    },
+    // 
+    searchClear: function(){
+      var keyword = this.keyword.trim();
+      var that = this;
+      if(keyword == ''){
+        that.getNewsList(0)
+      }
+      // console.log(this.keyword);
     },
     // textarea转换保留空格和换行
     textareaTo: function(str){
@@ -206,7 +215,7 @@ export default {
       // console.log(that);
       axios.get(common.globalUrl+'/exp/QuerylfNews.do?page='+page+'&count=5')
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         that.newsList = response.data.lfnl;
         that.pages = Math.ceil(response.data.num/5);
         // console.log('pages:'+that.pages);
@@ -259,7 +268,7 @@ export default {
     },
     // 跳转到某一页
     gotoPage: function(page){
-      console.log(page);
+      // console.log(page);
       this.pageIndex = page-1;
       this.getNewsList(page-1)
     },
