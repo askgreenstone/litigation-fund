@@ -389,4 +389,213 @@ export default {
   font-size: 20px;
   font-family: 'Medium';
 }
+@media screen and (max-width: 414px) {
+  /*图片轮播容器*/
+  .window{
+    width: 100%;
+    height: 156px;  
+    overflow: hidden;
+    position: relative;
+  }
+  /*图片轮播盒子*/
+  .container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .container li{
+    width: 100%;
+    height: 100%;
+  }
+  .container img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+  }
+  /*图片轮播动画*/
+  .image-enter-active{
+    transform: opacity(0);
+    transition: all 1s ease;
+  }
+  .image-leave-active{
+    transform: opacity(100%);
+    transition: all 0.5s ease;
+  }
+  .image-enter{
+    transform: opacity(100%);
+  }
+  .image-leave{
+    transform: opacity(0);
+  }
+
+  /*左右按钮*/
+  .direction{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .left{
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: 38px;
+    top: 50%;
+    margin-top: -14px;
+    cursor: pointer;
+  }
+  .right{
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: 38px;
+    top: 50%;
+    margin-top: -14px;
+    cursor: pointer;
+  }
+  /*图片轮播底部按钮*/
+  .dots{
+    width: 90px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -45px;
+  }
+  .dots li{
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  .dots li.dotted{
+    background: #c49a6d;
+  }
+  /*诉讼资助信息介绍*/
+  .introduction{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+  .introTitle{
+    font-family: 'Medium';
+    color: #333;
+    font-size: 21px;
+    
+  }
+  .introLine{
+    font-size: 0;
+    margin: 2px 10px;
+  }
+  .introLine span{
+    width: 20px;
+    height: 1px;
+    background: #c49a6d;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .introLine span.two{
+    width: 150px;
+  }
+  .introLine span.three{
+    margin-right: 0;
+  }
+  .introEng{
+    font-family: 'Regular';
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .introMessage{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+  }
+  /*客户/律师*/
+  .lawyer{
+    width: 100%;
+    background: #f0f0f0;
+    padding-top: 17px;
+    padding-bottom: 30px;
+  }
+  .lawyerTop{
+    width: 142px;
+    height: 33px;
+    display: inline-block;
+    margin: 0 auto 13px;
+    background: #c49a6d;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Medium';
+    border-radius: 5px;
+    line-height: 33px;
+  }
+  .lawyerList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .lawyerList li{
+    width: 50%;
+  }
+  .lawyerTitle{
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-size: 19px;
+    font-family: 'Regular';
+    margin-top: 15px;
+  }
+  .lawyerBox{
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Regular';
+    margin-bottom: 15px;
+  }
+  .lawyerLine{
+    color: #c49a6d;
+  }
+  /*<!-- 支持 -->*/
+  .support .introduction{
+    height: 66px;
+  }
+  .introListBox{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .introListBox img{
+    width: 150%;
+    margin-left: -25%;
+  }
+  .introList{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -31%;
+    bottom: 10%;
+  }
+  .introList li{
+    width: 20%;
+    color: #c49a6d;
+    font-size: 20px;
+    font-family: 'Medium';
+  }
+}
 </style>

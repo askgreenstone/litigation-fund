@@ -33,11 +33,11 @@
       <ul class="topNav">
         <router-link to="/" tag="li" exact >首页</router-link>
         <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
-        <router-link to="/Funding" tag="li" exact >诉讼资助</router-link>
+        <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
         <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
         <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
         <router-link to="/Blog" tag="li" >律石研究院</router-link>
-        <router-link to="/Scenarios" tag="li" exact >应用场景</router-link>
+        <router-link to="/Scenarios" tag="li" exact >应用案例</router-link>
         <router-link to="/Contact" tag="li" >联系我们</router-link>
       </ul>
     </div>  
@@ -319,6 +319,7 @@ export default {
     top: 0;
     z-index: 10;
     display: flex;
+    justify-content: space-between;
   }
   .topMenu span{
     height: 26px;
@@ -326,6 +327,7 @@ export default {
     line-height: 26px;
   }
   .welcome{
+   
     margin-left: 5px;
     font-family: 'Bold';
     font-size: 12px;
@@ -339,6 +341,9 @@ export default {
     cursor: pointer;
   }
   .language{
+    flex: 1;
+    text-align: right;
+    margin-left: 0;
     width: 50px;
     font-family: 'Normal';
     font-size: 12px;
@@ -472,6 +477,8 @@ export default {
     top: 26px;
     left: 0;
     z-index: 10;
+    display: none;
+
   }
   .topNavLeft{
     width: 20%;

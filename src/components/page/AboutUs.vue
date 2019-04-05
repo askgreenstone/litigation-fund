@@ -225,12 +225,12 @@ export default {
   .aboutImg{
     width: 100%;
     position: relative;
-    margin-bottom: -89px;
+    margin-bottom: 0;
   }
   .aboutImg img{
     width: 100%;
     position: relative;
-    top: -89px;
+    top: 0;
   }
   .aboutImgBox{
     width: 120px;
@@ -255,16 +255,21 @@ export default {
     text-align: center;
     font-family: 'Regular';
     color: #fff;
-    font-size: 16px;
+    font-size: 16px  ;
   }
   /*段落简介*/
+  .litigation{
+    width: 100%;
+  }
   .litigationImg{
     height: 70px;
     display: block;
     margin: 30px auto;
   }
   .paragraph1{
-    width: 63%;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; 
     margin: 0 auto;
     font-family: 'Normal';
     color: #333;
@@ -273,52 +278,63 @@ export default {
     line-height: 1.8;
   }
   .paragraph2{
-    width: 63%;
-    margin: 40px auto 25px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 20px auto 12px;
     font-family: 'Medium';
     color: #c49a6d;
     font-size: 24px;
   }
   .paragraph3{
-    width: 63%;
-    margin: 0 auto 20px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto 10px;
     font-family: 'Regular';
     color: #c49a6d;
     font-size: 15px;
   }
   .paragraph4{
-    width: 63%;
-    display: flex;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: block;
     margin: 0 auto;
   }
   .paragraph4 ul{
-    width: 45%;
+    width: 100%;
     font-family: 'Normal';
     color: #333;
     font-size: 15px;
     line-height: 2;
   }
+  .paragraph4 ul li{
+    display: flex;
+  }
   .paragraph4 ul li i{
     width: 5%;
     display: inline-block;
-    float: left;
     font-style: normal;
   }
   .paragraph4 ul li span{
     width: 95%;
     display: inline-block;
-    float: left;
   }
   .paragraph5{
-    width: 63%;
-    margin: 35px auto 20px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 17px auto 10px;
     font-family: 'Medium';
     color: #c49a6d;
     font-size: 20px;
   }
   .paragraph6{
-    width: 63%;
-    margin: 20px auto;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 10px auto;
     border-top: 1px solid #ccc;
     padding-top: 30px;
   }

@@ -100,5 +100,67 @@ export default {
   text-align: center;
 }
 
+@media screen and (max-width:414px) {
+  .bottom{
+    padding-top: 34px;
+    background: #333;
+  }
+  .bottomList{
+    width: 100%;
+    margin: 0 auto 20px;
+    display: flex;
+  }
+  .bottomListLogo{
+    width: 55%;
+    margin-right: 5%;
+  }
 
+  .bottomListLogo div{
+    color: #cacaca;
+    font-size: 12px;
+    font-family: 'Normal';
+    transform: scale(0.8);
+  }
+  .bottomListLogo img{
+    text-align: left;
+    margin-left: 0;
+    transform: scale(1);
+    height: 56px;
+  }
+  .bottomListTel{
+    width: 23%;
+    margin-right: 5%;
+    padding-top: 30px;
+    color: #cacaca;
+    font-size: 12px;
+    font-family: 'Regular';
+  }
+  .bottomListTel .bottomListContactUs{
+    color: #cacaca;
+    font-size: 13px;
+    font-family: 'Medium';
+  }
+  .bottomListQrcode{
+    width: 12%;
+    margin-top: 20px;
+  }
+  .bottomListQrcode img{
+    width: 100%;
+  }
+  .bottomLine{
+    width: 95%;
+    height: 1px;
+    background: #cacaca;
+    margin: 0 auto;
+  }
+  .bottomText{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #cacaca;
+    font-size: 12px;
+    font-family: 'Regular';
+    text-align: center;
+  }
+}
 </style>
