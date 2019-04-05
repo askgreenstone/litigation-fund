@@ -21,7 +21,7 @@
       </li>
     </ul>
     <div class="bottomLine"></div>
-    <div class="bottomText">2018 绿石（北京）网络科技有限公司 版权所有</div>
+    <div class="bottomText">2018 律石（北京）网络科技有限公司 版权所有</div>
   </div>
 </template>
 

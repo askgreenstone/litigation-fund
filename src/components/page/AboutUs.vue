@@ -16,7 +16,7 @@
     <div class="litigation">
       <img class="litigationImg" src="../../assets/images/logoWe.png">
       <div class="paragraph1">
-        绿石诉讼资助以其卓越的专业能力，在争议解决中为当事人提供相关团队、资源和费用帮助，及时释放诉权、加速资金回笼，已有越来越多的财富500强公司、企业和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行领域的主流趋势。
+        律石诉讼资助以其卓越的专业能力，在争议解决中为当事人提供相关团队、资源和费用帮助，及时释放诉权、加速资金回笼，已有越来越多的财富500强公司、企业和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行领域的主流趋势。
       </div>
       <div class="paragraph1">
         争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏也导致其合理合法的诉权主张被迫推迟或放弃追索。
@@ -25,7 +25,7 @@
         当事人之间不同的财务资源存在着巨大差异，给其自身的司法救济带来了障碍，并使得现金流紧张的当事人所能获得的裁判结果发生偏离。诉讼资助应运而生，在为客户切实创造价值的基础上实现共赢。
       </div>
       <div class="paragraph2">顶级团队</div>
-      <div class="paragraph3">绿石与一流的专家型律师、顾问合作，在客户与顶尖团队间搭建桥梁：</div>
+      <div class="paragraph3">律石与一流的专家型律师、顾问合作，在客户与顶尖团队间搭建桥梁：</div>
       <div class="paragraph4">
         <ul>
           <li><i>-  </i><span>资深诉讼律师</span></li>
@@ -54,7 +54,7 @@
       </div>
       <div class="paragraph6">
         <div class="more">更多资料请下载宣传册查看</div>
-        <a href="http://dist.green-stone.cn/common/font/绿石诉讼资助宣传册.pdf" download="text" class="download">绿石诉讼资助宣传册</a>
+        <a href="http://dist.green-stone.cn/common/font/律石诉讼资助宣传册.pdf" download="text" class="download">律石诉讼资助宣传册</a>
       </div>
     </div>
     <!-- 申请资助 -->
@@ -220,5 +220,128 @@ export default {
   background: #c49a6d;
   margin: 10px auto 50px;
   cursor: pointer;
+}
+@media screen and (max-width: 414px) {
+  .aboutImg{
+    width: 100%;
+    position: relative;
+    margin-bottom: -89px;
+  }
+  .aboutImg img{
+    width: 100%;
+    position: relative;
+    top: -89px;
+  }
+  .aboutImgBox{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -60px;
+  }
+  .aboutChi{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Medium';
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 1px solid #c49a6d;
+  }
+  .aboutEng{
+    width: 120px;
+    height: 22px;
+    text-align: center;
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 16px;
+  }
+  /*段落简介*/
+  .litigationImg{
+    height: 70px;
+    display: block;
+    margin: 30px auto;
+  }
+  .paragraph1{
+    width: 63%;
+    margin: 0 auto;
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+    text-indent: 30px;
+    line-height: 1.8;
+  }
+  .paragraph2{
+    width: 63%;
+    margin: 40px auto 25px;
+    font-family: 'Medium';
+    color: #c49a6d;
+    font-size: 24px;
+  }
+  .paragraph3{
+    width: 63%;
+    margin: 0 auto 20px;
+    font-family: 'Regular';
+    color: #c49a6d;
+    font-size: 15px;
+  }
+  .paragraph4{
+    width: 63%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .paragraph4 ul{
+    width: 45%;
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+    line-height: 2;
+  }
+  .paragraph4 ul li i{
+    width: 5%;
+    display: inline-block;
+    float: left;
+    font-style: normal;
+  }
+  .paragraph4 ul li span{
+    width: 95%;
+    display: inline-block;
+    float: left;
+  }
+  .paragraph5{
+    width: 63%;
+    margin: 35px auto 20px;
+    font-family: 'Medium';
+    color: #c49a6d;
+    font-size: 20px;
+  }
+  .paragraph6{
+    width: 63%;
+    margin: 20px auto;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+  }
+  .more{
+    width: 100%;
+    font-family: 'Regular';
+    color: #c49a6d;
+    font-size: 16px;
+    text-align: center;
+  }
+  .download{
+    display: block;
+    width: 186px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 13px;
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 12px;
+    background: #c49a6d;
+    margin: 10px auto 50px;
+    cursor: pointer;
+  }
 }
 </style>

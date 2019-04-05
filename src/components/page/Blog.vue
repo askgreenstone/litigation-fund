@@ -4,11 +4,11 @@
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
     <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
-   <!-- 绿石研究院 -->
+   <!-- 律石研究院 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner4.png">
       <div class="aboutImgBox">
-        <div class="aboutChi">绿石研究院</div>
+        <div class="aboutChi">律石研究院</div>
         <div class="aboutEng">GS INSTITUTE</div>
       </div>
     </div>
@@ -20,7 +20,7 @@
         <router-link tag="span" to="/Blog/BlogEdit" v-if="username" class="searchBtn">新建</router-link>
       </div>
     </div>
-    <!-- 绿石研究院列表 -->
+    <!-- 律石研究院列表 -->
     <ul class="searchList">
       <router-link v-for="item in newsList" class="searchLi" tag="li" :to="{path:'/Blog/BlogDetail',query:{lfnid:item.lfnid}}" :key="item.lfnid" >
         <div class="searchLeft">

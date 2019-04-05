@@ -7,7 +7,7 @@
     <!-- 图片轮播部分 -->
     <div class="window" id="#window" @mouseover="stop" @mouseout="play">
       <transition-group tag="ul" class="container" name="image">
-        <li v-for="(image,index) in imgData" :key="index" v-show="index===mark">
+        <li v-for="(image,index) in imgData" :key="image" v-show="index===mark">
           <img name="banner" :src="image">
         </li>
       </transition-group>

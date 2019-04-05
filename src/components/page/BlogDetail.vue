@@ -12,13 +12,13 @@
         <div class="aboutEng">OUR TEAM</div>
       </div>
     </div>
-    <!-- 绿石研究院文章详情 -->
+    <!-- 律石研究院文章详情 -->
     <div v-if="nDocName" class="contentBox">
       <div id="reader"></div>
     </div>
     <div v-else class="contentBox">
       <div class="infoTitle">
-        <span>绿石研究院 > </span><span class="information">{{nTitle}}</span>
+        <span>律石研究院 > </span><span class="information">{{nTitle}}</span>
       </div>
       <div class="title">{{nTitle}}</div>
       <div class="date">{{dts}}</div>
@@ -181,7 +181,7 @@ export default {
   color: #fff;
   font-size: 16px;
 }
-/*绿石研究院文章详情*/
+/*律石研究院文章详情*/
 .contentBox{
   width: 1000px;
   height: auto;
