@@ -2,7 +2,7 @@
 	<!-- 申请资助 -->
   <div class="applyFunding">
     <img src="../../assets/images/applyFunding.png">
-    <div class="applyTitle">我们分担您的诉讼风险</div>
+    <div class="applyTitle">让我们化解您的诉讼风险</div>
     <router-link tag="div" to="/Contact" class="applyButton">申请资助</router-link>
   </div>
 </template>
@@ -50,5 +50,42 @@ export default {
   background: #c49a6d;
   text-align: center;
   cursor: pointer;
+}
+@media screen and (max-width:414px){
+  .applyFunding{
+    width: 100%;
+    height: 140px;
+    position: relative;
+    background: url("../../assets/images/applyFunding.png");
+    background-position: center;
+    background-size: auto 100%;
+  }
+  .applyFunding img{
+    width: 100%;
+    display: none;
+  }
+  .applyTitle{
+    position: absolute;
+    left: 36px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Regular';
+    top: 63px;
+  }
+  .applyButton{
+    position: absolute;
+    right: 40px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Regular';
+    top: 50px;
+    background: #c49a6d;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 </style>

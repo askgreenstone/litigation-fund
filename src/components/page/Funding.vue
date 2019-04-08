@@ -278,4 +278,155 @@ export default {
   font-size: 15px;
   line-height: 1.5;
 }
+@media screen and (max-width:414px) {
+  .aboutImg{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .aboutImg img{
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .aboutImgBox{
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -90px;
+  }
+  .aboutChi{
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Medium';
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 1px solid #c49a6d;
+  }
+  .aboutEng{
+    width: 180px;
+    height: 22px;
+    text-align: center;
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 16px;
+  }
+  /*诉讼资助*/
+  .litigation{
+    width: 100%;
+    height: 413px;
+    background: #f0f0f0;
+    padding-top: 40px;
+  }
+  .introduction{
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .introTitle{
+    font-family: 'Medium';
+    color: #333;
+    font-size: 21px;
+  }
+  .introLine{
+    font-size: 0;
+    margin: 2px 10px;
+  }
+  .introLine span{
+    width: 20px;
+    height: 1px;
+    background: #c49a6d;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .introLine span.two{
+    width: 180px;
+  }
+  .introLine span.three{
+    margin-right: 0;
+  }
+  .introEng{
+    font-family: 'Regular';
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 33px;
+  }
+  .litigationImgBox{
+    width: 100%;
+    height: 360px;
+    position: relative;
+  }
+  .litigationImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 360px;
+    z-index: 1;
+  }
+  .litigationImg img{
+    height: 100%;
+  }
+  /*<!-- 资助阶段 -->*/
+  .funding{
+    padding-top: 40px;
+    background: url('../../assets/images/lightBg.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .phase{
+    width: 320px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .phaseLine{
+    width: 10px;
+    height: 100px;
+    line-height: 100px;
+    color: #ccc;
+    display: none;
+  }
+  .phaseImg ul{
+    width: 150px;
+    text-align: center;
+  }
+  .phaseImg img{
+    width: 100px;
+    height: 100px;
+    margin-left: 37px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .phaseTextGray{
+    font-family: 'Regular';
+    color: #333;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .phaseTextActive{
+    font-family: 'Regular';
+    color: #c49a6d;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .phaseImgBig{
+    font-family: 'Regular';
+    color: #000;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .phaseImgSmall{
+    font-family: 'Normal';
+    color: #4d4d4d;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
 </style>

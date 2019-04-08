@@ -259,4 +259,135 @@ export default {
   cursor: pointer;
   border-radius: 5px;
 }
+@media screen and (max-width:414px){
+  /*联系我们图片*/
+  .aboutImg{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .aboutImg img{
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .aboutImgBox{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -50px;
+  }
+  .aboutChi{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Medium';
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 1px solid #c49a6d;
+  }
+  .aboutEng{
+    width: 120px;
+    height: 22px;
+    text-align: center;
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 16px;
+  }
+  /*联系我们*/
+  .contactBox{
+    width: 100%;
+    min-height: 725px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .contactLeft{
+    width: 100%;
+    padding: 0 15px 15px;
+    box-sizing: border-box;
+  }
+  .leftTitle{
+    font-family: 'Medium';
+    color: #333;
+    font-size: 18px;
+  }
+  .leftTitleEng{
+    font-family: 'Normal';
+    color: #c49a6d;
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  .leftMessage{
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 12px;
+  }
+  .leftQrcode{
+    width: 110px;
+  }
+  .leftQrcode img{
+    width: 110px;
+  }
+  .contactRight{
+    width: 100%;
+    padding: 0 15px 15px;
+    box-sizing: border-box;
+  }
+  .rightTitle{
+    font-family: 'Medium';
+    color: #333;
+    font-size: 18px;
+  }
+  .rightInput{
+    width: 300px;
+    height: 29px;
+    border: 1px solid #ccc;
+    margin: 15px auto;
+  }
+  .rightInput input{
+    border: none;
+    width: 298px;
+    height: 27px;
+    line-height: 28px;
+    font-family: 'Normal';
+    color: #979797;
+    font-size: 14px;
+    text-indent: 10px;
+  }
+  .rightTextarea{
+    width: 300px;
+    height: 170px;
+    border: 1px solid #ccc;
+    margin: 15px auto;
+  }
+  .rightTextarea textarea{
+    border: none;
+    resize: none;
+    width: 296px;
+    height: 166px;
+    line-height: 22px;
+    font-family: 'Normal';
+    color: #979797;
+    text-indent: 10px;
+    font-size: 14px;
+  }
+  .rightButton{
+    width: 115px;
+    height: 35px;
+    margin: 0 auto;
+    border: 1px solid #c49a6d;
+    text-align: center;
+    line-height: 35px;
+    font-family: 'Normal';
+    color: #c49a6d;
+    font-size: 15px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
 </style>

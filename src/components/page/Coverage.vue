@@ -160,4 +160,92 @@ export default {
   left: 30%;
   top: 0;
 }
+@media screen and (max-width:414px){
+  /*行业覆盖 地区辐射*/
+  .aboutImg{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .aboutImg img{
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .introduction{
+    width: 100%;
+    height:85px;
+    text-align: center;
+    margin: 0 auto;
+    background: #333;
+    padding-top: 25px;
+  }
+  .introTitle{
+    font-family: 'Medium';
+    color: #fff;
+    font-size: 21px;
+    
+  }
+  .introLine{
+    font-size: 0;
+    margin: 2px 10px;
+  }
+  .introLine span{
+    width: 20px;
+    height: 1px;
+    background: #c49a6d;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .introLine span.two{
+    width: 180px;
+  }
+  .introLine span.three{
+    margin-right: 0;
+  }
+  .introEng{
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
+  /*地球网络*/
+  .net{
+    width: 100%;
+    position: relative;
+  }
+  .net .earth{
+    width: 100%;
+    display: block;
+  }
+  .address1{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background: #333;
+  }
+  .addTop{
+    font-family: 'Medium';
+    color: #c49a6d;
+    font-size: 15px;
+  }
+  .addBottom{
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .addressBox{
+    position: relative;
+  }
+  .addressRight{
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
 </style>
