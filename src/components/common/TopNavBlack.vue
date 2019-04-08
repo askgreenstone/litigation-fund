@@ -27,7 +27,7 @@
     <!-- 顶部导航栏，左图右导航结构 -->
     <div v-bind:class="bgColor ==='white'?'topNavBoxWhite':'topNavBox'">
       <router-link to="/" tag="div" class="topNavLeft">
-        <img v-if="bgColor == 'white'" src="../../assets/images/logo.png"/>
+        <img v-if="bgColor == 'white'" src="../../assets/images/logo2.png"/>
         <img v-else src="../../assets/images/logoBlank.png"/>
       </router-link>
       <ul class="topNav">
@@ -320,6 +320,7 @@ export default {
     z-index: 10;
     display: flex;
     justify-content: space-between;
+    display: none;
   }
   .topMenu span{
     height: 26px;

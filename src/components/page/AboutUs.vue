@@ -15,17 +15,18 @@
     </div>
     <div class="litigation">
       <img class="litigationImg" src="../../assets/images/logoWe.png">
+      <div class="paragraph2">关于律石</div>
       <div class="paragraph1">
-        律石诉讼资助以其卓越的专业能力，在争议解决中为当事人提供相关团队、资源和费用帮助，及时释放诉权、加速资金回笼，已有越来越多的财富500强公司、企业和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行领域的主流趋势。
+        律石诉讼资助通过专业能力和执行力，在争议解决中提供专业能力和费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、企业和个人从该模式中受益。日益成为民商事诉讼、仲裁、执行业务的主流趋势。
       </div>
       <div class="paragraph1">
-        争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏也导致其合理合法的诉权主张被迫推迟或放弃追索。
+        争议解决涉及的专业门槛高、诉讼周期长，许多应收款长期挂账，严重影响现金周转，甚至最终超过诉讼时效而不得不予以核销。当事人对律师行业和司法体系的生疏也导致具有合理诉权的主张被迫推迟或被迫放弃追索。
       </div>
       <div class="paragraph1">
-        当事人之间不同的财务资源存在着巨大差异，给其自身的司法救济带来了障碍，并使得现金流紧张的当事人所能获得的裁判结果发生偏离。诉讼资助应运而生，在为客户切实创造价值的基础上实现共赢。
+        当事人之间不平等的财务资源存在着巨大的差异，给司法救济带来了障碍和不平衡，并使资金紧张的当事人所能获得的裁判结果发生偏离和扭曲。诉讼资助应运而生，在为客户切实创造价值的基础上实现共赢。
       </div>
       <div class="paragraph2">顶级团队</div>
-      <div class="paragraph3">律石与一流的专家型律师、顾问合作，在客户与顶尖团队间搭建桥梁：</div>
+      <div class="paragraph3">律石与一流的专家型律师、顾问合作，为客户提供一揽子诉讼法律事务解决方案：</div>
       <div class="paragraph4">
         <ul>
           <li><i>-  </i><span>资深诉讼律师</span></li>
@@ -39,7 +40,7 @@
           <li><i>-  </i><span>法学专家、知名高校教授</span></li>
           <li><i>-  </i><span>投行、金融资深人士</span></li>
           <li><i>-  </i><span>财会/税务专业团队</span></li>
-          <li><i>-  </i><span>领先的知识产权、海事海商、建筑工程、矿业能源、文化传媒、环境保护、 医疗健康、反垄断、侵权赔偿等各专业领域的学科带头律师和顾问</span></li>
+          <li><i>-  </i><span>领先的知识产权、海事海商、建筑工程、矿业能源、文化传媒、环境保护、医疗健康、反垄断、侵权赔偿等各专业领域的学科带头律师和顾问</span></li>
         </ul>
       </div>
       <div class="paragraph5">诉讼垫资项目包括但不局限于：</div>
@@ -147,7 +148,7 @@ export default {
   font-family: 'Normal';
   color: #333;
   font-size: 15px;
-  text-indent: 30px;
+  // text-indent: 30px;
   line-height: 1.8;
 }
 .paragraph2{
@@ -161,7 +162,7 @@ export default {
   width: 63%;
   margin: 0 auto 20px;
   font-family: 'Regular';
-  color: #c49a6d;
+  color: #333;
   font-size: 15px;
 }
 .paragraph4{
@@ -191,8 +192,8 @@ export default {
   width: 63%;
   margin: 35px auto 20px;
   font-family: 'Medium';
-  color: #c49a6d;
-  font-size: 20px;
+  color: #333;
+  font-size: 15px;
 }
 .paragraph6{
   width: 63%;
@@ -292,7 +293,7 @@ export default {
     box-sizing: border-box;
     margin: 0 auto 10px;
     font-family: 'Regular';
-    color: #c49a6d;
+    color: #333;
     font-size: 15px;
   }
   .paragraph4{
@@ -327,8 +328,8 @@ export default {
     box-sizing: border-box;
     margin: 17px auto 10px;
     font-family: 'Medium';
-    color: #c49a6d;
-    font-size: 20px;
+    color: #333;
+    font-size: 15px;
   }
   .paragraph6{
     width: 100%;

@@ -498,5 +498,203 @@ export default {
   color: #fff;
   font-size: 14px;
 }
+@media screen and (max-width:414px){
+  /*关于我们图片*/
+  .aboutImg{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .aboutImg img{
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .aboutImgBox{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -60px;
+  }
+  .aboutChi{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Medium';
+    color: #fff;
+    font-size: 22px;
+    border-bottom: 1px solid #c49a6d;
+  }
+  .aboutEng{
+    width: 120px;
+    height: 22px;
+    text-align: center;
+    font-family: 'Regular';
+    color: #fff;
+    font-size: 16px;
+  }
+  /*搜索框，新建按钮，团队介绍*/
+  .searchBox{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+  }
+  .search{
+    width: 100%;
+    height: 35px;
+    display: flex;
+  }
+  .searchInput{
+    flex: 1;
+    height: 35px;
+    margin: 0 auto;
+    line-height: 33px;
+    padding-left: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Normal';
+    color: #b1b1b1;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  .searchBtn{
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #c49a6d;
+    line-height: 33px;
+    font-family: 'Normal';
+    color: #c49a6d;
+    font-size: 14px;
+    margin-left: 0;
+    cursor: pointer;
+  }
+  /*文章列表*/
+  .searchList{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .searchLi{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+  }
+  .searchLeft{
+    width: 198px;
+    height: 130px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  .searchLeft img{
+    width: 100%;
+    display: block;
+  }
+  .searchRight{
+    width: 630px;
+    height: 130px;
+  }
+  .searchRightTop{
+    width: 100%;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .title{
+    width: 50%;
+    display: inline-block;
+    font-family: 'Medium';
+    color: #c49a6d;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .date{
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+  }
+  .searchIntroduction{
+    width: 100%;
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+    line-height: 27px;
+    height: 60px;
+  }
+  .searchIntroduction pre{
+    margin: 0;
+    white-space: pre-line;
+  }
+  .searchEdit{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+  .editBtn{
+    float: right;
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Regular';
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .deleteBtn{
+    float: right;
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Regular';
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .pageList{
+    width: 500px;
+    height: 40px;
+    margin: 20px auto;
+    display: flex;
+  }
+  .pageList li{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 7px 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .pageList li a{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    font-family: 'Regular';
+    color: #4d4d4d;
+    font-size: 14px;
+  }
+  .pageList li.pageActive{
+    border-radius: 12px;
+    background: #c49a6d;
+  }
+  .pageList li.pageActive a{
+    font-family: 'Normal';
+    color: #fff;
+    font-size: 14px;
+  }
+}
 </style>
 

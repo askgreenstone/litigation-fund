@@ -37,14 +37,14 @@
     <div class="lawyer">
       <div class="lawyerBox">
         <span class="lawyerLine">—</span>
-        <span class="lawyerTop">客户/律师</span>
+        <span class="lawyerTop">为当事人或律师提供</span>
         <span class="lawyerLine">—</span>
       </div>
       <ul class="lawyerList">
         <li>
           <img src="../../assets/images/professionalService.png" >
           <div class="lawyerTitle">专业服务</div>
-          <div class="lawyerBox">
+          <div class="lawyerBox" style="display:none">
             <span class="lawyerLine">—</span>
             <span>资深专业团队</span>
             <span class="lawyerLine">—</span>
@@ -53,7 +53,7 @@
         <li>
           <img src="../../assets/images/coveringCountry.png" >
           <div class="lawyerTitle">覆盖全国</div>
-          <div class="lawyerBox">
+          <div class="lawyerBox" style="display:none">
             <span class="lawyerLine">—</span>
             <span>覆盖各省自治区</span>
             <span class="lawyerLine">—</span>
@@ -62,7 +62,7 @@
         <li>
           <img src="../../assets/images/resourceSupport.png" >
           <div class="lawyerTitle">资源支持</div>
-          <div class="lawyerBox">
+          <div class="lawyerBox" style="display:none">
             <span class="lawyerLine">—</span>
             <span>各方资源的整合</span>
             <span class="lawyerLine">—</span>
@@ -71,7 +71,7 @@
         <li>
           <img src="../../assets/images/litigation.png" >
           <div class="lawyerTitle">诉讼垫资</div>
-          <div class="lawyerBox">
+          <div class="lawyerBox" style="display:none">
             <span class="lawyerLine">—</span>
             <span>雄厚的资本支持</span>
             <span class="lawyerLine">—</span>
@@ -324,7 +324,7 @@ export default {
   padding-top: 34px;
 }
 .lawyerTop{
-  width: 142px;
+  width: 180px;
   height: 33px;
   display: inline-block;
   margin: 0 auto 56px;
@@ -529,7 +529,7 @@ export default {
     padding-bottom: 30px;
   }
   .lawyerTop{
-    width: 142px;
+    width: 180px;
     height: 33px;
     display: inline-block;
     margin: 0 auto 13px;
@@ -549,6 +549,7 @@ export default {
   }
   .lawyerList li{
     width: 50%;
+    margin-bottom: 34px;
   }
   .lawyerTitle{
     width: 100%;
