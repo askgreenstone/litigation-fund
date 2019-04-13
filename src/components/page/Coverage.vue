@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 行业覆盖 地区辐射 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner3.png">
@@ -77,6 +77,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*行业覆盖 地区辐射*/
 .aboutImg{
   width: 100%;
@@ -112,9 +118,11 @@ export default {
   background: #c49a6d;
   display: inline-block;
   margin-right: 10px;
+  display: none;
 }
 .introLine span.two{
   width: 180px;
+  display: inline-block;
 }
 .introLine span.three{
   margin-right: 0;
@@ -161,6 +169,12 @@ export default {
   top: 0;
 }
 @media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   /*行业覆盖 地区辐射*/
   .aboutImg{
     width: 100%;
@@ -177,13 +191,13 @@ export default {
     height:85px;
     text-align: center;
     margin: 0 auto;
-    background: #333;
+    background: #fff;
     padding-top: 25px;
   }
   .introTitle{
     font-family: 'Medium';
-    color: #fff;
-    font-size: 21px;
+    color: #333;
+    font-size: 18px;
     
   }
   .introLine{
@@ -196,17 +210,19 @@ export default {
     background: #c49a6d;
     display: inline-block;
     margin-right: 10px;
-  }
-  .introLine span.two{
-    width: 180px;
-  }
+    display: none;
+}
+.introLine span.two{
+  width: 150px;
+  display: inline-block;
+}
   .introLine span.three{
     margin-right: 0;
   }
   .introEng{
     font-family: 'Regular';
-    color: #fff;
-    font-size: 18px;
+    color: #333;
+    font-size: 15px;
     margin-bottom: 33px;
   }
   /*地球网络*/
@@ -223,7 +239,7 @@ export default {
     position: relative;
     left: 0;
     bottom: 0;
-    padding: 20px;
+    padding: 27px 20px;
     box-sizing: border-box;
     line-height: 1.5;
     background: #333;
@@ -231,20 +247,19 @@ export default {
   .addTop{
     font-family: 'Medium';
     color: #c49a6d;
-    font-size: 15px;
+    font-size: 14px;
   }
   .addBottom{
     font-family: 'Regular';
     color: #fff;
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 27px;
   }
   .addressBox{
     position: relative;
   }
   .addressRight{
-    position: relative;
-    left: 0;
+    left: 180px;
     top: 0;
   }
 }

@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack v-bind:bgColor="bgColor"></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 关于我们正文 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
@@ -17,13 +17,13 @@
       <img class="litigationImg" src="../../assets/images/logoWe.png">
       <div class="paragraph2">关于律石</div>
       <div class="paragraph1">
-        律石诉讼资助通过专业能力和执行力，在争议解决中提供专业能力和费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、企业和个人从该模式中受益。日益成为民商事诉讼、仲裁、执行业务的主流趋势。
+        律石诉讼资助以其卓越的专业能力，在争议解决中为当事人和代理律师提供团队和费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、上市公司和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行、破产重整领域的主流趋势。
       </div>
       <div class="paragraph1">
-        争议解决涉及的专业门槛高、诉讼周期长，许多应收款长期挂账，严重影响现金周转，甚至最终超过诉讼时效而不得不予以核销。当事人对律师行业和司法体系的生疏也导致具有合理诉权的主张被迫推迟或被迫放弃追索。
+        争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏，也可能导致其合理合法的诉权主张被迫推迟或放弃追索。
       </div>
       <div class="paragraph1">
-        当事人之间不平等的财务资源存在着巨大的差异，给司法救济带来了障碍和不平衡，并使资金紧张的当事人所能获得的裁判结果发生偏离和扭曲。诉讼资助应运而生，在为客户切实创造价值的基础上实现共赢。
+        当事人之间，财务资源、法律专业资源可能存在着巨大差异，这将一定程度给其自身的司法救济带来障碍，甚至出现现金流紧张的当事人无法接近司法公平。因此，诉讼资助应运而生，在为客户切实创造价值的基础上实现共赢。
       </div>
       <div class="paragraph2">顶级团队</div>
       <div class="paragraph3">律石与一流的专家型律师、顾问合作，为客户提供一揽子诉讼法律事务解决方案：</div>
@@ -100,6 +100,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+  width:100%;
+  height:115px;
+  background:#fff;
+  position:relative;
+}
 /*关于我们图片*/
 .aboutImg{
   width: 100%;
@@ -223,6 +229,12 @@ export default {
   cursor: pointer;
 }
 @media screen and (max-width: 414px) {
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   .aboutImg{
     width: 100%;
     position: relative;
@@ -240,6 +252,7 @@ export default {
     left: 50%;
     top: 40%;
     margin-left: -60px;
+    display: none;
   }
   .aboutChi{
     width: 120px;
@@ -263,7 +276,7 @@ export default {
     width: 100%;
   }
   .litigationImg{
-    height: 70px;
+    height: 50px;
     display: block;
     margin: 30px auto;
   }
@@ -275,7 +288,6 @@ export default {
     font-family: 'Normal';
     color: #333;
     font-size: 15px;
-    text-indent: 30px;
     line-height: 1.8;
   }
   .paragraph2{
@@ -301,7 +313,7 @@ export default {
     padding: 0 15px;
     box-sizing: border-box;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   .paragraph4 ul{
     width: 100%;
@@ -326,7 +338,7 @@ export default {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-    margin: 17px auto 10px;
+    margin: 0 auto 10px;
     font-family: 'Medium';
     color: #333;
     font-size: 15px;
@@ -338,6 +350,7 @@ export default {
     margin: 10px auto;
     border-top: 1px solid #ccc;
     padding-top: 30px;
+    display: none;
   }
   .more{
     width: 100%;

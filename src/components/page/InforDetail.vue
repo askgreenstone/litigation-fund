@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 信息列表图片 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
@@ -132,6 +132,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*联系我们图片*/
 .aboutImg{
   width: 100%;
@@ -223,5 +229,105 @@ export default {
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 20px;
+}
+@media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
+/*联系我们图片*/
+.aboutImg{
+  width: 100%;
+  position: relative;
+  margin-bottom: -89px;
+}
+.aboutImg img{
+  width: 100%;
+  position: relative;
+  top: -89px;
+}
+.aboutImgBox{
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -50px;
+}
+.aboutChi{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: 'Medium';
+  color: #fff;
+  font-size: 22px;
+  border-bottom: 1px solid #c49a6d;
+}
+.aboutEng{
+  width: 100px;
+  height: 22px;
+  text-align: center;
+  font-family: 'Regular';
+  color: #fff;
+  font-size: 16px;
+}
+/*信息列表*/
+.infoBox{
+  width: 985px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+.infoTitle{
+  width: 985px;
+  height: 51px;
+  line-height: 51px;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Normal';
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.information{
+  color: #c49a6d
+}
+.infoList{
+  width: 800px;
+  height: auto;
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+
+}
+.infoListTitle{
+  width: 800px;
+  margin-bottom: 15px;
+  display: flex;
+}
+.infoListName{
+  font-family: 'Medium';
+  color: #333;
+  font-size: 16px;
+  width: 50%;
+  display: inline-block;
+  line-height: 25px;
+}
+.infoListTime{
+  font-family: 'Normal';
+  color: #808080;
+  font-size: 15px;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  line-height: 30px;
+}
+.infoListContent{
+  font-family: 'Normal';
+  color: #333;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
 }
 </style>

@@ -3,13 +3,13 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
    <!-- 律石研究院 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner4.png">
       <div class="aboutImgBox">
         <div class="aboutChi">律石研究院</div>
-        <div class="aboutEng">GS INSTITUTE</div>
+        <div class="aboutEng">LS INSTITUTE</div>
       </div>
     </div>
     <!-- 搜索框，新建按钮，团队介绍 -->
@@ -51,6 +51,10 @@
       </li>
       <li @click="gotoNext()"><a href="javascript:;">&gt;</a></li>
     </ol>
+    <div class="blogArticle">
+      <div class="title">律石诉讼资助</div>
+      <div class="content">诉讼资助的主要优势是不论当事方的财务状况如何，均可以通过外部资助启动司法救济程序，并且由资助方分担诉讼风险，使当事方能够将有限的流动资金集中在研发、生产等主营业务领域、创造更大产值，避免冗长的诉讼周期带来的资金、时间、精力上的损耗，并解决了当事人遴选律师团队的痛点、消除了代理人与被代理人之间的信任风险。</div>
+    </div>
     <!-- 首页底部 -->
     <Bottom></Bottom>
   </div>
@@ -304,6 +308,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*关于我们图片*/
 .aboutImg{
   width: 100%;
@@ -498,7 +508,16 @@ export default {
   color: #fff;
   font-size: 14px;
 }
+.blogArticle{
+  display: none;
+}
 @media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   /*关于我们图片*/
   .aboutImg{
     width: 100%;
@@ -517,14 +536,16 @@ export default {
     left: 50%;
     top: 40%;
     margin-left: -60px;
+    top: 100%;
+    padding-top: 35px;
   }
   .aboutChi{
     width: 120px;
-    height: 30px;
+    height: 22px;
     text-align: center;
     font-family: 'Medium';
-    color: #fff;
-    font-size: 22px;
+    color: #333;
+    font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
@@ -532,8 +553,8 @@ export default {
     height: 22px;
     text-align: center;
     font-family: 'Regular';
-    color: #fff;
-    font-size: 16px;
+    color: #333;
+    font-size: 13px;
   }
   /*搜索框，新建按钮，团队介绍*/
   .searchBox{
@@ -541,6 +562,7 @@ export default {
     margin: 0 auto;
     padding-top: 20px;
     position: relative;
+    display: none;
   }
   .search{
     width: 100%;
@@ -578,6 +600,7 @@ export default {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    display: none;
   }
   .searchLi{
     padding: 20px 0;
@@ -667,6 +690,7 @@ export default {
     height: 40px;
     margin: 20px auto;
     display: flex;
+    display: none;
   }
   .pageList li{
     width: 25px;
@@ -694,6 +718,32 @@ export default {
     font-family: 'Normal';
     color: #fff;
     font-size: 14px;
+  }
+  .blogArticle{
+    width: 100%;
+    display: block;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+  }
+  .blogArticle .title{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-family: Medium;
+    color: #c49a6d;
+    font-size: 16px;
+    margin: 15px auto 0;
+    text-decoration: none;
+    
+  }
+  .blogArticle .content{
+    line-height: 20px;
+    color: #333;
+    font-size: 13px;
+    text-indent: 26px;
   }
 }
 </style>

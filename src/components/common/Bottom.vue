@@ -20,6 +20,16 @@
         <div><img src="../../assets/images/qrcode.png"></div>
       </li>
     </ul>
+    <ul class="topNavList">
+        <router-link to="/" tag="li" exact >首页</router-link>
+        <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
+        <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
+        <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
+        <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
+        <router-link to="/Blog" tag="li" >律石研究院</router-link>
+        <router-link to="/Scenarios" tag="li" exact >应用案例</router-link>
+        <router-link to="/Contact" tag="li" >联系我们</router-link>
+      </ul>
     <div class="bottomLine"></div>
     <div class="bottomText">2018 深圳律石资本有限公司 版权所有</div>
   </div>
@@ -99,6 +109,9 @@ export default {
   font-family: 'Regular';
   text-align: center;
 }
+.topNavList{
+  display: none;
+}
 
 @media screen and (max-width:414px) {
   .bottom{
@@ -129,7 +142,7 @@ export default {
     text-align: left;
     margin-left: 0;
     transform: scale(1);
-    height: 56px;
+    height: 50px;
   }
   .bottomListTel{
     width: 200px;
@@ -143,6 +156,7 @@ export default {
     color: #cacaca;
     font-size: 13px;
     font-family: 'Medium';
+    display: none;
   }
   .bottomListQrcode{
     width: 100px;
@@ -154,6 +168,25 @@ export default {
   }
   .bottomListQrcode img{
     width: 100%;
+  }
+  .topNavList{
+    width: 100%;
+    height: 280px;
+    display: block;
+  }
+  .topNavList li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: #3f3e3e;
+    opacity: 0.8;
+  }
+  .topNavList li.active{
+    background: #fff;
+    color: #c49a6d;
   }
   .bottomLine{
     width: 95%;

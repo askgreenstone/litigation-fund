@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 团队／顾问 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
@@ -145,6 +145,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*关于我们图片*/
 .aboutImg{
   width: 100%;
@@ -238,6 +244,108 @@ export default {
   font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
+}
+@media screen and(max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
+/*关于我们图片*/
+.aboutImg{
+  width: 100%;
+  position: relative;
+  margin-bottom: -89px;
+}
+.aboutImg img{
+  width: 100%;
+  position: relative;
+  top: -89px;
+}
+.aboutImgBox{
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -50px;
+}
+.aboutChi{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-family: 'Medium';
+  color: #fff;
+  font-size: 22px;
+  border-bottom: 1px solid #c49a6d;
+}
+.aboutEng{
+  width: 120px;
+  height: 22px;
+  text-align: center;
+  font-family: 'Regular';
+  color: #fff;
+  font-size: 16px;
+}
+/*律石研究院文章详情*/
+.contentBox{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto 20px;
+  position: relative;
+}
+.infoTitle{
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Normal';
+  color: #333;
+  font-size: 16px;
+  margin: 0 auto 10px;
+}
+.information{
+  font-family: 'Normal';
+  color: #c49a6d;
+  font-size: 16px;
+}
+.title{
+  width: 850px;
+  height: 40px;
+  font-family: 'Medium';
+  color: #c49a6d;
+  font-size: 22px;
+  text-align: center;
+  margin: 30px auto 0;
+}
+.date{
+  width: 850px;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 30px;
+  text-align: right;
+  box-sizing: border-box;
+  font-family: 'Normal';
+  color: #979797;
+  font-size: 16px;
+  margin: 0 auto 20px;
+}
+.content{
+  width: 850px;
+  line-height: 28px;
+  font-family: 'Normal';
+  color: #333;
+  font-size: 15px;
+  margin: 0 auto 20px;
+}
+.content pre{
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: 'Normal';
+  color: #4d4d4d;
+  font-size: 14px;
+}
 }
 
 

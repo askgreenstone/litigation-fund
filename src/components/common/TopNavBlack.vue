@@ -7,6 +7,7 @@
       <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link>
       <span class="language"><!-- <span>English</span>/ --><span class="active">中文</span></span>
     </div>
+    <div class="topBlack"></div>
     <div v-show="loginFlag" class="loginBg">
       <div class="loginBox">
         <div class="loginText">用户登录</div>
@@ -41,6 +42,22 @@
         <router-link to="/Contact" tag="li" >联系我们</router-link>
       </ul>
     </div>  
+    <!-- 移动端导航 -->
+    <div class="mobileNavBox">
+      <img class="left" src="../../assets/images/logoBlank.png"/>
+      <img class="right" v-show="!showMenuFlag" src="../../assets/images/topMenu1.png" @click="showMenu"/>
+      <img class="right" v-show="showMenuFlag" src="../../assets/images/topMenu2.png" @click="hideMenu"/>
+      <ul class="topNavList" v-show="showMenuFlag"> 
+        <router-link to="/" tag="li" exact >首页</router-link>
+        <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
+        <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
+        <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
+        <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
+        <router-link to="/Blog" tag="li" >律石研究院</router-link>
+        <router-link to="/Scenarios" tag="li" exact >应用案例</router-link>
+        <router-link to="/Contact" tag="li" >联系我们</router-link>
+      </ul>
+    </div>  
   </div>
   
 </template>
@@ -54,6 +71,7 @@ export default {
   store,
   data () {
     return {
+      showMenuFlag: false
     }
   },
   props: ['bgColor'],
@@ -80,8 +98,15 @@ export default {
     ...mapMutations(['showLogin','closeLogin','login']),
     init:function(){
       // console.log(this.bgColor);
+    },
+    showMenu: function(){
+      this.showMenuFlag = true;
+    },
+    hideMenu: function(){
+      this.showMenuFlag = false;
     }
   },
+  
   mounted: function(){
     this.init();
   },
@@ -149,6 +174,9 @@ export default {
 }
 .language .active{
   color: #c49a6d;
+}
+.topBlack{
+  display: none;
 }
 
 /*登陆框*/
@@ -309,55 +337,82 @@ export default {
   color: #c49a6d;
   border-bottom: 4px solid #c49a6d;
 }
+.mobileNavBox{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 414px){
   .topMenu{
-    width: 100%;
-    height: 26px;
-    background: #f0f0f0;
+    display: none;
+  }
+  .mobileNavBox{
+    display: block;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background: #262522;
     display: flex;
-    justify-content: space-between;
-    display: none;
+    background: url('../../assets/images/topMobileBg.png');
+    background-size: 100%;
+    background-position: center;
   }
-  .topMenu span{
-    height: 26px;
-    display: inline-block;
-    line-height: 26px;
-  }
-  .welcome{
-   
-    margin-left: 5px;
-    font-family: 'Bold';
-    font-size: 12px;
-    color: #333;
-  }
-  .login{
-    margin-left: 5px;
-    font-family: 'Normal';
-    font-size: 12px;
-    color: #c49a6d;
-    cursor: pointer;
-  }
-  .language{
-    flex: 1;
-    text-align: right;
+  .mobileNavBox .left{
+    height: 30px;
     margin-left: 0;
-    width: 50px;
-    font-family: 'Normal';
-    font-size: 12px;
-    color: #333;
+  } 
+  .mobileNavBox .right{
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 0;
+  } 
+  .mobileNavBox .topNavList{
+    width: 144px;
+    height: 280px;
+    position: fixed;
+    right: 0;
+    top: 70px;
   }
-  .language span{
-    margin: 0 10px;
-    /*cursor: pointer;*/
+  .mobileNavBox .topNavList li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: #3f3e3e;
+    opacity: 0.8;
   }
-  .language .active{
+  .mobileNavBox .topNavList li.active{
+    background: #fff;
     color: #c49a6d;
   }
-
+  .topBlack{
+    width: 100%;
+    height: 0;
+    background: #333;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
   /*登陆框*/
   .loginBg{
     width: 100%;
@@ -460,26 +515,27 @@ export default {
     width: 100%;
     cursor: pointer;
   }
+ 
   /*顶部导航栏，左图右导航结构*/
   .topNavBoxWhite{
     width: 100%;
     height: 89px;
     background: #fff;
     position: fixed;
-    top: 26px;
+    top: 40px;
     left: 0;
     z-index: 10;
+    display: none;
   }
   .topNavBox{
     width: 100%;
     height: 89px;
     background: rgba(0,0,0,0.7);
     position: fixed;
-    top: 26px;
+    top: 40px;
     left: 0;
     z-index: 10;
     display: none;
-
   }
   .topNavLeft{
     width: 20%;

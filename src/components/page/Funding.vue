@@ -3,13 +3,13 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 诉讼资助 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner3.png">
       <div class="aboutImgBox">
         <div class="aboutChi">诉讼资助</div>
-        <div class="aboutEng">LITIGATION FUNDING</div>
+        <div class="aboutEng">LITIGATION SUPPORT</div>
       </div>
       
     </div>
@@ -22,13 +22,13 @@
     <div class="funding">
       <!-- <img src="../../assets/images/lightBg.png"> -->
       <div class="introduction">
-        <div class="introTitle">阶段和类型</div>
+        <div class="introTitle">资助阶段</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">PHASE AND CATEGORIES</div>
+        <div class="introEng">LITIGATION PHASES</div>
       </div>
       <ul class="phase">
         <li class="phaseLine">————</li>
@@ -41,7 +41,7 @@
               <div class="phaseImgSmall">
                 <span>一审</span><br>
                 <span>二审</span><br>
-                <span>三审</span>
+                <span>再审</span>
               </div>
             </li>
           </ul>
@@ -131,6 +131,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*诉讼资助图片*/
 .aboutImg{
   width: 100%;
@@ -171,7 +177,7 @@ export default {
 .litigation{
   width: 100%;
   height: 413px;
-  background: #f0f0f0;
+  background: #fff;
   padding-top: 40px;
 }
 .introduction{
@@ -195,9 +201,11 @@ export default {
   background: #c49a6d;
   display: inline-block;
   margin-right: 10px;
+  display: none;
 }
 .introLine span.two{
   width: 180px;
+  display: inline-block;
 }
 .introLine span.three{
   margin-right: 0;
@@ -279,6 +287,12 @@ export default {
   line-height: 1.5;
 }
 @media screen and (max-width:414px) {
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   .aboutImg{
     width: 100%;
     position: relative;
@@ -294,15 +308,16 @@ export default {
     height: 60px;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 100%;
     margin-left: -90px;
+    padding-top: 35px;
   }
   .aboutChi{
     width: 180px;
     height: 30px;
     text-align: center;
     font-family: 'Medium';
-    color: #fff;
+    color: #333;
     font-size: 22px;
     border-bottom: 1px solid #c49a6d;
   }
@@ -311,15 +326,15 @@ export default {
     height: 22px;
     text-align: center;
     font-family: 'Regular';
-    color: #fff;
+    color: #333;
     font-size: 16px;
   }
   /*诉讼资助*/
   .litigation{
     width: 100%;
     height: 413px;
-    background: #f0f0f0;
-    padding-top: 40px;
+    background: #fff;
+    padding-top: 110px;
   }
   .introduction{
     width: 100%;
@@ -342,10 +357,12 @@ export default {
     background: #c49a6d;
     display: inline-block;
     margin-right: 10px;
-  }
-  .introLine span.two{
-    width: 180px;
-  }
+    display: none;
+}
+.introLine span.two{
+  width: 180px;
+  display: inline-block;
+}
   .introLine span.three{
     margin-right: 0;
   }
@@ -374,13 +391,13 @@ export default {
   /*<!-- 资助阶段 -->*/
   .funding{
     padding-top: 40px;
-    background: url('../../assets/images/lightBg.png');
+    background: url('../../assets/images/lightBg2.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
   .phase{
     width: 320px;
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -403,6 +420,8 @@ export default {
     margin-left: 37px;
     margin-bottom: 10px;
     cursor: pointer;
+    margin: 0 auto;
+    display: block;
   }
   .phaseTextGray{
     font-family: 'Regular';
@@ -413,19 +432,20 @@ export default {
   .phaseTextActive{
     font-family: 'Regular';
     color: #c49a6d;
-    font-size: 17px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: none;
   }
   .phaseImgBig{
     font-family: 'Regular';
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
   }
   .phaseImgSmall{
     font-family: 'Normal';
     color: #4d4d4d;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.5;
   }
 }

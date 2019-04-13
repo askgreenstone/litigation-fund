@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack v-bind:bgColor="bgColor"></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:#fff;position:relative;"></div>
+    <div class="position"></div>
     <!-- 图片轮播部分 -->
     <div class="window" id="#window" @mouseover="stop" @mouseout="play">
       <transition-group tag="ul" class="container" name="image">
@@ -31,7 +31,7 @@
         <span class="three"></span>
       </div>
       <div class="introEng">LITIGATION SUPPORT</div>
-      <div class="introMessage">如果您有民商事诉讼/仲裁/执行领域重大、疑难案件，因当事人财力有限，或代理人专业/地域/资源局限，难以启动司法救济，请联系我们。我们以诉讼垫资，全国网络覆盖和资深律师/专家/顾问团队及行业资源，为您实现胜诉和回款。</div>
+      <div class="introMessage">如果您有民商事诉讼/仲裁/执行领域重大、疑难案件，或司法破产重整/清算事项，因当事人财力有限，或代理人专业/地域/资源局限，难以启动司法救济，请联系我们。我们以诉讼垫资，全国网络覆盖和资深律师/专家/顾问团队及领先的一揽子解决方案行，为企业和个人客户实现胜诉和回款。</div>
     </div>
     <!-- 客户/律师 -->
     <div class="lawyer">
@@ -82,17 +82,20 @@
     <!-- 支持 -->
     <div class="support">
       <div class="introduction">
-        <div class="introTitle">专业支持</div>
-        <div class="introLine">
+        <div class="introTitle">支持</div>
+        <div class="introLine introLine2">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">PROFESSIONAL SUPPORT</div>
+        <div class="introEng">SUPPORT</div>
       </div>
-      <div class="introListBox">
-        <img src="../../assets/images/support.png">
-      </div> 
+      <div class="introListBox1">
+        <img src="../../assets/images/support1.png">
+      </div>
+      <div class="introListBox2">
+        <img src="../../assets/images/support2.png">
+      </div>  
     </div>
     <!-- 申请资助 -->
     <ApplyFunding></ApplyFunding>
@@ -188,6 +191,12 @@ export default {
 <style scoped>
 .hello{
 
+}
+.position{
+  width:100%;
+  height:115px;
+  background:#fff;
+  position:relative;
 }
 /*图片轮播容器*/
 .window{
@@ -298,9 +307,14 @@ export default {
   background: #c49a6d;
   display: inline-block;
   margin-right: 10px;
+  display: none;
 }
 .introLine span.two{
-  width: 180px;
+  width: 160px;
+  display: inline-block;
+}
+.introLine2 span.two{
+  width: 90px;
 }
 .introLine span.three{
   margin-right: 0;
@@ -367,12 +381,15 @@ export default {
 .support .introduction{
   height: 90px;
 }
-.introListBox{
+.introListBox1{
   width: 100%;
   position: relative;
 }
-.introListBox img{
+.introListBox1 img{
   width: 100%;
+}
+.introListBox2{
+  display: none;
 }
 .introList{
   width: 70%;
@@ -390,6 +407,12 @@ export default {
   font-family: 'Medium';
 }
 @media screen and (max-width: 414px) {
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   /*图片轮播容器*/
   .window{
     width: 100%;
@@ -446,6 +469,7 @@ export default {
     top: 50%;
     margin-top: -14px;
     cursor: pointer;
+    display: none;
   }
   .right{
     width: 29px;
@@ -455,6 +479,7 @@ export default {
     top: 50%;
     margin-top: -14px;
     cursor: pointer;
+    display: none;
   }
   /*图片轮播底部按钮*/
   .dots{
@@ -464,6 +489,7 @@ export default {
     left: 50%;
     bottom: 30px;
     margin-left: -45px;
+    display: none;
   }
   .dots li{
     width: 30px;
@@ -480,12 +506,12 @@ export default {
   .introduction{
     width: 100%;
     text-align: center;
-    margin: 20px auto 0;
+    margin: 20px auto 35px;
   }
   .introTitle{
     font-family: 'Medium';
     color: #333;
-    font-size: 21px;
+    font-size: 15px;
     
   }
   .introLine{
@@ -498,17 +524,22 @@ export default {
     background: #c49a6d;
     display: inline-block;
     margin-right: 10px;
-  }
-  .introLine span.two{
-    width: 150px;
-  }
+    display: none;
+}
+.introLine span.two{
+  width: 130px;
+  display: inline-block;
+}
+  .introLine2 span.two{
+  width: 70px;
+}
   .introLine span.three{
     margin-right: 0;
   }
   .introEng{
     font-family: 'Regular';
     color: #333;
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 16px;
   }
   .introMessage{
@@ -574,14 +605,17 @@ export default {
   .support .introduction{
     height: 66px;
   }
-  .introListBox{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+  .introListBox1{
+   display: none;
   }
-  .introListBox img{
-    width: 150%;
-    margin-left: -25%;
+  .introListBox2{
+    display: block;
+    padding: 0 0 0 25px;
+    background: url('../../assets/images/lightBg2.png')
+  }
+  .introListBox2 img{
+    display: block;
+    width: 100%;
   }
   .introList{
     width: 70%;
