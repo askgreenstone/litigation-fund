@@ -43,6 +43,12 @@
           </div>
           <div class="rightButton" @click="submit">提交信息</div>
         </div>
+        <div class="contactLeft2">
+          <div class="leftTitle">诉讼资助联系方式</div>
+          <div class="leftTitleEng">Contact Information</div>
+          <div class="leftMessage">电邮：business@green-stone.cn<br/>微信公众号：诉讼资助</div>
+          <div class="leftQrcode"><img src="../../assets/images/qrcode.png"></div>
+        </div>
       </div>  
     </div>
     
@@ -186,6 +192,9 @@ export default {
   width: 300px;
   float: left;
 }
+.contactLeft2{
+  display: none;
+}
 .leftTitle{
   font-family: 'Medium';
   color: #333;
@@ -319,6 +328,13 @@ export default {
     width: 100%;
     padding: 0 15px 15px;
     box-sizing: border-box;
+    display: none;
+  }
+   .contactLeft2{
+    width: 100%;
+    padding: 0 15px 15px;
+    box-sizing: border-box;
+    display: block;
   }
   .leftTitle{
     font-family: 'Medium';

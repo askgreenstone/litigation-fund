@@ -192,7 +192,7 @@ export default {
     width: 95%;
     height: 1px;
     background: #cacaca;
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
   .bottomText{
     width: 100%;
