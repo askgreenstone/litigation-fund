@@ -22,6 +22,15 @@
         </li>
       </ul>
     </div>
+    <!-- 移动端图片轮播 -->
+    <div id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="items in swiper" :key="items"><a href=""><img :src="items"></a></div>
+            </div>
+        </div>
+    </div>
+
     <!-- 诉讼资助简介 -->
     <div class="introduction">
       <div class="introTitle">诉讼资助</div>
@@ -105,9 +114,14 @@
 </template>
 
 <script>
+
+import Swiper from "swiper";
 import TopNavBlack from '@/components/common/TopNavBlack'
 import ApplyFunding from '@/components/common/ApplyFunding'
 import Bottom from '@/components/common/Bottom'
+const banner1 = require('../../assets/images/banner11.png')
+const banner2 = require('../../assets/images/banner22.png')
+require('swiper/dist/css/swiper.css')
 export default {
   name: 'Index',
   data () {
@@ -118,6 +132,10 @@ export default {
       imgData: [
         'http://dist.green-stone.cn/common/font/banner.png',
         'http://dist.green-stone.cn/common/font/banner2.png'
+      ],
+      swiper: [
+        banner1,
+        banner2
       ],
       bgColor: 'white'
     }
@@ -136,6 +154,15 @@ export default {
       // console.log(imgHeight);
       // 设置轮播图盒子高度
       // document.getElementById('#window').style.height = imgHeight+'px';
+      let mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        //分页器
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        observer: true,
+        loop: true
+    })
+
     },
     // 通过底部按钮切换图片
     change:function(index){
@@ -204,6 +231,9 @@ export default {
   height: 600px;
   overflow: hidden;
   position: relative;
+}
+#banner{
+  display: none;
 }
 /*图片轮播盒子*/
 .container{
@@ -419,6 +449,16 @@ export default {
     height: 156px;  
     overflow: hidden;
     position: relative;
+    display: none;
+  }
+  #banner{
+    display: block;
+  }
+  .swiper-slide a{
+    display: block;
+  }
+  .swiper-slide a img{
+    width: 100%;
   }
   /*图片轮播盒子*/
   .container{

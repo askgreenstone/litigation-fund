@@ -393,7 +393,7 @@ export default {
     padding-top: 40px;
     background: url('../../assets/images/lightBg2.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
   }
   .phase{
     width: 320px;
