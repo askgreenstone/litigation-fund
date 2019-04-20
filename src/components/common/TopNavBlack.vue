@@ -387,7 +387,7 @@ export default {
     height: 280px;
     position: fixed;
     right: 0;
-    top: 70px;
+    top: 40px;
   }
   .mobileNavBox .topNavList li{
     width: 100%;
