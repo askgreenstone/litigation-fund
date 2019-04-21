@@ -284,38 +284,43 @@ export default {
   /*联系我们图片*/
   .aboutImg{
     width: 100%;
+    height: 255px;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }
   .aboutImgBox{
-    width: 100px;
+    width: 160px;
     height: 60px;
     position: absolute;
     left: 50%;
-    top: 40%;
-    margin-left: -50px;
+    top: 160px;
+    margin-left: -80px;
+    padding-top: 35px;
   }
   .aboutChi{
-    width: 120px;
-    height: 30px;
+    width: 160px;
+    height: 24px;
     text-align: center;
     font-family: 'Medium';
-    color: #fff;
-    font-size: 22px;
+    color: #333;
+    font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
-    width: 120px;
+    width: 160px;
     height: 22px;
     text-align: center;
     font-family: 'Regular';
-    color: #fff;
-    font-size: 16px;
+    color: #333;
+    font-size: 12px;
   }
   /*联系我们*/
   .contactBox{

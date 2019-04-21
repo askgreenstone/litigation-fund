@@ -199,11 +199,15 @@ export default {
   /*应用场景图片*/
   .aboutImg{
     width: 100%;
+    height: 255px;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }
@@ -212,7 +216,7 @@ export default {
     height: 60px;
     position: absolute;
     left: 50%;
-    top: 100%;
+    top: 160px;
     margin-left: -80px;
     padding-top: 35px;
   }
@@ -267,8 +271,7 @@ export default {
     display: block;
     width:100%;
     padding: 20px;
-    margin: 55px auto 0;
-    padding-top: 50px;
+    margin: 0 auto 0;
     box-sizing: border-box;
   }
   .caseListMobile .caseTitle{
@@ -289,6 +292,7 @@ export default {
     font-family: 'Normal';
     color: #333;
     font-size: 15px;
+    margin-bottom: 30px;
   }
 }
 

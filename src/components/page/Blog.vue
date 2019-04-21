@@ -521,11 +521,15 @@ export default {
   /*关于我们图片*/
   .aboutImg{
     width: 100%;
+    height: 255px;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }
@@ -536,7 +540,7 @@ export default {
     left: 50%;
     top: 40%;
     margin-left: -60px;
-    top: 100%;
+    top: 160px;
     padding-top: 35px;
   }
   .aboutChi{
@@ -724,8 +728,8 @@ export default {
     display: block;
     background: #fff;
     padding: 20px;
+    padding-top: 0;
     box-sizing: border-box;
-    margin-top: 60px;
   }
   .blogArticle .title{
     width: 100%;

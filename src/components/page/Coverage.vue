@@ -180,9 +180,12 @@ export default {
     width: 100%;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }

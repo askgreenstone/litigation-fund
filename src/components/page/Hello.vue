@@ -33,57 +33,65 @@
 
     <!-- 诉讼资助简介 -->
     <div class="introduction">
-      <div class="introTitle">诉讼资助</div>
+      <div class="introTitle">律石诉讼资助</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
         <span class="three"></span>
       </div>
       <div class="introEng">LITIGATION SUPPORT</div>
-      <div class="introMessage">如果您有民商事诉讼/仲裁/执行领域重大、疑难案件，或司法破产重整/清算事项，因当事人财力有限，或代理人专业/地域/资源局限，难以启动司法救济，请联系我们。我们以诉讼垫资，全国网络覆盖和资深律师/专家/顾问团队及领先的一揽子解决方案行，为企业和个人客户实现胜诉和回款。</div>
+      <div class="introMessage">如果您有民商事诉讼、仲裁、执行领域的重大、疑难案件，或司法破产重整、清算事项，因当事人财力有限，或不符合现有代理人的专业领域、地域范畴，启动司法救济的门槛高企，请联系我们。律石以诉讼资助、全国网络覆盖和资深律师、专家、顾问团队，提供领先的一揽子解决方案，实现胜诉和回款。</div>
+      <div class="introMessage">律石诉讼资助以卓越的专业能力，在争议解决中为当事人和代理律师提供团队、专业和启动费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、上市公司、企业和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行、破产重整领域的主流趋势。</div>
+      <div class="introMessage">争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏，也可能导致其合理合法的诉权主张被迫推迟或放弃追索。</div>
+      <div class="introMessage">当事人之间，财务资源、法律专业资源可能存在着巨大差异，这将一定程度给其自身的司法救济带来障碍，甚至出现现金流紧张的当事人无法接近司法公平。因此，诉讼资助应运而生，创造价值，增益共赢。</div>
     </div>
     <!-- 客户/律师 -->
+    <div class="introduction introduction2 introduction3">
+      <div class="introTitle">为当事人或律师提供</div>
+      <div class="introLine">
+        <span></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </div>
+      <div class="introEng">PROVIDE FOR CLIENTS AND LAWYERS</div>
+    </div>
     <div class="lawyer">
-      <div class="lawyerBox">
-        <span class="lawyerLine">—</span>
-        <span class="lawyerTop">为当事人或律师提供</span>
-        <span class="lawyerLine">—</span>
+      <div class="introduction introduction2 ">
+        <div class="introTitle">为当事人或律师提供</div>
+        <div class="introLine">
+          <span></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+        <div class="introEng">PROVIDE FOR CLIENTS AND LAWYERS</div>
       </div>
       <ul class="lawyerList">
         <li>
           <img src="../../assets/images/professionalService.png" >
           <div class="lawyerTitle">专业服务</div>
-          <div class="lawyerBox" style="display:none">
-            <span class="lawyerLine">—</span>
-            <span>资深专业团队</span>
-            <span class="lawyerLine">—</span>
+          <div class="lawyerBox">
+            <span>为客户或代理人提供特定法律领域的专家技术支持</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/coveringCountry.png" >
           <div class="lawyerTitle">覆盖全国</div>
-          <div class="lawyerBox" style="display:none">
-            <span class="lawyerLine">—</span>
-            <span>覆盖各省自治区</span>
-            <span class="lawyerLine">—</span>
+          <div class="lawyerBox">
+            <span>业务遍及全国50多个城市和地区（含香港、台湾）</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/resourceSupport.png" >
           <div class="lawyerTitle">资源支持</div>
-          <div class="lawyerBox" style="display:none">
-            <span class="lawyerLine">—</span>
-            <span>各方资源的整合</span>
-            <span class="lawyerLine">—</span>
+          <div class="lawyerBox">
+            <span>从前期论证到案件启动、审理、执行，全流程风控跟进</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/litigation.png" >
           <div class="lawyerTitle">诉讼垫资</div>
-          <div class="lawyerBox" style="display:none">
-            <span class="lawyerLine">—</span>
-            <span>雄厚的资本支持</span>
-            <span class="lawyerLine">—</span>
+          <div class="lawyerBox">
+            <span>垫付诉讼费、律师费、保全费、评估费、鉴定费、审计费...</span>
           </div>
         </li>
       </ul>
@@ -91,19 +99,36 @@
     <!-- 支持 -->
     <div class="support">
       <div class="introduction">
-        <div class="introTitle">支持</div>
+        <div class="introTitle">合作流程</div>
         <div class="introLine introLine2">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">SUPPORT</div>
+        <div class="introEng">COOPERATION PROCEDURES</div>
       </div>
       <div class="introListBox1">
         <img src="../../assets/images/support1.png">
+        <ul class="introListBox1List">
+          <li>当事人、代理人介绍案情、提供证据资料</li>
+          <li>律石对案件资料进行必要的前期调查和分析</li>
+          <li>相关领域、所在地区的专家型律师评审通过案件合作</li>
+          <li>订立协议、提起诉讼，启动法律程序维权</li>
+          <li>一审、二审、和解、执行，案件回款时按照约定比例分配</li>
+        </ul>
       </div>
       <div class="introListBox2">
-        <img src="../../assets/images/support2.png">
+        <img src="../../assets/images/support21.png">
+        <ul class="introListBox1List">
+          <li>当事人、代理人介绍案情、提供证据资料</li>
+          <li>律石对案件资料进行必要的前期调查和分析</li>
+          <li>相关领域、所在地区的专家型律师评审通过案件合作</li>
+        </ul>
+        <img class="img2" src="../../assets/images/support22.png">
+        <ul class="introListBox1List2">
+          <li>订立协议、提起诉讼，启动法律程序维权</li>
+          <li>一审、二审、和解、执行，案件回款时按照约定比例分配</li>
+        </ul>
       </div>  
     </div>
     <!-- 申请资助 -->
@@ -317,15 +342,13 @@ export default {
 /*诉讼资助信息介绍*/
 .introduction{
   width: 800px;
-  height: 192px;
   text-align: center;
   margin: 40px auto 0;
 }
 .introTitle{
   font-family: 'Medium';
-  color: #333;
   font-size: 21px;
-  
+  color: #c49a6d;
 }
 .introLine{
   font-size: 0;
@@ -337,11 +360,15 @@ export default {
   background: #c49a6d;
   display: inline-block;
   margin-right: 10px;
-  display: none;
 }
 .introLine span.two{
   width: 160px;
-  display: inline-block;
+}
+.introduction2 .introLine span.two{
+  width: 260px;
+}
+.introduction3{
+  display: none;
 }
 .introLine2 span.two{
   width: 90px;
@@ -359,6 +386,8 @@ export default {
   font-family: 'Normal';
   color: #333;
   font-size: 15px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 /*客户/律师*/
 .lawyer{
@@ -398,8 +427,9 @@ export default {
   margin-top: 30px;
 }
 .lawyerBox{
-  width: 100%;
-  text-align: center;
+  width: 110px;
+  margin: 10px auto;
+  text-align: left;
   color: #333;
   font-size: 15px;
   font-family: 'Regular';
@@ -418,8 +448,27 @@ export default {
 .introListBox1 img{
   width: 100%;
 }
+.introListBox1 .introListBox1List{
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 4rem;
+  font-size: 12px;
+}
+.introListBox1 .introListBox1List li{
+  width: 110px;
+}
+.introListBox1 .introListBox1List li:last-child{
+  margin-right: 0;
+}
 .introListBox2{
   display: none;
+}
+.support .introLine .two{
+  width: 200px;
 }
 .introList{
   width: 70%;
@@ -550,7 +599,6 @@ export default {
   }
   .introTitle{
     font-family: 'Medium';
-    color: #333;
     font-size: 15px;
     
   }
@@ -564,11 +612,18 @@ export default {
     background: #c49a6d;
     display: inline-block;
     margin-right: 10px;
-    display: none;
 }
 .introLine span.two{
   width: 130px;
-  display: inline-block;
+}
+.introduction2 .introLine span.two{
+  width: 220px;
+}
+.introduction2{
+  display: none;
+}
+.introduction3{
+  display: block;
 }
   .introLine2 span.two{
   width: 70px;
@@ -591,10 +646,12 @@ export default {
     font-size: 15px;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 30px;
   }
   /*客户/律师*/
   .lawyer{
     width: 100%;
+    height: 450px;
     background: #f0f0f0;
     padding-top: 17px;
     padding-bottom: 30px;
@@ -615,6 +672,7 @@ export default {
   .lawyerList{
     width: 100%;
     display: flex;
+    height: auto;
     flex-wrap: wrap;
     margin: 0 auto;
   }
@@ -626,15 +684,15 @@ export default {
     width: 100%;
     text-align: center;
     color: #333;
-    font-size: 19px;
+    font-size: 14px;
     font-family: 'Regular';
     margin-top: 15px;
   }
   .lawyerBox{
-    width: 100%;
-    text-align: center;
+    width: 110px;
+    text-align: left;
     color: #333;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Regular';
     margin-bottom: 15px;
   }
@@ -651,11 +709,36 @@ export default {
   .introListBox2{
     display: block;
     padding: 0 0 0 25px;
-    background: url('../../assets/images/lightBg2.png')
+    background: url('../../assets/images/lightBg2.png');
+    background-size: 100%;
   }
   .introListBox2 img{
     display: block;
     width: 100%;
+  }
+  .introListBox2 img.img2{
+    display: block;
+    width: 66.6%;
+  }
+  .introListBox2 .introListBox1List{
+    display: flex;
+    padding-right: 15px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  .introListBox2 .introListBox1List li{
+    width: 80px;
+  }
+  .introListBox2 .introListBox1List2{
+    width: 66.6%;
+    margin: 0 auto;
+    display: flex;
+    padding-right: 15px;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+  .introListBox2 .introListBox1List2 li{
+    width: 80px;
   }
   .introList{
     width: 70%;

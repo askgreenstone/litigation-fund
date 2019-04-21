@@ -17,14 +17,31 @@
       <img class="litigationImg" src="../../assets/images/logoWe.png">
       <div class="paragraph2">关于律石</div>
       <div class="paragraph1">
-        律石诉讼资助以其卓越的专业能力，在争议解决中为当事人和代理律师提供团队和费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、上市公司和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行、破产重整领域的主流趋势。
+        律石是由资深法律和专业人士组建成立的中国领先的诉讼资助服务机构
       </div>
       <div class="paragraph1">
-        争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏，也可能导致其合理合法的诉权主张被迫推迟或放弃追索。
+        我们在民商事诉讼、仲裁、执行、调解、破产重整和清算案件中集中优秀的法律专业资源，进行深度分析论证，制定诉讼策略，管理风控、流程，对案件涉及的诉讼费、律师费等提供资助服务。如案件胜诉或挽回损失，我们按照约定提取报酬收益；如案件败诉，资助费用由我们承担，有效化解当事人潜在的诉讼成本损失。
       </div>
       <div class="paragraph1">
-        当事人之间，财务资源、法律专业资源可能存在着巨大差异，这将一定程度给其自身的司法救济带来障碍，甚至出现现金流紧张的当事人无法接近司法公平。因此，诉讼资助应运而生，在为客户切实创造价值的基础上实现共赢。
+        律石与律师事务所及专家顾问紧密合作，创新性地为民商事主体提供了更为灵活的费用安排和服务模式，降低经营风险和诉讼成本，为争端解决提升专业品质。
       </div>
+      <div class="paragraph2">诉讼资助的优势</div>
+      <div class="paragraph1">
+        对于企业法务或本地律师有局限的重大案件或项目，律石推荐和提供覆盖各地域、各专业、资深资源和能力过硬的危机处理团队。
+      </div>
+      <div class="paragraph1">
+        为困境当事人涉诉案件先期垫付律师费和诉讼费，实现法律成本和风险的管控和平衡。
+      </div>
+      <div class="paragraph1">
+        为案件办理注入相关专业资源优势，增加客户对诉讼的承压能力，防止不合理或过早让渡权益、被迫妥协。
+      </div>
+      <div class="paragraph1">
+        有利于企业与个人合理安排财务成本，加速应收账款回收，合理减少经济损失，确保有限的流动资金不被诉讼成本挤占，提升会计财务表现。
+      </div>
+      <div class="paragraph1">
+        有效转移企业面临的诉讼成本，优化律师团队选任，诉讼风险共担，提振纠纷解决的信任和信心。
+      </div>
+      
       <div class="paragraph2">顶级团队</div>
       <div class="paragraph3">律石与一流的专家型律师、顾问合作，为客户提供一揽子诉讼法律事务解决方案：</div>
       <div class="paragraph4">
@@ -43,8 +60,12 @@
           <li><i>-  </i><span>领先的知识产权、海事海商、建筑工程、矿业能源、文化传媒、环境保护、医疗健康、反垄断、侵权赔偿等各专业领域的学科带头律师和顾问</span></li>
         </ul>
       </div>
-      <div class="paragraph5">诉讼垫资项目包括但不局限于：</div>
-      <div class="paragraph4">
+      <div class="paragraph1">
+        律石根植于中国蓬勃生长的法律服务市场，致力成为国际领先的诉讼资助和服务提供商。我们以响应客户需求为第一要旨，所提供的不仅是费用垫资。我们对案件项目详细分析、深入调查、专业评判，为客户带来深度、创新解决方案，平衡司法救济成本，提供法律风险管控和顾问咨询。专业引领，成就赢家！
+      </div>
+      
+      <div class="paragraph5" style="display:none">诉讼垫资项目包括但不局限于：</div>
+      <div class="paragraph4" style="display:none">
         <ul>
           <li><i>-  </i><span>律师费</span></li>
           <li><i>-  </i><span>诉讼费、仲裁申请费、保全费</span></li>
@@ -156,6 +177,7 @@ export default {
   font-size: 15px;
   // text-indent: 30px;
   line-height: 1.8;
+  margin-top: 25px;
 }
 .paragraph2{
   width: 63%;
@@ -239,9 +261,12 @@ export default {
     width: 100%;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }
@@ -278,7 +303,7 @@ export default {
   .litigationImg{
     height: 50px;
     display: block;
-    margin: 30px auto;
+    margin: 40px auto;
   }
   .paragraph1{
     width: 100%;
@@ -289,6 +314,7 @@ export default {
     color: #333;
     font-size: 15px;
     line-height: 1.8;
+    margin-bottom: 25px;
   }
   .paragraph2{
     width: 100%;

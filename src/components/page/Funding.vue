@@ -13,12 +13,71 @@
       </div>
       
     </div>
-    <div class="litigation">
-      <div class="litigationImgBox">
-        <div class="litigationImg"><img src="../../assets/images/circles.png"></div>
+    <div class="litigationPcBox">
+      <div class="litigationPcBox1">
+        <div class="litigationPcBoxLeft">
+          <img src="../../assets/images/pcLitigation1.png">
+          <span>垫付费用</span>
+        </div>
+        <div class="litigationPcBoxCenter">
+          <img src="../../assets/images/pcLitigation3.png">
+        </div>
+        <div class="litigationPcBoxRight">
+          <span>律师费</span>
+          <span>诉讼费、保全费</span>
+          <span>仲裁费</span>
+          <span>公证费</span>
+          <span>审计费</span>
+          <span>评估费、拍卖费</span>
+          <span>破产管理人报酬</span>
+          <span>破产管理人执行职务费用</span>
+          <span>司法鉴定费、专家证人费</span>
+        </div>
+      </div>
+      <div class="litigationPcBox1">
+        <div class="litigationPcBoxLeft">
+          <img src="../../assets/images/pcLitigation2.png">
+          <span>案件类型</span>
+        </div>
+        <div class="litigationPcBoxCenter">
+          <img src="../../assets/images/pcLitigation3.png">
+        </div>
+        <div class="litigationPcBoxRight">
+          <span>商务合同</span>
+          <span>民商事纠纷</span>
+          <span>版权、商标、专利</span>
+          <span>环境保护</span>
+          <span>破产重整与清算</span>
+          <span>违反忠实义务</span>
+          <span>司法强制执行</span>
+          <span>侵权赔偿</span>
+          <span>国内和国际仲裁</span>
+        </div>
       </div>
     </div>
+    <!-- 移动端案例列表 -->
+    <ul class="caseListMobile">
+      <li>
+          <div class="caseTitle">垫付费用</div>
+          <img src="../../assets/images/caseImg.png">
+          <div class="caseContent">律师费、诉讼费、保全费、仲裁费、公证费、审计费、评估费、拍卖费、破产管理人报酬、破产管理人执行职务费用、司法鉴定费、专家证人费</div>
+      </li>
+      <li>
+          <div class="caseTitle">案件类型</div>
+          <img src="../../assets/images/caseImg.png">
+          <div class="caseContent">商务合同、民商事纠纷、版权、商标、专利、信贷、资管、投融资、环境保护、破产重整与清算、违反忠实义务、司法强制执行、侵权赔偿、国内和国际仲裁</div>
+      </li>
+    </ul>
     <!-- 资助阶段 -->
+    <div class="introduction introduction2">
+        <div class="introTitle">资助阶段</div>
+        <div class="introLine">
+          <span></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+        <div class="introEng">LITIGATION PHASES</div>
+      </div>
     <div class="funding">
       <!-- <img src="../../assets/images/lightBg.png"> -->
       <div class="introduction">
@@ -94,7 +153,21 @@
         <li class="phaseLine">————</li>
       </ul>
     </div>
-    
+    <!-- 风险告知 -->
+    <div class="introduction introduction3">
+        <div class="introTitle">风险告知</div>
+        <div class="introLine">
+          <span></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+        <div class="introEng">RISK DISCLOSURE</div>
+      </div>
+    <div class="youKnow">
+      <div class="youKnowBox">
+        诉讼有败诉、对方当事人持有未知证据、难以执行回款等潜在风险。律石所提供的服务不能改变案件的基本事实、证据情况或对方当事人的偿付能力。通过与律师、律所及专业人士紧密合作，律石向客户提供最佳诉讼策略安排及案件费用垫资，但不就案件的审理或执行结果提供任何承诺或保证。
+      </div>
+    </div>
     <!-- 申请资助 -->
     <ApplyFunding></ApplyFunding>
     <!-- 首页底部 -->
@@ -186,6 +259,12 @@ export default {
   text-align: center;
   margin: 0 auto;
 }
+.introduction2{
+  display: none;
+}
+.introduction3 .introLine span.two{
+  width: 150px;
+}
 .introTitle{
   font-family: 'Medium';
   color: #333;
@@ -238,6 +317,7 @@ export default {
   background: url('../../assets/images/lightBg.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin-bottom: 40px;
 }
 .phase{
   width: 1100px;
@@ -286,6 +366,67 @@ export default {
   font-size: 15px;
   line-height: 1.5;
 }
+.litigationPcBox{
+  width: 800px;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+}
+.litigationPcBox1{
+  width: 400px;
+  height: 450px;
+  display: flex;
+  padding-top: 65px;
+}
+.litigationPcBoxLeft{
+  width: 70px;
+  height: 150px;
+  margin-right: 10px;
+}
+.litigationPcBoxLeft img{
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin-bottom: 20px;
+}
+.litigationPcBoxLeft span{
+  width: 70px;
+  display: block;
+  font-size: 14px;
+  color: #c49a6d;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.litigationPcBoxCenter{
+  width: 22px;
+  margin-right: 20px;
+}
+.litigationPcBoxCenter img{
+  width: 22px;
+  display: block;
+}
+.litigationPcBoxRight{
+  height: 580px;
+}
+.litigationPcBoxRight span{
+  display: block;
+  margin-bottom: 15px;
+}
+.caseListMobile{
+  display: none;
+}
+.youKnow{
+  width: 100%;
+  background: #f0f0f0;
+  padding: 30px 0;
+}
+.youKnow .youKnowBox{
+  width: 800px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 2;
+  font-size: 14px;
+}
 @media screen and (max-width:414px) {
   .position{
     width:100%;
@@ -295,11 +436,15 @@ export default {
   }
   .aboutImg{
     width: 100%;
+    height: 255px;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }
@@ -308,7 +453,7 @@ export default {
     height: 60px;
     position: absolute;
     left: 50%;
-    top: 100%;
+    top: 160px;
     margin-left: -90px;
     padding-top: 35px;
   }
@@ -341,6 +486,11 @@ export default {
     height: 110px;
     text-align: center;
     margin: 0 auto;
+    display: none;
+  }
+  .introduction2{
+    height: 87px;
+    display: block;
   }
   .introTitle{
     font-family: 'Medium';
@@ -360,7 +510,7 @@ export default {
     display: none;
 }
 .introLine span.two{
-  width: 180px;
+  width: 150px;
   display: inline-block;
 }
   .introLine span.three{
@@ -394,6 +544,7 @@ export default {
     background: url('../../assets/images/lightBg2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-bottom: 0;
   }
   .phase{
     width: 320px;
@@ -447,6 +598,41 @@ export default {
     color: #4d4d4d;
     font-size: 12px;
     line-height: 1.5;
+  }
+  .litigationPcBox{
+    display: none;
+  }
+  .caseListMobile{
+    display: block;
+    width:100%;
+    padding: 20px;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+  }
+  .caseListMobile .caseTitle{
+    margin-bottom: 5px;
+    text-indent: 30px;
+    color: #c49a6d;
+  }
+  .caseListMobile img{
+    width: 100%;
+    position: relative;
+    top: -10px;
+  }
+  .caseTitle{
+    font-family: 'Medium';
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0 15px
+  }
+  .caseContent{
+    font-family: 'Normal';
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .youKnow{
+    display: none;
   }
 }
 </style>
