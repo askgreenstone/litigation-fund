@@ -122,27 +122,29 @@ export default {
   top: -89px;
 }
 .aboutImgBox{
-  width: 200px;
+  width: 210px;
   height: 60px;
   position: absolute;
   left: 50%;
   top: 40%;
-  margin-left: -80px;
+  margin-left: -105px;
 }
 .aboutChi{
-  width: 200px;
+  width: 210px;
   height: 30px;
   text-align: center;
   font-family: 'Medium';
+  font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
 }
 .aboutEng{
-  width: 200px;
+  width: 210px;
   height: 22px;
   text-align: center;
   font-family: 'Regular';
+  font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -169,7 +171,8 @@ export default {
   margin-bottom: 19px; 
 }
 .caseListLeft img{
-  height: 90%;
+  width: 175px;
+  display: block;
   margin-top: 5%;
 }
 .caseListRight{
@@ -182,6 +185,7 @@ export default {
   font-family: 'Medium';
   color: #333;
   font-size: 18px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 .caseContent{
@@ -225,7 +229,9 @@ export default {
     height: 24px;
     text-align: center;
     font-family: 'Medium';
+  font-weight: bold;
     color: #333;
+    font-weight: bold;
     font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }
@@ -234,6 +240,8 @@ export default {
     height: 22px;
     text-align: center;
     font-family: 'Regular';
+    font-weight: bold;
+  font-weight: bold;
     color: #333;
     font-size: 12px;
   }
@@ -275,7 +283,8 @@ export default {
     box-sizing: border-box;
   }
   .caseListMobile .caseTitle{
-    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
   }
   .caseListMobile img{
     width: 100%;
@@ -286,13 +295,14 @@ export default {
     font-family: 'Medium';
     color: #333;
     font-size: 18px;
-    margin: 5px 0 15px
+    font-weight: bold;
+    margin: 5px 0 15px;
   }
   .caseContent{
     font-family: 'Normal';
     color: #333;
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 }
 

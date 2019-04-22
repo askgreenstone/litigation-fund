@@ -77,12 +77,12 @@
           <img src="../../assets/images/coveringCountry.png" >
           <div class="lawyerTitle">覆盖全国</div>
           <div class="lawyerBox">
-            <span>业务遍及全国50多个城市和地区（含香港、台湾）</span>
+            <span>业务遍及全国50多个城市和地区(含香港、台湾)</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/resourceSupport.png" >
-          <div class="lawyerTitle">资源支持</div>
+          <div class="lawyerTitle">品质服务</div>
           <div class="lawyerBox">
             <span>从前期论证到案件启动、审理、执行，全流程风控跟进</span>
           </div>
@@ -427,11 +427,12 @@ export default {
   margin-top: 30px;
 }
 .lawyerBox{
-  width: 110px;
+  width: 120px;
   margin: 10px auto;
-  text-align: left;
+  text-align: center;
   color: #333;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 21px;
   font-family: 'Regular';
 }
 .lawyerLine{
@@ -449,17 +450,18 @@ export default {
   width: 100%;
 }
 .introListBox1 .introListBox1List{
-  width: 60%;
+  width: 58%;
   position: absolute;
   left: 50%;
-  margin-left: -30%;
+  margin-left: -29%;
   display: flex;
   justify-content: space-between;
-  bottom: 4rem;
+  bottom: 3rem;
   font-size: 12px;
 }
 .introListBox1 .introListBox1List li{
-  width: 110px;
+  width: 90px;
+  line-height: 21px;
 }
 .introListBox1 .introListBox1List li:last-child{
   margin-right: 0;
@@ -468,7 +470,7 @@ export default {
   display: none;
 }
 .support .introLine .two{
-  width: 200px;
+  width: 160px;
 }
 .introList{
   width: 70%;
@@ -595,12 +597,12 @@ export default {
   .introduction{
     width: 100%;
     text-align: center;
-    margin: 20px auto 35px;
+    margin: 20px auto 5px;
   }
   .introTitle{
     font-family: 'Medium';
-    font-size: 15px;
-    
+    font-size: 20px;
+    font-weight: bold;
   }
   .introLine{
     font-size: 0;
@@ -617,7 +619,7 @@ export default {
   width: 130px;
 }
 .introduction2 .introLine span.two{
-  width: 220px;
+  width: 210px;
 }
 .introduction2{
   display: none;
@@ -633,6 +635,7 @@ export default {
   }
   .introEng{
     font-family: 'Regular';
+    font-weight: bold;
     color: #333;
     font-size: 10px;
     margin-bottom: 16px;
@@ -651,9 +654,9 @@ export default {
   /*客户/律师*/
   .lawyer{
     width: 100%;
-    height: 450px;
+    height: 480px;
     background: #f0f0f0;
-    padding-top: 17px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
   .lawyerTop{
@@ -690,7 +693,7 @@ export default {
   }
   .lawyerBox{
     width: 110px;
-    text-align: left;
+    text-align: center;
     color: #333;
     font-size: 12px;
     font-family: 'Regular';
@@ -708,9 +711,9 @@ export default {
   }
   .introListBox2{
     display: block;
-    padding: 0 0 0 25px;
+    padding: 15px 0 30px 25px;
     background: url('../../assets/images/lightBg2.png');
-    background-size: 100%;
+    background-size: cover;
   }
   .introListBox2 img{
     display: block;
@@ -719,6 +722,7 @@ export default {
   .introListBox2 img.img2{
     display: block;
     width: 66.6%;
+    margin-top: 15px;
   }
   .introListBox2 .introListBox1List{
     display: flex;
@@ -733,12 +737,12 @@ export default {
     width: 66.6%;
     margin: 0 auto;
     display: flex;
-    padding-right: 15px;
+    padding-right: 4px;
     font-size: 12px;
     justify-content: space-between;
   }
   .introListBox2 .introListBox1List2 li{
-    width: 80px;
+    width: 90px;
   }
   .introList{
     width: 70%;

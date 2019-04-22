@@ -3,7 +3,7 @@
   <div class="bottom">
     <ul class="bottomList">
       <li class="bottomListLogo">
-        <div><img src="../../assets/images/logoBottom.png"></div>
+        <div><img src="../../assets/images/logoBlank.png"></div>
         <div>
           <span class="bottomListLogoTitle">平台免责声明：</span><br>
           <span>网站所载的信息可能包含通过各种公开和非公开渠道所获取的内容，本网站不保证第三方内容的真实性、准确性、完整性、实时性、原创性等。基于前述信息而作的任何交易或决定，由您自行承担决策或决定的后果和责任。</span>
@@ -21,6 +21,7 @@
       </li>
     </ul>
     <ul class="topNavList">
+        <li @click="scrollTop">回到顶部</li>
         <router-link to="/" tag="li" exact >首页</router-link>
         <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
         <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
@@ -31,7 +32,7 @@
         <router-link to="/Contact" tag="li" >联系我们</router-link>
       </ul>
     <div class="bottomLine"></div>
-    <div class="bottomText">2018 深圳律石资本有限公司 版权所有</div>
+    <div class="bottomText">2019 深圳律石资本有限公司 版权所有</div>
   </div>
 </template>
 
@@ -42,7 +43,12 @@ export default {
     return {
 
     }
-  }
+  },
+  methods: {
+    scrollTop(){
+      window.scrollTo(0,0)
+    }
+  },
 }
 </script>
 
@@ -151,6 +157,8 @@ export default {
     font-size: 12px;
     font-family: 'Regular';
     margin-left: 160px;
+    position: relative;
+    top: 10px;
   }
   .bottomListTel .bottomListContactUs{
     color: #cacaca;
@@ -192,7 +200,7 @@ export default {
     width: 95%;
     height: 1px;
     background: #cacaca;
-    margin: 30px auto 0;
+    margin: 55px auto 0;
   }
   .bottomText{
     width: 100%;

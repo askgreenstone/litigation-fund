@@ -14,10 +14,10 @@
       
     </div>
     <div class="litigation">
-      <img class="litigationImg" src="../../assets/images/logoWe.png">
+      <img class="litigationImg" src="../../assets/images/logo3.png">
       <div class="paragraph2">关于律石</div>
       <div class="paragraph1">
-        律石是由资深法律和专业人士组建成立的中国领先的诉讼资助服务机构
+        律石是由资深法律和专业人士组建成立的中国领先的诉讼资助服务机构。
       </div>
       <div class="paragraph1">
         我们在民商事诉讼、仲裁、执行、调解、破产重整和清算案件中集中优秀的法律专业资源，进行深度分析论证，制定诉讼策略，管理风控、流程，对案件涉及的诉讼费、律师费等提供资助服务。如案件胜诉或挽回损失，我们按照约定提取报酬收益；如案件败诉，资助费用由我们承担，有效化解当事人潜在的诉讼成本损失。
@@ -25,7 +25,7 @@
       <div class="paragraph1">
         律石与律师事务所及专家顾问紧密合作，创新性地为民商事主体提供了更为灵活的费用安排和服务模式，降低经营风险和诉讼成本，为争端解决提升专业品质。
       </div>
-      <div class="paragraph2">诉讼资助的优势</div>
+      <div class="paragraph2">律石诉讼的优势</div>
       <div class="paragraph1">
         对于企业法务或本地律师有局限的重大案件或项目，律石推荐和提供覆盖各地域、各专业、资深资源和能力过硬的危机处理团队。
       </div>
@@ -60,7 +60,7 @@
           <li><i>-  </i><span>领先的知识产权、海事海商、建筑工程、矿业能源、文化传媒、环境保护、医疗健康、反垄断、侵权赔偿等各专业领域的学科带头律师和顾问</span></li>
         </ul>
       </div>
-      <div class="paragraph1">
+      <div class="paragraph1 paragraph7">
         律石根植于中国蓬勃生长的法律服务市场，致力成为国际领先的诉讼资助和服务提供商。我们以响应客户需求为第一要旨，所提供的不仅是费用垫资。我们对案件项目详细分析、深入调查、专业评判，为客户带来深度、创新解决方案，平衡司法救济成本，提供法律风险管控和顾问咨询。专业引领，成就赢家！
       </div>
       
@@ -76,7 +76,7 @@
       </div>
       <div class="paragraph6">
         <div class="more">更多资料请下载宣传册查看</div>
-        <a href="http://dist.green-stone.cn/common/font/律石诉讼资助宣传册.pdf" download="text" class="download">律石诉讼资助宣传册</a>
+        <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">律石诉讼资助宣传册</a>
       </div>
     </div>
     <!-- 申请资助 -->
@@ -151,6 +151,7 @@ export default {
   height: 30px;
   text-align: center;
   font-family: 'Medium';
+    font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -160,6 +161,7 @@ export default {
   height: 22px;
   text-align: center;
   font-family: 'Regular';
+    font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -229,6 +231,9 @@ export default {
   border-top: 1px solid #ccc;
   padding-top: 30px;
 }
+.paragraph7{
+  margin-bottom: 50px;
+}
 .more{
   width: 100%;
   font-family: 'Regular';
@@ -284,6 +289,7 @@ export default {
     height: 30px;
     text-align: center;
     font-family: 'Medium';
+    font-weight: bold;
     color: #fff;
     font-size: 22px;
     border-bottom: 1px solid #c49a6d;
@@ -293,6 +299,7 @@ export default {
     height: 22px;
     text-align: center;
     font-family: 'Regular';
+    font-weight: bold;
     color: #fff;
     font-size: 16px  ;
   }
@@ -316,14 +323,18 @@ export default {
     line-height: 1.8;
     margin-bottom: 25px;
   }
+  .paragraph7{
+  margin-bottom: 50px;
+}
   .paragraph2{
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-    margin: 20px auto 12px;
+    margin: 20px auto 30px;
     font-family: 'Medium';
     color: #c49a6d;
     font-size: 24px;
+    font-weight: bold;
   }
   .paragraph3{
     width: 100%;

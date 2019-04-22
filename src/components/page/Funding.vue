@@ -234,6 +234,7 @@ export default {
   height: 30px;
   text-align: center;
   font-family: 'Medium';
+    font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -243,6 +244,7 @@ export default {
   height: 22px;
   text-align: center;
   font-family: 'Regular';
+    font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -267,7 +269,7 @@ export default {
 }
 .introTitle{
   font-family: 'Medium';
-  color: #333;
+  color: #c49a6d;
   font-size: 21px;
 }
 .introLine{
@@ -280,11 +282,9 @@ export default {
   background: #c49a6d;
   display: inline-block;
   margin-right: 10px;
-  display: none;
 }
 .introLine span.two{
   width: 180px;
-  display: inline-block;
 }
 .introLine span.three{
   margin-right: 0;
@@ -462,6 +462,7 @@ export default {
     height: 30px;
     text-align: center;
     font-family: 'Medium';
+    font-weight: bold;
     color: #333;
     font-size: 22px;
     border-bottom: 1px solid #c49a6d;
@@ -471,6 +472,7 @@ export default {
     height: 22px;
     text-align: center;
     font-family: 'Regular';
+    font-weight: bold;
     color: #333;
     font-size: 16px;
   }
@@ -494,8 +496,9 @@ export default {
   }
   .introTitle{
     font-family: 'Medium';
-    color: #333;
-    font-size: 21px;
+    color: #c49a6d;
+    font-weight: bold;
+    font-size: 22px;
   }
   .introLine{
     font-size: 0;
@@ -507,17 +510,16 @@ export default {
     background: #c49a6d;
     display: inline-block;
     margin-right: 10px;
-    display: none;
 }
 .introLine span.two{
   width: 150px;
-  display: inline-block;
 }
   .introLine span.three{
     margin-right: 0;
   }
   .introEng{
     font-family: 'Regular';
+    font-weight: bold;
     color: #333;
     font-size: 14px;
     margin-bottom: 33px;
@@ -540,7 +542,7 @@ export default {
   }
   /*<!-- 资助阶段 -->*/
   .funding{
-    padding-top: 40px;
+    padding: 15px 0 25px;
     background: url('../../assets/images/lightBg2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -598,6 +600,7 @@ export default {
     color: #4d4d4d;
     font-size: 12px;
     line-height: 1.5;
+    margin-top: 5px;
   }
   .litigationPcBox{
     display: none;
@@ -613,6 +616,7 @@ export default {
     margin-bottom: 5px;
     text-indent: 30px;
     color: #c49a6d;
+    font-weight: bold;
   }
   .caseListMobile img{
     width: 100%;
@@ -623,7 +627,8 @@ export default {
     font-family: 'Medium';
     color: #333;
     font-size: 18px;
-    margin: 5px 0 15px
+    font-weight: bold;
+    margin: 5px 0 15px;
   }
   .caseContent{
     font-family: 'Normal';

@@ -339,6 +339,7 @@ export default {
   text-align: center;
   font-family: 'Medium';
   color: #fff;
+  font-weight: bold;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
 }
@@ -347,6 +348,7 @@ export default {
   height: 22px;
   text-align: center;
   font-family: 'Regular';
+  font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -521,7 +523,7 @@ export default {
   /*关于我们图片*/
   .aboutImg{
     width: 100%;
-    height: 255px;
+    height: 280px;
     position: relative;
     margin-bottom: 0;
     overflow: hidden;
@@ -541,13 +543,14 @@ export default {
     top: 40%;
     margin-left: -60px;
     top: 160px;
-    padding-top: 35px;
+    padding-top: 50px;
   }
   .aboutChi{
     width: 120px;
-    height: 22px;
+    height: 26px;
     text-align: center;
     font-family: 'Medium';
+  font-weight: bold;
     color: #333;
     font-size: 16px;
     border-bottom: 1px solid #c49a6d;
@@ -555,8 +558,10 @@ export default {
   .aboutEng{
     width: 120px;
     height: 22px;
+    line-height: 22px;
     text-align: center;
     font-family: 'Regular';
+  font-weight: bold;
     color: #333;
     font-size: 13px;
   }
@@ -727,7 +732,7 @@ export default {
     width: 100%;
     display: block;
     background: #fff;
-    padding: 20px;
+    padding: 20px 20px 40px;
     padding-top: 0;
     box-sizing: border-box;
   }
@@ -739,7 +744,7 @@ export default {
     font-family: Medium;
     color: #c49a6d;
     font-size: 16px;
-    margin: 15px auto 0;
+    margin: 0 auto 20px;
     text-decoration: none;
     
   }

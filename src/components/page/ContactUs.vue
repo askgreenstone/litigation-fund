@@ -37,7 +37,7 @@
             <input type="text" v-model.trim="clientSubject" name="" placeholder="诉讼标的">
           </div>
           <div class="rightTextarea">
-            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="案件情况和具体需求">
+            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="需求描述">
               
             </textarea>
           </div>
@@ -169,6 +169,7 @@ export default {
   height: 30px;
   text-align: center;
   font-family: 'Medium';
+  font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -178,6 +179,7 @@ export default {
   height: 22px;
   text-align: center;
   font-family: 'Regular';
+  font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -297,28 +299,30 @@ export default {
     top: 0;
   }
   .aboutImgBox{
-    width: 160px;
+    width: 80px;
     height: 60px;
     position: absolute;
     left: 50%;
     top: 160px;
-    margin-left: -80px;
+    margin-left: -40px;
     padding-top: 35px;
   }
   .aboutChi{
-    width: 160px;
+    width: 80px;
     height: 24px;
     text-align: center;
     font-family: 'Medium';
+  font-weight: bold;
     color: #333;
     font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
-    width: 160px;
+    width: 80px;
     height: 22px;
     text-align: center;
     font-family: 'Regular';
+  font-weight: bold;
     color: #333;
     font-size: 12px;
   }
@@ -328,6 +332,7 @@ export default {
     min-height: 725px;
     margin: 0 auto;
     padding-top: 20px;
+    padding-bottom: 15px;
   }
   .contactLeft{
     width: 100%;
@@ -337,19 +342,19 @@ export default {
   }
    .contactLeft2{
     width: 100%;
-    padding: 0 15px 15px;
+    padding: 0 15px 15px 37px;
     box-sizing: border-box;
     display: block;
   }
   .leftTitle{
     font-family: 'Medium';
     color: #333;
-    font-size: 18px;
+    font-size: 20px;
   }
   .leftTitleEng{
     font-family: 'Normal';
     color: #c49a6d;
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 12px;
   }
   .leftMessage{
@@ -373,7 +378,9 @@ export default {
   .rightTitle{
     font-family: 'Medium';
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 22px;
   }
   .rightInput{
     width: 300px;
@@ -411,7 +418,6 @@ export default {
   .rightButton{
     width: 115px;
     height: 35px;
-    margin: 0 auto;
     border: 1px solid #c49a6d;
     text-align: center;
     line-height: 35px;
@@ -421,6 +427,7 @@ export default {
     background: #fff;
     cursor: pointer;
     border-radius: 5px;
+    margin: 20px 0 10px 22px;
   }
 }
 </style>

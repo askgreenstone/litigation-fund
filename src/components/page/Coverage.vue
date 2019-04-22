@@ -41,10 +41,12 @@
         </li>
         <li>
           <div class="addTop">其他地区</div>
-          <div class="addBottom">福建（厦门、福州）、江西（南昌）、湖南（长沙）、广西（南宁）、海南（海口）、四川（成都、重庆）、贵州（贵阳）、云南（昆明）、黑龙江（哈尔滨）、吉林（长春、吉林）、辽宁（大连、沈阳）、内蒙古（呼和浩特）、新疆（乌鲁木齐）、陕西（西安）、青海（西宁）、宁夏（银川）、河南（郑州）、山西（太原）、甘肃（兰州）、山东（济南、青岛）、湖北（武汉、黄石）、西藏（拉萨）、中国香港、中国台北</div>
+          <div class="addBottom">福建(厦门、福州)、江西(南昌)、湖南(长沙)、广西(南宁)、海南(海口)、四川(成都、重庆)、贵州(贵阳)、云南(昆明)、黑龙江(哈尔滨)、吉林(长春、吉林)、辽宁(大连、沈阳)、内蒙古(呼和浩特)、新疆(乌鲁木齐)、陕西(西安)、青海(西宁)、宁夏(银川)、河南(郑州)、山西(太原)、甘肃(兰州)、山东(济南、青岛)、湖北(武汉、黄石)、西藏(拉萨)、中国香港、中国台北</div>
         </li>
       </ul>
     </div>
+    <!-- 申请资助 -->
+    <ApplyFunding></ApplyFunding>
     <!-- 首页底部 -->
     <Bottom></Bottom>
   </div>
@@ -54,6 +56,7 @@
 
 <script>
 import TopNavBlack from '@/components/common/TopNavBlack'
+import ApplyFunding from '@/components/common/ApplyFunding'
 import Bottom from '@/components/common/Bottom'
 export default {
   name: 'AboutUs',
@@ -70,6 +73,7 @@ export default {
   },
   components:{
     TopNavBlack,
+    ApplyFunding,
     Bottom
   }
 }
@@ -118,11 +122,9 @@ export default {
   background: #c49a6d;
   display: inline-block;
   margin-right: 10px;
-  display: none;
 }
 .introLine span.two{
   width: 180px;
-  display: inline-block;
 }
 .introLine span.three{
   margin-right: 0;
@@ -201,7 +203,7 @@ export default {
     font-family: 'Medium';
     color: #333;
     font-size: 18px;
-    
+    font-weight: bold;
   }
   .introLine{
     font-size: 0;
@@ -213,17 +215,16 @@ export default {
     background: #c49a6d;
     display: inline-block;
     margin-right: 10px;
-    display: none;
 }
 .introLine span.two{
   width: 150px;
-  display: inline-block;
 }
   .introLine span.three{
     margin-right: 0;
   }
   .introEng{
     font-family: 'Regular';
+    font-weight: bold;
     color: #333;
     font-size: 15px;
     margin-bottom: 33px;
@@ -242,7 +243,7 @@ export default {
     position: relative;
     left: 0;
     bottom: 0;
-    padding: 27px 20px;
+    padding: 55px 20px 30px;
     box-sizing: border-box;
     line-height: 1.5;
     background: #333;
@@ -256,7 +257,7 @@ export default {
     font-family: 'Regular';
     color: #fff;
     font-size: 13px;
-    margin-bottom: 27px;
+    margin-bottom: 55px;
   }
   .addressBox{
     position: relative;

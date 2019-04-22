@@ -28,8 +28,8 @@
     <!-- 顶部导航栏，左图右导航结构 -->
     <div v-bind:class="bgColor ==='white'?'topNavBoxWhite':'topNavBox'">
       <router-link to="/" tag="div" class="topNavLeft">
-        <img v-if="bgColor == 'white'" src="../../assets/images/logo2.png"/>
-        <img v-else src="../../assets/images/logoBlank.png"/>
+        <img v-if="bgColor == 'white'" src="../../assets/images/logo3.png"/>
+        <img v-else src="../../assets/images/logoBottom.png"/>
       </router-link>
       <ul class="topNav">
         <router-link to="/" tag="li" exact >首页</router-link>
@@ -44,7 +44,7 @@
     </div>  
     <!-- 移动端导航 -->
     <div class="mobileNavBox">
-      <img class="left" src="../../assets/images/logoBlank.png"/>
+      <img class="left" src="../../assets/images/logoBottom.png"/>
       <img class="right" v-show="!showMenuFlag" src="../../assets/images/topMenu1.png" @click="showMenu"/>
       <img class="right" v-show="showMenuFlag" src="../../assets/images/topMenu2.png" @click="hideMenu"/>
       <ul class="topNavList" v-show="showMenuFlag"> 
@@ -398,6 +398,7 @@ export default {
     color: #fff;
     background: #3f3e3e;
     opacity: 0.8;
+    font-weight: bold;
   }
   .mobileNavBox .topNavList li.active{
     background: #fff;
