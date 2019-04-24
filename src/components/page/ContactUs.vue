@@ -329,7 +329,7 @@ export default {
   /*联系我们*/
   .contactBox{
     width: 100%;
-    min-height: 725px;
+    min-height: 750px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -386,19 +386,21 @@ export default {
   }
   .rightInput{
     width: 300px;
-    height: 29px;
+    height: 36px;
     border: 1px solid #ccc;
     margin: 15px 22px;
   }
   .rightInput input{
     border: none;
-    width: 296px;
-    height: 25px;
-    line-height: 25px;
+    width: 280px;
+    height: 24px;
+    margin-top: 6px;
+    line-height: 24px;
     font-family: 'Normal';
     color: #979797;
     font-size: 14px;
-    text-indent: 10px;
+    text-indent: 8px;
+    padding: 0;
   }
   .rightTextarea{
     width: 300px;
