@@ -8,8 +8,8 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
       <div class="aboutImgBox">
-        <div class="aboutChi">团队/顾问</div>
-        <div class="aboutEng">OUR TEAM</div>
+        <div class="aboutChi">律石研究院</div>
+        <div class="aboutEng">LS INSTITUTE</div>
       </div>
     </div>
     <!-- 律石研究院文章详情 -->
@@ -18,7 +18,7 @@
     </div>
     <div v-else class="contentBox">
       <div class="infoTitle">
-        <span>律石研究院 > </span><span class="information">{{nTitle}}</span>
+        <router-link tag="span" class="editBtn" :to="{path:'/Blog'}">律石研究院 > </router-link><span class="information">{{nTitle}}</span>
       </div>
       <div class="title">{{nTitle}}</div>
       <div class="date">{{dts}}</div>
@@ -203,6 +203,9 @@ export default {
   color: #333;
   font-size: 16px;
   margin: 0 auto 10px;
+}
+.infoTitle .editBtn{
+  cursor: pointer;
 }
 .information{
   font-family: 'Normal';

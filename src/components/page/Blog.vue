@@ -446,6 +446,7 @@ export default {
 .searchIntroduction pre{
   margin: 0;
   white-space: pre-line;
+  font-family: 'Normal';
 }
 .searchEdit{
   width: 100%;
@@ -533,7 +534,7 @@ export default {
     height: 160px;
     left: -60px;
     position: relative;
-    top: 0;
+    top: -1px;
   }
   .aboutImgBox{
     width: 120px;
@@ -663,6 +664,7 @@ export default {
   .searchIntroduction pre{
     margin: 0;
     white-space: pre-line;
+    font-family: 'Normal';
   }
   .searchEdit{
     width: 100%;

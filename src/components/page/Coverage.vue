@@ -6,7 +6,7 @@
     <div class="position"></div>
     <!-- 行业覆盖 地区辐射 -->
     <div class="aboutImg">
-      <img src="../../assets/images/banner3.png">
+      <img src="../../assets/images/banner2.png">
     </div>
     <div class="introduction">
       <div class="introTitle">行业覆盖 地区辐射</div>
@@ -20,6 +20,7 @@
     <!-- 地球网络 -->
     <div class="net">
       <img class="earth" src="../../assets/images/earth.png">
+      <img class="earthMobile" src="../../assets/images/earthMobile.png">
       <ul class="address1">
         <li>
           <div class="addTop">最高人民法院六巡所在地</div>
@@ -45,8 +46,7 @@
         </li>
       </ul>
     </div>
-    <!-- 申请资助 -->
-    <ApplyFunding></ApplyFunding>
+   
     <!-- 首页底部 -->
     <Bottom></Bottom>
   </div>
@@ -144,6 +144,9 @@ export default {
   width: 100%;
   display: block;
 }
+.net .earthMobile{
+  display: none;
+}
 .address1{
   width: 75%;
   position: absolute;
@@ -235,6 +238,10 @@ export default {
     position: relative;
   }
   .net .earth{
+    width: 100%;
+    display: none;
+  }
+  .net .earthMobile{
     width: 100%;
     display: block;
   }

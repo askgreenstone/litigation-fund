@@ -109,13 +109,6 @@
       </div>
       <div class="introListBox1">
         <img src="../../assets/images/support1.png">
-        <ul class="introListBox1List">
-          <li>当事人、代理人介绍案情、提供证据资料</li>
-          <li>律石对案件资料进行必要的前期调查和分析</li>
-          <li>相关领域、所在地区的专家型律师评审通过案件合作</li>
-          <li>订立协议、提起诉讼，启动法律程序维权</li>
-          <li>一审、二审、和解、执行，案件回款时按照约定比例分配</li>
-        </ul>
       </div>
       <div class="introListBox2">
         <img src="../../assets/images/support21.png">
@@ -673,15 +666,20 @@ export default {
     line-height: 33px;
   }
   .lawyerList{
-    width: 100%;
+    width: 280px;
     display: flex;
     height: auto;
     flex-wrap: wrap;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   .lawyerList li{
-    width: 50%;
-    margin-bottom: 34px;
+    width: 80px;
+    margin: 0 30px 30px 30px;
+  }
+  .lawyerList li img{
+    width: 80px;
+    display: block;
   }
   .lawyerTitle{
     width: 100%;
@@ -698,6 +696,7 @@ export default {
     font-size: 12px;
     font-family: 'Regular';
     margin-bottom: 15px;
+    margin-left: -15px;
   }
   .lawyerLine{
     color: #c49a6d;

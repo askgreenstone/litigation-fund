@@ -148,7 +148,7 @@ export default {
     text-align: left;
     margin-left: 0;
     transform: scale(1);
-    height: 50px;
+    height: 40px;
   }
   .bottomListTel{
     width: 200px;
@@ -191,6 +191,7 @@ export default {
     color: #fff;
     background: #3f3e3e;
     opacity: 0.8;
+    font-weight: bold;
   }
   .topNavList li.active{
     background: #fff;

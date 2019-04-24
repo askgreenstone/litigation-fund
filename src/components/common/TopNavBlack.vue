@@ -351,8 +351,29 @@ export default {
 
 
 
+@media screen and (min-width: 1200px) and (max-width:1360px){
+  .topNav li{
+    width: 12.5%;
+    margin: 0;
+  }
 
-
+}
+@media screen and (min-width: 415px) and (max-width:1200px){
+  .topMenu{
+    width: 1200px;
+  }
+  .topNavBox{
+    width: 1200px;
+  }
+  .topNavLeft{
+    width: 217px;
+  }
+  .topNav li{
+    width: 12.5%;
+    margin: 0;
+  }
+  
+}
 @media screen and (max-width: 414px){
   .topMenu{
     display: none;
@@ -399,10 +420,13 @@ export default {
     background: #3f3e3e;
     opacity: 0.8;
     font-weight: bold;
+    border: 2px solid #3f3e3e;
+    box-sizing: border-box;
   }
   .mobileNavBox .topNavList li.active{
     background: #fff;
     color: #c49a6d;
+    border: 2px solid #3f3e3e;
   }
   .topBlack{
     width: 100%;

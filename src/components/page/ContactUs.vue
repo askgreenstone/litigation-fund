@@ -299,7 +299,7 @@ export default {
     top: 0;
   }
   .aboutImgBox{
-    width: 80px;
+    width: 100px;
     height: 60px;
     position: absolute;
     left: 50%;
@@ -308,7 +308,7 @@ export default {
     padding-top: 35px;
   }
   .aboutChi{
-    width: 80px;
+    width: 100px;
     height: 24px;
     text-align: center;
     font-family: 'Medium';
@@ -318,7 +318,7 @@ export default {
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
-    width: 80px;
+    width: 100px;
     height: 22px;
     text-align: center;
     font-family: 'Regular';
@@ -349,20 +349,22 @@ export default {
   .leftTitle{
     font-family: 'Medium';
     color: #333;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
   }
   .leftTitleEng{
     font-family: 'Normal';
     color: #c49a6d;
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   .leftMessage{
     font-family: 'Normal';
     color: #333;
     font-size: 15px;
-    line-height: 2;
-    margin-bottom: 12px;
+    line-height: 21px;
+    margin-bottom: 25px;
   }
   .leftQrcode{
     width: 110px;
@@ -386,13 +388,13 @@ export default {
     width: 300px;
     height: 29px;
     border: 1px solid #ccc;
-    margin: 15px auto;
+    margin: 15px 22px;
   }
   .rightInput input{
     border: none;
-    width: 298px;
-    height: 27px;
-    line-height: 28px;
+    width: 296px;
+    height: 25px;
+    line-height: 25px;
     font-family: 'Normal';
     color: #979797;
     font-size: 14px;
@@ -402,7 +404,7 @@ export default {
     width: 300px;
     height: 170px;
     border: 1px solid #ccc;
-    margin: 15px auto;
+    margin: 15px 22px;
   }
   .rightTextarea textarea{
     border: none;
@@ -416,18 +418,18 @@ export default {
     font-size: 14px;
   }
   .rightButton{
-    width: 115px;
-    height: 35px;
-    border: 1px solid #c49a6d;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ccc;
     text-align: center;
-    line-height: 35px;
+    line-height: 30px;
     font-family: 'Normal';
     color: #c49a6d;
-    font-size: 15px;
+    font-size: 13px;
     background: #fff;
     cursor: pointer;
-    border-radius: 5px;
-    margin: 20px 0 10px 22px;
+    border-radius: 3px;
+    margin: 20px 0 25px 22px;
   }
 }
 </style>

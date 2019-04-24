@@ -93,7 +93,7 @@
         <li class="phaseLine">————</li>
         <li class="phaseImg">
           <ul>
-            <li><img src="../../assets/images/phase11.png"></li>
+            <li><img src="../../assets/images/phase1.png"></li>
             <li class="phaseTextActive">诉讼</li>
             <li>
               <div class="phaseImgBig">诉讼</div>
@@ -108,7 +108,7 @@
         <li class="phaseLine">————</li>
         <li class="phaseImg">
           <ul>
-            <li><img src="../../assets/images/phase22.png"></li>
+            <li><img src="../../assets/images/phase2.png"></li>
             <li class="phaseTextActive">仲裁</li>
             <li>
               <div class="phaseImgBig">仲裁</div>
@@ -122,7 +122,7 @@
         <li class="phaseLine">————</li>
         <li class="phaseImg">
           <ul>
-            <li><img src="../../assets/images/phase33.png"></li>
+            <li><img src="../../assets/images/phase3.png"></li>
             <li class="phaseTextActive">保全与执行</li>
             <li>
               <div class="phaseImgBig">保全与执行</div>
@@ -137,7 +137,7 @@
         <li class="phaseLine">————</li>
         <li class="phaseImg">
           <ul>
-            <li><img src="../../assets/images/phase44.png"></li>
+            <li><img src="../../assets/images/phase4.png"></li>
             <li class="phaseTextActive">破产重组与清算</li>
             <li>
               <div class="phaseImgBig">破产重组与清算</div>
@@ -446,7 +446,7 @@ export default {
     height: 160px;
     left: -60px;
     position: relative;
-    top: 0;
+    top: -1px;
   }
   .aboutImgBox{
     width: 180px;
@@ -568,12 +568,10 @@ export default {
     text-align: center;
   }
   .phaseImg img{
-    width: 100px;
-    height: 100px;
-    margin-left: 37px;
-    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     display: block;
   }
   .phaseTextGray{
