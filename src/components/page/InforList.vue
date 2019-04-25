@@ -134,7 +134,7 @@ export default {
       // ”ddesc”: 需求描述    string  
       // ”dReply”: 是否已回复  0 否  1 是    int
       // console.log(that);
-      axios.get(common.globalUrl+'exp/QuerylfDemand.do?page='+page+'&count=5')
+      axios.get(common.globalUrl+'/exp/QuerylfDemand.do?page='+page+'&count=5')
       .then(function (response) {
         // console.log(response.data);
         that.commandList = response.data.lfdl;
@@ -155,7 +155,7 @@ export default {
       var that = this;
       var confirm = window.confirm('确定要删除么？');
       if(confirm){
-        axios.post(common.globalUrl+'exp/DellfDemand.do',{
+        axios.post(common.globalUrl+'/exp/DellfDemand.do',{
           "lfdid": lfdid
         })
         .then(function(response){

@@ -464,7 +464,7 @@ export default {
     font-family: 'Medium';
     font-weight: bold;
     color: #333;
-    font-size: 22px;
+    font-size: 18px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
@@ -474,7 +474,7 @@ export default {
     font-family: 'Regular';
     font-weight: bold;
     color: #333;
-    font-size: 16px;
+    font-size: 15px;
   }
   /*诉讼资助*/
   .litigation{

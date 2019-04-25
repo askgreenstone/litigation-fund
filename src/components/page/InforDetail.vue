@@ -78,7 +78,7 @@ export default {
     // 获取某条需求详细信息
     getInforDetail: function(lfdid){
       var that = this;
-      axios.get(common.globalUrl + 'exp/QuerylfDemandDetail.do?lfdid='+lfdid)
+      axios.get(common.globalUrl + '/exp/QuerylfDemandDetail.do?lfdid='+lfdid)
       .then(function(response){
         // console.log(response.data);
         var data = response.data;
@@ -97,7 +97,7 @@ export default {
     // 更新某条需求状态为已读
     updateInforDetail: function(lfdid,dName,dMobile,dMail,dStandard,ddesc){
       var that = this;
-      axios.post(common.globalUrl + 'exp/UpdatelfDemand.do',{
+      axios.post(common.globalUrl + '/exp/UpdatelfDemand.do',{
         "lfdid": lfdid,
         "dName": dName,
         "dMobile": dMobile,

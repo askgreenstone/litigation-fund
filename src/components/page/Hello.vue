@@ -90,8 +90,11 @@
         <li>
           <img src="../../assets/images/litigation.png" >
           <div class="lawyerTitle">诉讼垫资</div>
-          <div class="lawyerBox">
+          <div class="lawyerBox lawyerBox1">
             <span>垫付诉讼费、律师费、保全费、评估费、鉴定费、审计费...</span>
+          </div>
+          <div class="lawyerBox lawyerBox2">
+            <span>垫付诉讼费、律师费<br/>、保全费、评估费、<br/>鉴定费、审计费...</span>
           </div>
         </li>
       </ul>
@@ -428,6 +431,12 @@ export default {
   line-height: 21px;
   font-family: 'Regular';
 }
+.lawyerBox1{
+  display: block;
+}
+.lawyerBox2{
+  display: none;
+}
 .lawyerLine{
   color: #c49a6d;
 }
@@ -697,6 +706,12 @@ export default {
     font-family: 'Regular';
     margin-bottom: 15px;
     margin-left: -15px;
+  }
+  .lawyerBox1{
+    display: none;
+  }
+  .lawyerBox2{
+    display: block;
   }
   .lawyerLine{
     color: #c49a6d;
