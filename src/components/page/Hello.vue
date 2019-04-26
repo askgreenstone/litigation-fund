@@ -140,8 +140,8 @@ import Swiper from "swiper";
 import TopNavBlack from '@/components/common/TopNavBlack'
 import ApplyFunding from '@/components/common/ApplyFunding'
 import Bottom from '@/components/common/Bottom'
-const banner1 = require('../../assets/images/banner11.png')
-const banner2 = require('../../assets/images/banner22.png')
+const banner1 = require('../../assets/images/banner01.png')
+const banner2 = require('../../assets/images/banner02.png')
 require('swiper/dist/css/swiper.css')
 export default {
   name: 'Index',
