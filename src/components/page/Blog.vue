@@ -552,7 +552,7 @@ export default {
     text-align: center;
     font-family: 'Medium';
   font-weight: bold;
-    color: #333;
+    color: #c49a6d;
     font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }

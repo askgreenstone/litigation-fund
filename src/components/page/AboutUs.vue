@@ -187,6 +187,7 @@ export default {
   font-family: 'Medium';
   color: #c49a6d;
   font-size: 24px;
+  font-weight: bold;
 }
 .paragraph3{
   width: 63%;

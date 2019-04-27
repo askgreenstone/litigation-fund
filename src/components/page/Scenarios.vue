@@ -109,15 +109,15 @@ export default {
   top: -89px;
 }
 .aboutImgBox{
-  width: 210px;
+  width: 220px;
   height: 60px;
   position: absolute;
   left: 50%;
   top: 40%;
-  margin-left: -105px;
+  margin-left: -110px;
 }
 .aboutChi{
-  width: 210px;
+  width: 220px;
   height: 30px;
   text-align: center;
   font-family: 'Medium';
@@ -127,7 +127,7 @@ export default {
   border-bottom: 1px solid #c49a6d;
 }
 .aboutEng{
-  width: 210px;
+  width: 220px;
   height: 22px;
   text-align: center;
   font-family: 'Regular';
@@ -221,9 +221,9 @@ export default {
     text-align: center;
     font-family: 'Medium';
   font-weight: bold;
-    color: #333;
+    color: #c49a6d;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
@@ -285,7 +285,7 @@ export default {
   .caseTitle{
     font-family: 'Medium';
     color: #333;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin: 5px 0 15px;
   }

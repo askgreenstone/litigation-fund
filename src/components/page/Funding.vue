@@ -271,6 +271,7 @@ export default {
   font-family: 'Medium';
   color: #c49a6d;
   font-size: 21px;
+  font-weight: bold;
 }
 .introLine{
   font-size: 0;
@@ -294,6 +295,7 @@ export default {
   color: #333;
   font-size: 14px;
   margin-bottom: 33px;
+  font-weight: bold;
 }
 .litigationImgBox{
   width: 100%;
@@ -353,12 +355,14 @@ export default {
   color: #c49a6d;
   font-size: 17px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .phaseImgBig{
   font-family: 'Regular';
   color: #000;
   font-size: 20px;
   line-height: 1.5;
+  display: none;
 }
 .phaseImgSmall{
   font-family: 'Normal';
@@ -463,7 +467,7 @@ export default {
     text-align: center;
     font-family: 'Medium';
     font-weight: bold;
-    color: #333;
+    color: #c49a6d;
     font-size: 18px;
     border-bottom: 1px solid #c49a6d;
   }
@@ -613,7 +617,7 @@ export default {
   .caseListMobile .caseTitle{
     margin-bottom: 5px;
     text-indent: 30px;
-    color: #c49a6d;
+    color: #333;
     font-weight: bold;
   }
   .caseListMobile img{

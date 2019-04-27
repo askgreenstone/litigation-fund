@@ -313,8 +313,8 @@ export default {
     text-align: center;
     font-family: 'Medium';
   font-weight: bold;
-    color: #333;
-    font-size: 16px;
+    color: #c49a6d;
+    font-size: 18px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
@@ -380,7 +380,7 @@ export default {
   .rightTitle{
     font-family: 'Medium';
     color: #333;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-left: 22px;
   }

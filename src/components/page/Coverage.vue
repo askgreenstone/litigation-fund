@@ -110,7 +110,8 @@ export default {
   font-family: 'Medium';
   color: #fff;
   font-size: 21px;
-  
+  font-weight: bold;
+  color: #c49a6d;
 }
 .introLine{
   font-size: 0;
@@ -134,6 +135,7 @@ export default {
   color: #fff;
   font-size: 18px;
   margin-bottom: 33px;
+  font-weight: bold;
 }
 /*地球网络*/
 .net{
@@ -204,7 +206,7 @@ export default {
   }
   .introTitle{
     font-family: 'Medium';
-    color: #333;
+    color: #c49a6d;
     font-size: 18px;
     font-weight: bold;
   }

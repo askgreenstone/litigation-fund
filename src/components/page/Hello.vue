@@ -5,7 +5,7 @@
     <!-- 顶部不占位，做一个占位空白 -->
     <div class="position"></div>
     <!-- 图片轮播部分 -->
-    <div class="window" id="#window" @mouseover="stop" @mouseout="play">
+    <!-- <div class="window" id="#window" @mouseover="stop" @mouseout="play">
       <transition-group tag="ul" class="container" name="image">
         <li v-for="(image,index) in imgData" :key="image" v-show="index===mark">
           <img name="banner" :src="image">
@@ -21,6 +21,14 @@
         <li v-for="(dot, index) in imgData" :key="index" :class="{dotted: index ===  mark}"      @click = "change(index)">
         </li>
       </ul>
+    </div> -->
+     <!-- pc端图片轮播 -->
+    <div id="window">
+      <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="items in swiperPc" :key="items"><img :src="items"></div>
+            </div>
+        </div>
     </div>
     <!-- 移动端图片轮播 -->
     <div id="banner">
@@ -142,6 +150,8 @@ import ApplyFunding from '@/components/common/ApplyFunding'
 import Bottom from '@/components/common/Bottom'
 const banner1 = require('../../assets/images/banner01.png')
 const banner2 = require('../../assets/images/banner02.png')
+const banner3 = require('../../assets/images/banner03.png')
+const banner4 = require('../../assets/images/banner04.png')
 require('swiper/dist/css/swiper.css')
 export default {
   name: 'Index',
@@ -157,6 +167,10 @@ export default {
       swiper: [
         banner1,
         banner2
+      ],
+      swiperPc:[
+        banner3,
+        banner4
       ],
       bgColor: 'white'
     }
@@ -253,6 +267,9 @@ export default {
   overflow: hidden;
   position: relative;
 }
+#window{
+  display: block;
+}
 #banner{
   display: none;
 }
@@ -345,6 +362,7 @@ export default {
   font-family: 'Medium';
   font-size: 21px;
   color: #c49a6d;
+  font-weight: bold;
 }
 .introLine{
   font-size: 0;
@@ -377,6 +395,7 @@ export default {
   color: #333;
   font-size: 14px;
   margin-bottom: 33px;
+  font-weight: bold;
 }
 .introMessage{
   font-family: 'Normal';
@@ -502,6 +521,9 @@ export default {
     height: 156px;  
     overflow: hidden;
     position: relative;
+    display: none;
+  }
+  #window{
     display: none;
   }
   #banner{

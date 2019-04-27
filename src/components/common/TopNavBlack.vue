@@ -365,6 +365,9 @@ export default {
   .topNavBox{
     width: 1200px;
   }
+  .topNavBoxWhite{
+    width: 1200px;
+  }
   .topNavLeft{
     width: 217px;
   }
