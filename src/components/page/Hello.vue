@@ -270,6 +270,9 @@ export default {
 #window{
   display: block;
 }
+.swiper-slide img{
+  width: 100%;
+}
 #banner{
   display: none;
 }
@@ -529,10 +532,7 @@ export default {
   #banner{
     display: block;
   }
-  .swiper-slide a{
-    display: block;
-  }
-  .swiper-slide a img{
+  .swiper-slide img{
     width: 100%;
   }
   /*图片轮播盒子*/
