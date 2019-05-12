@@ -153,7 +153,6 @@ export default {
   width: 220px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   font-weight: bold;
   color: #fff;
   font-size: 22px;
@@ -163,7 +162,6 @@ export default {
   width: 220px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   font-weight: bold;
   color: #fff;
   font-size: 16px;
@@ -190,7 +188,6 @@ export default {
   margin-right: 20px;
 }
 .caseListBoxLeft img{
-  // width: 100%;
   display: block;
   
 }
@@ -199,9 +196,9 @@ export default {
 }
 .caseListBoxRight .caseListBoxRightTitle{
   font-size: 17px;
-  font-weight: bold;
-  line-height: 12px;
-  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 14px;
 }
 .caseListBoxRight .caseListBoxRightContent{
   font-size: 14px;
@@ -231,14 +228,12 @@ export default {
   display: none;
 }
 .caseTitle{
-  font-family: 'Medium';
   color: #333;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 .caseContent{
-  font-family: 'Normal';
   color: #333;
   font-size: 13px;
   line-height: 26px;
@@ -278,7 +273,6 @@ export default {
     width: 180px;
     height: 24px;
     text-align: center;
-    font-family: 'Medium';
   font-weight: bold;
     color: #c49a6d;
     font-weight: bold;
@@ -289,9 +283,7 @@ export default {
     width: 180px;
     height: 22px;
     text-align: center;
-    font-family: 'Regular';
     font-weight: bold;
-  font-weight: bold;
     color: #333;
     font-size: 12px;
   }
@@ -342,14 +334,12 @@ export default {
     top: -10px;
   }
   .caseTitle{
-    font-family: 'Medium';
     color: #333;
     font-size: 15px;
     font-weight: bold;
     margin: 5px 0 15px;
   }
   .caseContent{
-    font-family: 'Normal';
     color: #333;
     font-size: 15px;
     margin-bottom: 45px;

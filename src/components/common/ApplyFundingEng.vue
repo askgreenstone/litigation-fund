@@ -2,8 +2,8 @@
 	<!-- 申请资助 -->
   <div class="applyFunding">
     <img src="../../assets/images/applyFunding.png">
-    <div class="applyTitle">让我们化解您的诉讼风险</div>
-    <router-link tag="div" to="/Contact" class="applyButton">申请资助</router-link>
+    <div class="applyTitle">Let Us Resolve Your Litigation Risks</div>
+    <router-link tag="div" to="/Contact" class="applyButton">Apply for Litigation Support</router-link>
   </div>
 </template>
 
@@ -37,8 +37,8 @@ export default {
 }
 .applyButton{
   position: absolute;
-  right: 23%;
-  width: 123px;
+  right: 15%;
+  width: 270px;
   height: 50px;
   line-height: 50px;
   border-radius: 10px;
@@ -64,21 +64,24 @@ export default {
   }
   .applyTitle{
     position: absolute;
-    left: 36px;
+    width: 100%;
+    left: 0;
+    text-align: center;
     color: #fff;
     font-size: 14px;
-    top: 63px;
+    top: 40px;
   }
   .applyButton{
     position: absolute;
-    right: 40px;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 8px;
+    left: 50%;
+    margin-left: -110px;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 12px;
     color: #fff;
     font-size: 14px;
-    top: 50px;
+    top: 70px;
     background: #c49a6d;
     text-align: center;
     cursor: pointer;

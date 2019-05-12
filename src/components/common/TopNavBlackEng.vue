@@ -3,7 +3,8 @@
     <!-- 顶部欢迎菜单包括登录按钮，中英文切换 -->
     <div class="topMenu">
       <div class="topMenuBox">
-        <span class="welcome">您好，欢迎来到律石诉讼资助！</span>
+
+        <span class="welcome">Welcome To LawStone Litigation Support</span>
         <!-- <span class="login" v-show="!username" @click="showLogin">登录</span>
         <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link> -->
         <span class="language">
@@ -37,14 +38,14 @@
         <img v-else src="../../assets/images/logoBottom.png"/>
       </router-link>
       <ul class="topNav">
-        <router-link to="/" tag="li" exact >首页</router-link>
-        <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
-        <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
+        <router-link to="/Index-en" tag="li" exact >Home Page</router-link>
+        <router-link to="/AboutUs-en" tag="li" exact >About Us</router-link>
+        <router-link to="/Funding-en" tag="li" exact >Our Service</router-link>
         <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
-        <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
-        <router-link to="/Blog" tag="li" >律石研究院</router-link>
-        <router-link to="/Scenarios" tag="li" exact >应用案例</router-link>
-        <router-link to="/Contact" tag="li" >联系我们</router-link>
+        <router-link to="/Coverage-en" tag="li" exact >Professional Network</router-link>
+        <router-link to="/Blog-en" tag="li" >LawStone Institute</router-link>
+        <router-link to="/Scenarios-en" tag="li" exact >Case Applications</router-link>
+        <router-link to="/Contact-en" tag="li" >Contact Us</router-link>
       </ul>
     </div>  
     <!-- 移动端导航 -->
@@ -53,15 +54,15 @@
       <img class="right" v-show="!showMenuFlag" src="../../assets/images/topMenu1.png" @click="showMenu"/>
       <img class="right" v-show="showMenuFlag" src="../../assets/images/topMenu2.png" @click="hideMenu"/>
       <ul class="topNavList" v-show="showMenuFlag"> 
-        <router-link to="/" tag="li" exact >首页</router-link>
-        <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
-        <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
+        <router-link to="/Index-en" tag="li" exact >Home</router-link>
+        <router-link to="/AboutUs-en" tag="li" exact >About Us</router-link>
+        <router-link to="/Funding-en" tag="li" exact >Our Services</router-link>
         <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
-        <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
-        <router-link to="/Blog" tag="li" >律石研究院</router-link>
-        <router-link to="/Scenarios" tag="li" exact >应用案例</router-link>
-        <router-link to="/Contact" tag="li" >联系我们</router-link>
-        <li @click="selectLanguage(1)">English</li>
+        <router-link to="/Coverage-en" tag="li" exact >National Network</router-link>
+        <router-link to="/Blog-en" tag="li" >LS Institute</router-link>
+        <router-link to="/Scenarios-en" tag="li" exact >Case Applications</router-link>
+        <router-link to="/Contact-en" tag="li" >Contact Us</router-link>
+        <li @click="selectLanguage(2)">中文</li>
       </ul>
     </div>  
   </div>
@@ -82,7 +83,7 @@ export default {
           name: '中文',
           id: 2
         },
-         {
+        {
           name: '/',
           id: 0
         },
@@ -90,6 +91,8 @@ export default {
           name: 'English',
           id: 1
         },
+        
+        
       ],
       languageId: 2
     }
@@ -160,7 +163,6 @@ export default {
   },
   mounted: function(){
     this.init();
-    
   },
   beforeRouteEnter (to, from, next) {
     // 在渲染该组件的对应路由被 confirm 前调用
@@ -207,7 +209,6 @@ export default {
 }
 .welcome{
   width: 300px;
-  text-align: left;
   font-size: 12px;
   color: #333;
 }
@@ -369,7 +370,6 @@ export default {
 }
 .topNav li{
   float: left;
-  width: 9%;
   margin: 0 1%;
   font-size: 14px;
   border-bottom: 2px solid transparent;

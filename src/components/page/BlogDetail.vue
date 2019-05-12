@@ -174,7 +174,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -183,7 +182,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -199,7 +197,6 @@ export default {
   height: 50px;
   line-height: 50px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin: 0 auto 10px;
@@ -208,14 +205,12 @@ export default {
   cursor: pointer;
 }
 .information{
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 16px;
 }
 .title{
   width: 850px;
   height: 40px;
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 22px;
   text-align: center;
@@ -228,7 +223,6 @@ export default {
   padding-right: 30px;
   text-align: right;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #979797;
   font-size: 16px;
   margin: 0 auto 20px;
@@ -236,7 +230,6 @@ export default {
 .content{
   width: 850px;
   line-height: 28px;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   margin: 0 auto 20px;
@@ -244,7 +237,6 @@ export default {
 .content pre{
   margin: 0;
   white-space: pre-wrap;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
 }
@@ -278,7 +270,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -287,7 +278,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -303,20 +293,17 @@ export default {
   height: 50px;
   line-height: 50px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin: 0 auto 10px;
 }
 .information{
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 16px;
 }
 .title{
   width: 850px;
   height: 40px;
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 22px;
   text-align: center;
@@ -329,7 +316,6 @@ export default {
   padding-right: 30px;
   text-align: right;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #979797;
   font-size: 16px;
   margin: 0 auto 20px;
@@ -337,7 +323,6 @@ export default {
 .content{
   width: 850px;
   line-height: 28px;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   margin: 0 auto 20px;
@@ -345,7 +330,6 @@ export default {
 .content pre{
   margin: 0;
   white-space: pre-wrap;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
 }

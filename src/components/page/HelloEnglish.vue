@@ -41,68 +41,70 @@
 
     <!-- 诉讼资助简介 -->
     <div class="introduction">
-      <div class="introTitle">律石诉讼资助</div>
+      <div class="introTitle">LawStone Litigation Support</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
         <span class="three"></span>
       </div>
-      <div class="introEng">LITIGATION SUPPORT</div>
-      <div class="introMessage">如果您有民商事诉讼、仲裁、执行领域的重大、疑难案件，或司法破产重整、清算事项，因当事人财力有限，或不符合现有代理人的专业领域、地域范畴，启动司法救济的门槛高企，请联系我们。律石以诉讼资助、全国网络覆盖和资深律师、专家、顾问团队，提供领先的一揽子解决方案，实现胜诉和回款。</div>
-      <div class="introMessage">律石诉讼资助以卓越的专业能力，在争议解决中为当事人和代理律师提供团队、专业和启动费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、上市公司、企业和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行、破产重整领域的主流趋势。</div>
-      <div class="introMessage">争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏，也可能导致其合理合法的诉权主张被迫推迟或放弃追索。</div>
-      <div class="introMessage">当事人之间，财务资源、法律专业资源可能存在着巨大差异，这将一定程度给其自身的司法救济带来障碍，甚至出现现金流紧张的当事人无法接近司法公平。因此，诉讼资助应运而生，创造价值，增益共赢。</div>
+      <div class="introEng"></div>
+      <div class="introMessage">Where major and complicated civil or commercial legal actions, law enforcements or bankruptcy, reorganization, liquidation events are concerned and the parties cannot afford initiating or participating in the judicial proceedings due to limited financial circumstances, or the matter falls out of the fields or geographical areas of the existing counsels, please contact LawStone. With litigation funding, national network coverage and a profound industrial resource of leading lawyers, experts and specialists, LawStone provides one-stop dispute resolution services for clients to achieve winning outcomes. </div>
+      <div class="introMessage">By providing prominent professional teams, fees, cost and specialized risk management services to clients and lawyers in dispute resolution situations, LawStone unlocks the potential value of legal claims. A growing number of Fortune 500 companies, listed companies, enterprises and individuals have benefited from LawStone Litigation Support. It has increasingly become the mainstream trend in the fields of civil and commercial litigation, arbitration, enforcement, bankruptcy and debt restructuring in China.</div>
+      <div class="introMessage">Dispute resolution involves a high threshold of expertise, cost, time and resources. From time to time aged pending accounts of receivables exceeds statute of limitations and have to be written off, adversely affecting cash flow and turnover performance. The unfamiliarity of legal profession and judicial system may also result in delay or even waiver of sound legal claims by the right holders. </div>
+      <div class="introMessage">The financial status and legal resources among the parties may vary remarkably, which will to a certain extent bring obstacles to the access to judicial relief,  those with short cash flows can hardly afford a legal action. LawStone Litigation Support thereby came into being to create value and gain a win-win result for clients.</div>
     </div>
     <!-- 客户/律师 -->
+    <!-- h5 -->
     <div class="introduction introduction2 introduction3">
-      <div class="introTitle">为当事人或律师提供</div>
+      <div class="introTitle">Provide For Clients And Lawyers</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
         <span class="three"></span>
       </div>
-      <div class="introEng">PROVIDE FOR CLIENTS AND LAWYERS</div>
+      <div class="introEng"></div>
     </div>
+    <!-- pc -->
     <div class="lawyer">
       <div class="introduction introduction2 ">
-        <div class="introTitle">为当事人或律师提供</div>
+        <div class="introTitle">Provide For Clients And Lawyers</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">PROVIDE FOR CLIENTS AND LAWYERS</div>
+        <div class="introEng"></div>
       </div>
       <ul class="lawyerList">
         <li>
           <img src="../../assets/images/professionalService.png" >
-          <div class="lawyerTitle">专业服务</div>
+          <div class="lawyerTitle">Specialized Services</div>
           <div class="lawyerBox">
-            <span>为客户或代理人提供特定法律领域的专家技术支持</span>
+            <span>Provide for clients or lawyers with expertise and technical support in relevant legal fields</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/coveringCountry.png" >
-          <div class="lawyerTitle">覆盖全国</div>
+          <div class="lawyerTitle">National Coverage</div>
           <div class="lawyerBox">
-            <span>业务遍及全国50多个城市和地区(含香港、台湾)</span>
+            <span>A network of over 50 cities and regions of China (including Taiwan and Hong Kong)</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/resourceSupport.png" >
-          <div class="lawyerTitle">品质服务</div>
+          <div class="lawyerTitle">Quality Services</div>
           <div class="lawyerBox">
-            <span>从前期论证到案件启动、审理、执行，全流程风控跟进</span>
+            <span>Integral risk control services throughout initial due diligence to prosecution, trial and execution</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/litigation.png" >
-          <div class="lawyerTitle">诉讼垫资</div>
+          <div class="lawyerTitle">Litigation Funding</div>
           <div class="lawyerBox lawyerBox1">
-            <span>垫付诉讼费、律师费<br/>、保全费、评估费、<br/>鉴定费、审计费...</span>
+            <span>Advanced payment for litigation cost, lawyers’ fee, preservation, assessment, appraisal and audit fees, etc.</span>
           </div>
           <div class="lawyerBox lawyerBox2">
-            <span>垫付诉讼费、律师费<br/>、保全费、评估费、<br/>鉴定费、审计费...</span>
+            <span>Advanced payment for litigation cost, lawyers’ fee, preservation, assessment, appraisal and audit fees, etc.</span>
           </div>
         </li>
       </ul>
@@ -110,59 +112,61 @@
     <!-- 支持 -->
     <div class="support">
       <div class="introduction">
-        <div class="introTitle">合作流程</div>
+        <div class="introTitle">Cooperation Procedures</div>
         <div class="introLine introLine2">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">COOPERATION PROCEDURES</div>
+        <div class="introEng"></div>
       </div>
+      <!-- pc -->
       <div class="introListBox1">
         <ul>
           <li>
             <img class="img" src="../../assets/images/hello1.png"/>
-            <span style="margin-left: -5px;">案情介绍</span>
-            <i style="margin-left: -19px;">当事人、代理人介绍案情、提供证据资料</i>
+            <span>Introduction of Facts</span>
+            <i style="margin-left: -19px;">Provide evidence and materials, introduce the case by clients or lawyers</i>
           </li>
           <li><img class="line" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello2.png"/>
-            <span>调查论证</span>
-            <i>律石对案件资料进行必要的前期调查和分析</i>
+            <span>Due Diligence and Analysis</span>
+            <i>LawStone carry out initial investigation and analysis upon the case materials and facts </i>
           </li>
           <li><img class="line line2" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello3.png"/>
-            <span style="margin-left: 15px;">风险评估</span>
-            <i style="margin-left: 0px;">相关领域、所在地区的专家型律师评审通过案件合作</i>
+            <span style="margin-left: 0px;">Risk Evaluation</span>
+            <i style="margin-left: 0px;">Expert lawyers of relevant regions and fields evaluate and approve litigation funding and cooperation</i>
           </li>
           <li><img class="line line3" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello4.png"/>
-            <span style="margin-left: -8px;">诉讼垫资</span>
-            <i style="margin-left: -20px;">订立协议、提起诉讼<br/>，启动法律程序维权</i>
+            <span style="margin-left: -22px;">Litigation Funding</span>
+            <i style="margin-left: -28px;width:140px">Sign litigation funding agreements, file the case and initiate the legal proceedings to safeguard lawful rights and interests</i>
           </li>
           <li><img class="line line4" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello5.png"/>
-            <span style="margin-left: 4px;">胜诉回款</span>
-            <i style="margin-left: -9px;">一审、二审、和解、执行，案件回款时按照约定比例分配</i>
+            <span style="margin-left: -14px;">Win and Execution</span>
+            <i style="margin-left: -33px;width:160px">Get paid during the stages of the first instance, second instance or law enforcement, distribute the proceeds in accordance with a previously agreed commission rate. </i>
           </li>
         </ul>
         
       </div>
+      <!-- h5 -->
       <div class="introListBox2">
-        <img src="../../assets/images/support21.png">
+        <img src="../../assets/images/support21eng.png">
         <ul class="introListBox1List">
-          <li>当事人、代理人介绍案情、提供证据资料</li>
-          <li>律石对案件资料进行必要的前期调查和分析</li>
-          <li>相关领域、所在地区的专家型律师评审通过案件合作</li>
+          <li>Provide evidence and materials, introduce the case by clients or lawyers</li>
+          <li>LawStone carry out initial investigation and analysis upon the case materials and facts</li>
+          <li>Expert lawyers of relevant regions and fields evaluate and approve litigation funding and cooperation</li>
         </ul>
-        <img class="img2" src="../../assets/images/support22.png">
+        <img class="img2" src="../../assets/images/support22eng.png">
         <ul class="introListBox1List2">
-          <li>订立协议、提起诉讼，启动法律程序维权</li>
-          <li>一审、二审、和解、执行，案件回款时按照约定比例分配</li>
+          <li>Sign litigation funding agreements, file the case and initiate the legal proceedings to safeguard lawful rights and interests</li>
+          <li>Get paid during the stages of the first instance, second instance or law enforcement, distribute the proceeds in accordance with a previously agreed commission rate.</li>
         </ul>
       </div>  
     </div>
@@ -176,13 +180,13 @@
 <script>
 
 import Swiper from "swiper";
-import TopNavBlack from '@/components/common/TopNavBlack'
-import ApplyFunding from '@/components/common/ApplyFunding'
-import Bottom from '@/components/common/Bottom'
-const banner1 = require('../../assets/images/banner01.png')
-const banner2 = require('../../assets/images/banner02.png')
-const banner3 = require('../../assets/images/banner03.png')
-const banner4 = require('../../assets/images/banner04.png')
+import TopNavBlack from '@/components/common/TopNavBlackEng'
+import ApplyFunding from '@/components/common/ApplyFundingEng'
+import Bottom from '@/components/common/BottomEng'
+const banner1 = require('../../assets/images/banner01eng.png')
+const banner2 = require('../../assets/images/banner02eng.png')
+const banner3 = require('../../assets/images/banner03eng.png')
+const banner4 = require('../../assets/images/banner04eng.png')
 require('swiper/dist/css/swiper.css')
 export default {
   name: 'Index',
@@ -412,10 +416,10 @@ export default {
   margin-right: 10px;
 }
 .introLine span.two{
-  width: 160px;
+  width: 320px;
 }
 .introduction2 .introLine span.two{
-  width: 260px;
+  width: 350px;
 }
 .introduction3{
   display: none;
@@ -474,7 +478,7 @@ export default {
   margin-top: 30px;
 }
 .lawyerBox{
-  width: 120px;
+  width: 151px;
   margin: 10px auto;
   text-align: center;
   color: #333;
@@ -534,13 +538,14 @@ export default {
   margin-right: -15px;
 }
 .introListBox1 li span{
-  width: 90px;
+  width: 122px;
   display: block;
   color: #c49a6d;
   text-align: center;
   font-size: 18px;
   margin-top: 30px;
   margin-bottom: 20px;
+  margin-left: -16px;
 }
 .introListBox1 li i{
   font-style: normal;
@@ -574,7 +579,7 @@ export default {
   display: none;
 }
 .support .introLine .two{
-  width: 160px;
+  width: 270px;
 }
 .introList{
   width: 70%;
@@ -704,7 +709,7 @@ export default {
   }
   .introTitle{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
   }
   .introLine{
     font-size: 0;
@@ -746,8 +751,8 @@ export default {
     padding: 0 15px;
     box-sizing: border-box;
     color: #333;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 12.5px;
+    line-height: 22px;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -788,19 +793,20 @@ export default {
     display: block;
   }
   .lawyerTitle{
-    width: 100%;
+    width: 140px;
+    margin-left: -30px;
     text-align: center;
     color: #333;
     font-size: 14px;
     margin-top: 15px;
   }
   .lawyerBox{
-    width: 110px;
+    width: 140px;
     text-align: center;
     color: #333;
     font-size: 12px;
     margin-bottom: 15px;
-    margin-left: -15px;
+    margin-left: -30px;
   }
   .lawyerBox1{
     display: none;
@@ -840,7 +846,7 @@ export default {
     justify-content: space-between;
   }
   .introListBox2 .introListBox1List li{
-    width: 80px;
+    width: 100px;
   }
   .introListBox2 .introListBox1List2{
     width: 66.6%;
@@ -851,7 +857,7 @@ export default {
     justify-content: space-between;
   }
   .introListBox2 .introListBox1List2 li{
-    width: 90px;
+    width: 110px;
   }
   .introList{
     width: 70%;

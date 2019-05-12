@@ -162,7 +162,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -171,7 +170,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -194,7 +192,6 @@ export default {
   padding-left: 10px;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #b1b1b1;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -206,7 +203,6 @@ export default {
   display: inline-block;
   border: 1px solid #c49a6d;
   line-height: 33px;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 14px;
   margin-left: 75px;
@@ -214,7 +210,6 @@ export default {
 }
 .teamIntroduction{
   width: 100%;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 27px;
@@ -230,7 +225,6 @@ export default {
   width: 850px;
   height: 30px;
   font-weight: normal;
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 24px;
   margin: 0 auto 30px;
@@ -285,7 +279,6 @@ export default {
   line-height: 40px;
   padding: 0 50px;
   box-sizing: border-box;
-  font-family: 'Regular';
   color: #fff;
   font-size: 18px;
 }
@@ -298,7 +291,6 @@ export default {
   position: relative;
 }
 .lawyerIntroduction{
-  font-family: 'Normal';
   color: #fff;
   font-size: 15px;
   line-height: 27px;
@@ -322,7 +314,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  font-family: 'Regular';
   color: #fff;
   font-size: 15px;
 }
@@ -333,7 +324,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  font-family: 'Regular';
   color: red;
   font-size: 15px;
 }
@@ -367,7 +357,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -376,7 +365,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -399,7 +387,6 @@ export default {
   padding-left: 10px;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #b1b1b1;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -411,7 +398,6 @@ export default {
   display: inline-block;
   border: 1px solid #c49a6d;
   line-height: 33px;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 14px;
   margin-left: 75px;
@@ -419,7 +405,6 @@ export default {
 }
 .teamIntroduction{
   width: 100%;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 27px;
@@ -435,7 +420,6 @@ export default {
   width: 850px;
   height: 30px;
   font-weight: normal;
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 24px;
   margin: 0 auto 30px;
@@ -490,7 +474,6 @@ export default {
   line-height: 40px;
   padding: 0 50px;
   box-sizing: border-box;
-  font-family: 'Regular';
   color: #fff;
   font-size: 18px;
 }
@@ -503,7 +486,6 @@ export default {
   position: relative;
 }
 .lawyerIntroduction{
-  font-family: 'Normal';
   color: #fff;
   font-size: 15px;
   line-height: 27px;
@@ -527,7 +509,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  font-family: 'Regular';
   color: #fff;
   font-size: 15px;
 }
@@ -538,7 +519,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  font-family: 'Regular';
   color: red;
   font-size: 15px;
 }

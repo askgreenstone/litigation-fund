@@ -161,7 +161,6 @@ export default {
   width: 100px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -170,7 +169,6 @@ export default {
   width: 100px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -185,7 +183,6 @@ export default {
   height: 51px;
   line-height: 51px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin-bottom: 30px;
@@ -207,7 +204,6 @@ export default {
   display: flex;
 }
 .infoListName{
-  font-family: 'Medium';
   color: #333;
   font-size: 16px;
   width: 50%;
@@ -215,7 +211,6 @@ export default {
   line-height: 25px;
 }
 .infoListTime{
-  font-family: 'Normal';
   color: #808080;
   font-size: 15px;
   display: inline-block;
@@ -224,7 +219,6 @@ export default {
   line-height: 30px;
 }
 .infoListContent{
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 24px;
@@ -260,7 +254,6 @@ export default {
   width: 100px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -269,7 +262,6 @@ export default {
   width: 100px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -284,7 +276,6 @@ export default {
   height: 51px;
   line-height: 51px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin-bottom: 30px;
@@ -306,7 +297,6 @@ export default {
   display: flex;
 }
 .infoListName{
-  font-family: 'Medium';
   color: #333;
   font-size: 16px;
   width: 50%;
@@ -314,7 +304,6 @@ export default {
   line-height: 25px;
 }
 .infoListTime{
-  font-family: 'Normal';
   color: #808080;
   font-size: 15px;
   display: inline-block;
@@ -323,7 +312,6 @@ export default {
   line-height: 30px;
 }
 .infoListContent{
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 24px;

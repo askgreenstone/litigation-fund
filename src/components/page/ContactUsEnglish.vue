@@ -9,44 +9,45 @@
       <div class="aboutImg">
         <img src="../../assets/images/banner2.png">
         <div class="aboutImgBox">
-          <div class="aboutChi">联系我们</div>
-          <div class="aboutEng">CONTACT US</div>
+          <div class="aboutChiPc">CONTACT US</div>
+          <div class="aboutChiH5">Contact Us</div>
+          <div class="aboutEng"></div>
         </div>
         
       </div>
       <!-- 联系我们 -->
       <div class="contactBox">
         <div class="contactLeft">
-          <div class="leftTitle">诉讼资助联系方式</div>
-          <div class="leftTitleEng">Contact Information</div>
-          <div class="leftMessage">电邮：business@green-stone.cn<br/>微信公众号：诉讼资助</div>
+          <div class="leftTitle">Contact Information</div>
+          <div class="leftTitleEng"></div>
+          <div class="leftMessage">Email：business@green-stone.cn<br/>WeChat Official Account : <br/>Litigation Support</div>
           <div class="leftQrcode"><img src="../../assets/images/qrcode.png"></div>
         </div>
         <div class="contactRight">
-          <div class="rightTitle">请填写您的需求，我们将尽快与您联系</div>
+          <div class="rightTitle">Please leave your message here, we'll get back to you within 24 hours </div>
           <div class="rightInput">
-            <input type="text" v-model.trim="clientName" name="" placeholder="您的姓名">
+            <input type="text" v-model.trim="clientName" name="" placeholder="Name">
           </div>
           <div class="rightInput">
-            <input type="text" v-model="clientTel" name="" placeholder="电话">
+            <input type="text" v-model="clientTel" name="" placeholder="Telephone">
           </div>
           <div class="rightInput">
-            <input type="text" v-model="clientEmail" name="" placeholder="电邮">
+            <input type="text" v-model="clientEmail" name="" placeholder="Email">
           </div>
           <div class="rightInput">
-            <input type="text" v-model.trim="clientSubject" name="" placeholder="诉讼标的">
+            <input type="text" v-model.trim="clientSubject" name="" placeholder="Claim Value">
           </div>
           <div class="rightTextarea">
-            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="需求描述">
+            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="Description of Facts">
               
             </textarea>
           </div>
-          <div class="rightButton" @click="submit">提交信息</div>
+          <div class="rightButton" @click="submit">Submit</div>
         </div>
         <div class="contactLeft2">
-          <div class="leftTitle">诉讼资助联系方式</div>
-          <div class="leftTitleEng">Contact Information</div>
-          <div class="leftMessage">电邮：business@green-stone.cn<br/>微信公众号：诉讼资助</div>
+          <div class="leftTitle">Contact Information</div>
+          <div class="leftTitleEng"></div>
+          <div class="leftMessage">Email：business@green-stone.cn<br/>WeChat Official Account : Litigation Support</div>
           <div class="leftQrcode"><img src="../../assets/images/qrcode.png"></div>
         </div>
       </div>  
@@ -58,8 +59,8 @@
 </template>
 
 <script>
-import TopNavBlack from '@/components/common/TopNavBlack';
-import Bottom from '@/components/common/Bottom';
+import TopNavBlack from '@/components/common/TopNavBlackEng';
+import Bottom from '@/components/common/BottomEng';
 import store from '@/vuex/store';
 import {mapState} from 'vuex';
 import axios from 'axios';
@@ -157,24 +158,27 @@ export default {
   top: -89px;
 }
 .aboutImgBox{
-  width: 100px;
+  width: 160px;
   height: 60px;
   position: absolute;
   left: 50%;
   top: 40%;
-  margin-left: -50px;
+  margin-left: -80px;
 }
-.aboutChi{
-  width: 120px;
+.aboutChiPc{
+  width: 160px;
   height: 30px;
   text-align: center;
-  font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
+  display: block;
+}
+.aboutChiH5{
+  display: none;
 }
 .aboutEng{
-  width: 120px;
+  width: 160px;
   height: 22px;
   text-align: center;
   font-weight: bold;
@@ -298,14 +302,18 @@ export default {
     margin-left: -40px;
     padding-top: 35px;
   }
-  .aboutChi{
+  .aboutChiH5{
     width: 100px;
+    display: block;
     height: 24px;
     text-align: center;
   font-weight: bold;
-    color: #c49a6d;
+    color: #333;
     font-size: 18px;
     border-bottom: 1px solid #c49a6d;
+  }
+  .aboutChiPc{
+    display: none;
   }
   .aboutEng{
     width: 100px;

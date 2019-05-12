@@ -12,9 +12,6 @@ export default {
 // console.log($);
 </script>
 <style>
-  @import './assets/css/font.css';
-</style>
-<style>
 
 html,body,#app{
   margin: 0;
@@ -64,7 +61,6 @@ textarea{
 }
 .top{
   width: 100%;
-  font-family: 'Bold';
 }
 a{
   text-decoration: none;

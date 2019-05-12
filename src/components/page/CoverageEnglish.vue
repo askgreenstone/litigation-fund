@@ -9,40 +9,41 @@
       <img src="../../assets/images/banner2.png">
     </div>
     <div class="introduction">
-      <div class="introTitle">行业覆盖 地区辐射</div>
+      <div class="introTitlePc">COVERAGE</div>
+      <div class="introTitleH5">COVERAGE</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
         <span class="three"></span>
       </div>
-      <div class="introEng">COVERAGE</div>
+      <div class="introEng"></div>
     </div>
     <!-- 地球网络 -->
     <div class="net">
-      <img class="earth" src="../../assets/images/earth.png">
-      <img class="earthMobile" src="../../assets/images/earthMobile.png">
+      <img class="earth" src="../../assets/images/earthEnglish.png">
+      <img class="earthMobile" src="../../assets/images/earthMobileEnglish.png">
       <ul class="address1">
         <li>
-          <div class="addTop">最高人民法院六巡所在地</div>
-          <div class="addBottom">深圳、沈阳、郑州、南京、重庆、西安</div>
+          <div class="addTop">Regions of The Six Circuit Courts of Supreme People’s Court</div>
+          <div class="addBottom">Shenzhen, Shenyang, Zhengzhou, Nanjing, Chongqing, Xi ' an</div>
         </li>
         <li class="addressBox">
           <div class="addressLeft">
-            <div class="addTop">京津冀</div>
-            <div class="addBottom">北京、天津、河北(石家庄)</div>
+            <div class="addTop">Beijing-Tianjin-Hebei Region</div>
+            <div class="addBottom">Beijing, Tianjin, Hebei (Shijiazhuang)</div>
           </div>
           <div class="addressRight">
-            <div class="addTop">珠三角</div>
-            <div class="addBottom">广州、深圳、珠海</div>
+            <div class="addTop">The Pearl River Delta Region</div>
+            <div class="addBottom">Guangzhou, Shenzhen, Zhuhai</div>
           </div>
         </li>
         <li>
-          <div class="addTop">长三角</div>
-          <div class="addBottom">上海、江苏(南京、无锡、常州、苏州、南通)、浙江(杭州、宁波、舟山、温州)、安徽(合肥)</div>
+          <div class="addTop">Yangtze River Delta Region</div>
+          <div class="addBottom">Shanghai, Jiangsu (Nanjing, Wuxi, Changzhou, Suzhou, Nantong), Zhejiang (Hangzhou, Ningbo, Zhoushan, Wenzhou), Anhui (Hefei)</div>
         </li>
         <li>
-          <div class="addTop">其他地区</div>
-          <div class="addBottom">福建(厦门、福州)、江西(南昌)、湖南(长沙)、广西(南宁)、海南(海口)、四川(成都、重庆)、贵州(贵阳)、云南(昆明)、黑龙江(哈尔滨)、吉林(长春、吉林)、辽宁(大连、沈阳)、内蒙古(呼和浩特)、新疆(乌鲁木齐)、陕西(西安)、青海(西宁)、宁夏(银川)、河南(郑州)、山西(太原)、甘肃(兰州)、山东(济南、青岛)、湖北(武汉、黄石)、西藏(拉萨)、中国香港、中国台北</div>
+          <div class="addTop">Other Regions</div>
+          <div class="addBottom">Fujian (Xiamen, Fuzhou), Jiangxi (Nanchang), Hunan (Changsha), Guangxi (Nanning), Hainan (Haikou), Sichuan (Chengdu), Chongqing, Guizhou (Guiyang), Yunnan (Kunming), Heilongjiang (Harbin), Jilin (Changchun, Jilin), Liaoning (Dalian, Shenyang), Inner Mongolia (Hohhot), Xinjiang (Urumqi), Shaanxi (xi ' an), Gansu (Lanzhou), Qinghai (Xining), Ningxia (Yinchuan), Henan (Zhengzhou), Shanxi (Taiyuan), Shandong (Jinan, Qingdao), Hubei (Wuhan, Yellowstone), Tibet (Lhasa), Hong Kong, Taipei</div>
         </li>
       </ul>
     </div>
@@ -55,9 +56,9 @@
 </template>
 
 <script>
-import TopNavBlack from '@/components/common/TopNavBlack'
-import ApplyFunding from '@/components/common/ApplyFunding'
-import Bottom from '@/components/common/Bottom'
+import TopNavBlack from '@/components/common/TopNavBlackEng'
+import ApplyFunding from '@/components/common/ApplyFundingEng'
+import Bottom from '@/components/common/BottomEng'
 export default {
   name: 'AboutUs',
   data () {
@@ -106,11 +107,14 @@ export default {
   background: #333;
   padding-top: 25px;
 }
-.introTitle{
+.introTitlePc{
   color: #fff;
+  display: block;
   font-size: 21px;
-  font-weight: bold;
   color: #c49a6d;
+}
+.introTitleH5{
+  display: none;
 }
 .introLine{
   font-size: 0;
@@ -200,10 +204,14 @@ export default {
     background: #fff;
     padding-top: 25px;
   }
-  .introTitle{
-    color: #c49a6d;
+  .introTitleH5{
+    color: #333;
+    display: block;
     font-size: 18px;
     font-weight: bold;
+  }
+  .introTitlePc{
+    display: none;
   }
   .introLine{
     font-size: 0;
@@ -262,6 +270,9 @@ export default {
   }
   .addressBox{
     position: relative;
+  }
+  .addressLeft{
+    width: 50%;
   }
   .addressRight{
     left: 180px;

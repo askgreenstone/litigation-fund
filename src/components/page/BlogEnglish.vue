@@ -8,15 +8,16 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner4.png">
       <div class="aboutImgBox">
-        <div class="aboutChi">律石研究院</div>
-        <div class="aboutEng">LS INSTITUTE</div>
+        <div class="aboutChiPc">LS INSTITUTE</div>
+        <div class="aboutChiH5">LawStone Institute</div>
+        <div class="aboutEng"></div>
       </div>
     </div>
     <!-- 搜索框，新建按钮，团队介绍 -->
     <div class="searchBox">
       <div class="search">
-        <input type="text" name="search" class="searchInput" v-model="keyword" placeholder="请输入关键词" @input="searchClear">
-        <span class="searchBtn" @click="searchNews">搜索</span>
+        <input type="text" name="search" class="searchInput" v-model="keyword" placeholder="Key words…" @input="searchClear">
+        <span class="searchBtn" @click="searchNews">Search</span>
         <router-link tag="span" to="/Blog/BlogEdit" v-if="username" class="searchBtn">新建</router-link>
       </div>
     </div>
@@ -45,15 +46,15 @@
     </ul>
     <ol class="pageList">
       <li @click="gotoPre()"><a href="javascript:;">&lt;</a></li>
-      <li v-for="page in showPageBtn" :class="{'pageActive':page==pageIndex+1}">
+      <li v-for="page in showPageBtn" :class="{'pageActive':page==pageIndex+1}" :key="page">
         <a href="javascript:;" v-if="page" @click="gotoPage(page)">{{page}}</a>
         <a href="javascript:;" v-else>···</a>
       </li>
       <li @click="gotoNext()"><a href="javascript:;">&gt;</a></li>
     </ol>
     <div class="blogArticle">
-      <div class="title">律石诉讼资助</div>
-      <div class="content">诉讼资助的主要优势是不论当事方的财务状况如何，均可以通过外部资助启动司法救济程序，并且由资助方分担诉讼风险，使当事方能够将有限的流动资金集中在研发、生产等主营业务领域、创造更大产值，避免冗长的诉讼周期带来的资金、时间、精力上的损耗，并解决了当事人遴选律师团队的痛点、消除了代理人与被代理人之间的信任风险。</div>
+      <div class="title">LawStone Litigation Support</div>
+      <div class="content">The main advantage of litigation funding is that, regardless of the financial position of the parties, judicial relief can be reached through external funding, and the risk of litigation will be shared by the funders, so that the parties can concentrate their limited liquidity and resources in their main business areas such as research and development, production and marketing, thereby to create greater value and avoid consumption of limited capital, time and energies. It solves the pain point of attorney selection and mitigates the trust problem that might exist between the clients and the agents. </div>
     </div>
     <!-- 首页底部 -->
     <Bottom></Bottom>
@@ -63,8 +64,8 @@
 </template>
 
 <script>
-import TopNavBlack from '@/components/common/TopNavBlack';
-import Bottom from '@/components/common/Bottom';
+import TopNavBlack from '@/components/common/TopNavBlackEng';
+import Bottom from '@/components/common/BottomEng';
 import store from '@/vuex/store';
 import {mapState,mapMutations} from 'vuex';
 import axios from 'axios';
@@ -326,24 +327,26 @@ export default {
   top: -89px;
 }
 .aboutImgBox{
-  width: 120px;
+  width: 160px;
   height: 60px;
   position: absolute;
   left: 50%;
   top: 40%;
-  margin-left: -60px;
+  margin-left: -80px;
 }
-.aboutChi{
-  width: 120px;
+.aboutChiPc{
+  width: 160px;
   height: 30px;
   text-align: center;
   color: #fff;
-  font-weight: bold;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
 }
+.aboutChiH5{
+  display: none;
+}
 .aboutEng{
-  width: 120px;
+  width: 160px;
   height: 22px;
   text-align: center;
   font-weight: bold;
@@ -525,21 +528,25 @@ export default {
     top: -1px;
   }
   .aboutImgBox{
-    width: 120px;
+    width: 180px;
     height: 60px;
     position: absolute;
     left: 50%;
     top: 40%;
-    margin-left: -60px;
+    margin-left: -90px;
     top: 160px;
     padding-top: 50px;
   }
-  .aboutChi{
-    width: 120px;
+  .aboutChiPc{
+    display: none;
+  }
+  .aboutChiH5{
+    display: block;
+    width: 180px;
     height: 26px;
     text-align: center;
   font-weight: bold;
-    color: #c49a6d;
+    color: #333;
     font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }

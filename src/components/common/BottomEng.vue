@@ -5,15 +5,24 @@
       <li class="bottomListLogo">
         <div><img src="../../assets/images/logoBlank.png"></div>
         <div>
-          <span class="bottomListLogoTitle">平台免责声明：</span><br>
-          <span>网站所载的信息可能包含通过各种公开和非公开渠道所获取的内容，本网站不保证第三方内容的真实性、准确性、完整性、实时性、原创性等。基于前述信息而作的任何交易或决定，由您自行承担决策或决定的后果和责任。</span>
+          <span class="bottomListLogoTitle">Disclaimer of Liability</span><br>
+          <span>The information contained herein may have content obtained through various public and private channels, and this website does not guarantee the authenticity, accuracy, completeness, real-time or originality of the content resourced from third parties. Audiences shall bear any and all aftermath and liabilities on their own for transactions or decisions based on the foregoing information.</span>
         </div>
       </li>
-      <li class="bottomListTel">
+      <!-- pc -->
+      <li class="bottomListTel bottomListTelPc">
         <div>
-          <span class="bottomListContactUs">联系我们</span><br>
-          <span>电邮：business@green-stone.cn</span><br>
-          <span>微信公众号：诉讼资助</span>
+          <span class="bottomListContactUs">Contact Us</span><br>
+          <span>Email : business@green-stone.cn</span><br>
+          <span>WeChat Official Account : <br/>Litigation Support</span>
+        </div>
+      </li>
+      <!-- h5 -->
+      <li class="bottomListTel bottomListTelH5">
+        <div>
+          <span class="bottomListContactUs">Contact Us</span><br>
+          <span>Email :<br/> business@green-stone.cn</span><br>
+          <span>WeChat Official Account : <br/>Litigation Support</span>
         </div>
       </li>
       <li class="bottomListQrcode">
@@ -21,19 +30,19 @@
       </li>
     </ul>
     <ul class="topNavList">
-        <li @click="scrollTop">回到顶部</li>
-        <router-link to="/" tag="li" exact >首页</router-link>
-        <router-link to="/AboutUs" tag="li" exact >关于我们</router-link>
-        <router-link to="/Funding" tag="li" exact >我们的服务</router-link>
+        <li @click="scrollTop">Back to the top</li>
+        <router-link to="/Index-en" tag="li" exact >Home</router-link>
+        <router-link to="/AboutUs-en" tag="li" exact >About Us</router-link>
+        <router-link to="/Funding-en" tag="li" exact >Our Services</router-link>
         <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
-        <router-link to="/Coverage" tag="li" exact >专业网络</router-link>
-        <router-link to="/Blog" tag="li" >律石研究院</router-link>
-        <router-link to="/Scenarios" tag="li" exact >应用案例</router-link>
-        <router-link to="/Contact" tag="li" >联系我们</router-link>
-        <li @click="selectLanguage()">English</li>
+        <router-link to="/Coverage-en" tag="li" exact >National Network</router-link>
+        <router-link to="/Blog-en" tag="li" >LS Institute</router-link>
+        <router-link to="/Scenarios-en" tag="li" exact >Case Applications</router-link>
+        <router-link to="/Contact-en" tag="li" >Contact Us</router-link>
+        <li @click="selectLanguage()">中文</li>
       </ul>
     <div class="bottomLine"></div>
-    <div class="bottomText">2019 深圳律石资本有限公司 版权所有</div>
+    <div class="bottomText">2019 Shenzhen LawStone Capital Co., Ltd.  Copyright Reserved.</div>
   </div>
 </template>
 
@@ -111,6 +120,12 @@ export default {
   color: #cacaca;
   font-size: 13px;
 }
+.bottomListTelPc{
+  display: block;
+}
+.bottomListTelH5{
+  display: none;
+}
 .bottomListQrcode{
   width: 12%;
 }
@@ -178,6 +193,12 @@ export default {
     color: #cacaca;
     font-size: 13px;
     display: none;
+  }
+  .bottomListTelPc{
+    display: none;
+  }
+  .bottomListTelH5{
+    display: block;
   }
   .bottomListQrcode{
     width: 100px;

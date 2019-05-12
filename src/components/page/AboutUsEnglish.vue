@@ -8,75 +8,75 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
       <div class="aboutImgBox">
-        <div class="aboutChi">关于我们</div>
-        <div class="aboutEng">ABOUT US</div>
+        <div class="aboutChi">ABOUT US</div>
+        <div class="aboutEng"></div>
       </div>
       
     </div>
     <div class="litigation">
       <img class="litigationImg" src="../../assets/images/logo3.png">
-      <div class="paragraph2">关于律石</div>
+      <div class="paragraph2">About LawStone</div>
       <div class="paragraph1">
-        律石是由资深法律和专业人士组建成立的中国领先的诉讼资助服务机构。
+        LawStone is a leading litigation support service organization established by prominent legal and financial professionals
       </div>
       <div class="paragraph1">
-        我们在民商事诉讼、仲裁、执行、调解、破产重整和清算案件中集中优秀的法律专业资源，进行深度分析论证，制定诉讼策略，管理风控、流程，对案件涉及的诉讼费、律师费等提供资助服务。如案件胜诉或挽回损失，我们按照约定提取报酬收益；如案件败诉，资助费用由我们承担，有效化解当事人潜在的诉讼成本损失。
+        We converge outstanding legal professionals and resources in civil and commercial litigation, arbitration, enforcement, mediation, bankruptcy restructuring and liquidation matters, engage in-depth analyses and demonstrations, formulate litigation strategies, manage risk control process, and provide financial support upon litigation cost, attorney fees and relevant expenditures involved in dispute resolutions. If the case wins and the losses are restored, we withdraw a certain service fees from the proceeds in accordance with a previously agreed commission rate. If the case loses, we bear the expenses without recourse, thereby effectively resolve the potential loss of litigation cost for the parties.
       </div>
       <div class="paragraph1">
-        律石与律师事务所及专家顾问紧密合作，创新性地为民商事主体提供了更为灵活的费用安排和服务模式，降低经营风险和诉讼成本，为争端解决提升专业品质。
+        We work closely with law firms, experts and specialists to provide more flexible fee arrangements and an one-stop litigation service model in civil and commercial judicial matters, reduce operational risks and litigation costs, and enhance the qualities of legal service for individual and enterprise clients. 
       </div>
-      <div class="paragraph2">律石诉讼资助的优势</div>
+      <div class="paragraph2">Merits of LawStone Litigation Support</div>
       <div class="paragraph1">
-        对于企业法务或本地律师有局限的重大案件或项目，律石推荐和提供覆盖各地域、各专业、资深资源和能力过硬的危机处理团队。
-      </div>
-      <div class="paragraph1">
-        为困境当事人涉诉案件先期垫付律师费和诉讼费，实现法律成本和风险的管控和平衡。
+        For complex or intractable situations exceeding the calibers of the in-house or local lawyers, LawStone recommends and provides outstanding professional teams that cover various regions and specialties to resolve the problems.
       </div>
       <div class="paragraph1">
-        为案件办理注入相关专业资源优势，增加客户对诉讼的承压能力，防止不合理或过早让渡权益、被迫妥协。
+        Provide distressed clients with advanced attorney fees and litigation cost, achieving legal risk control and balance of financials.
       </div>
       <div class="paragraph1">
-        有利于企业与个人合理安排财务成本，加速应收账款回收，合理减少经济损失，确保有限的流动资金不被诉讼成本挤占，提升会计财务表现。
+        Inject leading professional expertise into dispute resolutions, increase the capacities of the clients under high pressures to prevent unnecessary or premature transfer of rights and interests, forced concessions or compromises. 
       </div>
       <div class="paragraph1">
-        有效转移企业面临的诉讼成本，优化律师团队选任，诉讼风险共担，提振纠纷解决的信任和信心。
+        Give leeway to the financial arrangements of individuals and enterprises, accelerate account receivable recoveries, minimize economic losses, and ensure that limited liquidity is not squeezed by litigation costs, so that to improve accounting and financial performance. 
+      </div>
+      <div class="paragraph1">
+        Effectively transfer litigation cost, optimize legal team composition, resolve litigation risks, and boost trust and confidence in dispute resolutions.
       </div>
       
-      <div class="paragraph2">顶级团队</div>
-      <div class="paragraph3">律石与一流的专家型律师、顾问合作，为客户提供一揽子诉讼法律事务解决方案：</div>
+      <div class="paragraph2">Top Professionals</div>
+      <div class="paragraph3">LawStone works closely with leading experts, lawyers and specialists to provide clients with a packaged solution of litigation affairs.</div>
       <div class="paragraph4">
         <ul>
-          <li><i>-  </i><span>资深诉讼律师</span></li>
-          <li><i>-  </i><span>律所专业部门负责人</span></li>
-          <li><i>-  </i><span>公司法务总监</span></li>
-          <li><i>-  </i><span>离职司法工作人员</span></li>
-          <li><i>-  </i><span>国际仲裁专家律师</span></li>
-          <li><i>-  </i><span>破产重整/清算专业团队</span></li>
+          <li><i>-  </i><span>Senior litigation lawyers</span></li>
+          <li><i>-  </i><span>Heads of law firm litigation departments</span></li>
+          <li><i>-  </i><span>In-house, general counsels</span></li>
+          <li><i>-  </i><span>Former judicial staff</span></li>
+          <li><i>-  </i><span>Solicitors of international arbitration</span></li>
+          <li><i>-  </i><span>Bankruptcy, reorganization and liquidation specialists</span></li>
         </ul>
         <ul>
-          <li><i>-  </i><span>法学专家、知名高校教授</span></li>
-          <li><i>-  </i><span>投行、金融资深人士</span></li>
-          <li><i>-  </i><span>财会/税务专业团队</span></li>
-          <li><i>-  </i><span>领先的知识产权、海事海商、建筑工程、矿业能源、文化传媒、环境保护、医疗健康、反垄断、侵权赔偿等各专业领域的学科带头律师和顾问</span></li>
+          <li><i>-  </i><span>Legal experts, famed professors</span></li>
+          <li><i>-  </i><span>Investment bankers, senior financial professionals</span></li>
+          <li><i>-  </i><span>Accounting, tax experts</span></li>
+          <li><i>-  </i><span>Leading lawyers and counsels in the fields of intellectual property, maritime and marine, infrastructure and construction, mining and energy, media, environment, medical and health, tort and compensation, etc.</span></li>
         </ul>
       </div>
       <div class="paragraph1 paragraph7">
-        律石根植于中国蓬勃生长的法律服务市场，致力成为国际领先的诉讼资助和服务提供商。我们以响应客户需求为第一要旨，所提供的不仅是费用垫资。我们对案件项目详细分析、深入调查、专业评判，为客户带来深度、创新解决方案，平衡司法救济成本，提供法律风险管控和顾问咨询。专业引领，成就赢家！
+        Rooted in China's booming legal services market, LawStone is committed to be a leading litigation support and service provider in the global market place. We respond to clients’ needs at the first place and take the same as our tenet, what we provide is not limited to case funding. We carry out in-depth investigations, detailed analyses and insight evaluations of cases and projects, bring up specialized and innovative solutions to our clients, help to balance the cost of judicial relief, advise on risk control and legal process. Professionals Lead to Win. 
       </div>
       
-      <div class="paragraph5" style="display:none">诉讼垫资项目包括但不局限于：</div>
+      <div class="paragraph5" style="display:none">Items of LawStone Litigation Support include without limitation: </div>
       <div class="paragraph4" style="display:none">
         <ul>
-          <li><i>-  </i><span>律师费</span></li>
-          <li><i>-  </i><span>诉讼费、仲裁申请费、保全费</span></li>
-          <li><i>-  </i><span>司法鉴定费、专家证人费</span></li>
-          <li><i>-  </i><span>公证费</span></li>
-          <li><i>-  </i><span>审计费、评估费、拍卖费等</span></li>
+          <li><i>-  </i><span>Lawyers Fee</span></li>
+          <li><i>-  </i><span>Litigation Cost, Preservation Fee </span></li>
+          <li><i>-  </i><span>Arbitration Fee</span></li>
+          <li><i>-  </i><span>Notary Fee</span></li>
+          <li><i>-  </i><span>Audit Charges</span></li>
         </ul>
       </div>
       <div class="paragraph6">
-        <div class="more">更多资料请下载宣传册查看</div>
-        <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">律石诉讼资助宣传册</a>
+        <div class="more">More information, please download LawStone </div>
+        <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">Download</a>
       </div>
     </div>
     <!-- 申请资助 -->
@@ -89,9 +89,9 @@
 </template>
 
 <script>
-import TopNavBlack from '@/components/common/TopNavBlack'
-import ApplyFunding from '@/components/common/ApplyFunding'
-import Bottom from '@/components/common/Bottom'
+import TopNavBlack from '@/components/common/TopNavBlackEng'
+import ApplyFunding from '@/components/common/ApplyFundingEng'
+import Bottom from '@/components/common/BottomEng'
 export default {
   name: 'AboutUs',
   data () {
@@ -150,7 +150,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-    font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -236,7 +235,7 @@ export default {
 }
 .download{
   display: block;
-  width: 186px;
+  width: 100px;
   height: 26px;
   text-align: center;
   line-height: 26px;

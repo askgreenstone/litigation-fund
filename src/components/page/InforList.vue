@@ -233,7 +233,6 @@ export default {
   width: 100px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -242,7 +241,6 @@ export default {
   width: 100px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -257,7 +255,6 @@ export default {
   height: 51px;
   line-height: 51px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin-bottom: 30px;
@@ -281,7 +278,6 @@ export default {
   width: 800px;
 }
 .infoListName{
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 18px;
   width: 50%;
@@ -289,7 +285,6 @@ export default {
   line-height: 30px;
 }
 .infoListNameRead{
-  font-family: 'Medium';
   color: #333;
   font-size: 18px;
   width: 50%;
@@ -297,7 +292,6 @@ export default {
   line-height: 30px;
 }
 .infoListTime{
-  font-family: 'Normal';
   color: #808080;
   font-size: 15px;
   display: inline-block;
@@ -306,7 +300,6 @@ export default {
   line-height: 30px;
 }
 .infoListContent{
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 24px;
@@ -320,7 +313,6 @@ export default {
   position: absolute;
   bottom: 20px;
   right: 0;
-  font-family: 'Normal';
   color: #f00;
   font-size: 15px;
   cursor: pointer;
@@ -345,7 +337,6 @@ export default {
   height: 25px;
   line-height: 25px;
   display: block;
-  font-family: 'Regular';
   color: #4d4d4d;
   font-size: 14px;
 }
@@ -354,7 +345,6 @@ export default {
   background: #c49a6d;
 }
 .pageList li.pageActive a{
-  font-family: 'Normal';
   color: #fff;
   font-size: 14px;
 }
@@ -388,7 +378,6 @@ export default {
   width: 100px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -397,7 +386,6 @@ export default {
   width: 100px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -412,7 +400,6 @@ export default {
   height: 51px;
   line-height: 51px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin-bottom: 30px;
@@ -436,7 +423,6 @@ export default {
   width: 800px;
 }
 .infoListName{
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 18px;
   width: 50%;
@@ -444,7 +430,6 @@ export default {
   line-height: 30px;
 }
 .infoListNameRead{
-  font-family: 'Medium';
   color: #333;
   font-size: 18px;
   width: 50%;
@@ -452,7 +437,6 @@ export default {
   line-height: 30px;
 }
 .infoListTime{
-  font-family: 'Normal';
   color: #808080;
   font-size: 15px;
   display: inline-block;
@@ -461,7 +445,6 @@ export default {
   line-height: 30px;
 }
 .infoListContent{
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 24px;
@@ -475,7 +458,6 @@ export default {
   position: absolute;
   bottom: 20px;
   right: 0;
-  font-family: 'Normal';
   color: #f00;
   font-size: 15px;
   cursor: pointer;
@@ -500,7 +482,6 @@ export default {
   height: 25px;
   line-height: 25px;
   display: block;
-  font-family: 'Regular';
   color: #4d4d4d;
   font-size: 14px;
 }
@@ -509,7 +490,6 @@ export default {
   background: #c49a6d;
 }
 .pageList li.pageActive a{
-  font-family: 'Normal';
   color: #fff;
   font-size: 14px;
 }

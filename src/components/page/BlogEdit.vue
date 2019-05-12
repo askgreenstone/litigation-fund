@@ -309,7 +309,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -318,7 +317,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -336,7 +334,6 @@ export default {
   width: 100%;
   height: 40px;
   line-height: 40px;
-  font-family: 'Medium';
   color: #4d4d4d;
   font-size: 18px;
   margin:25px 0 15px;
@@ -367,7 +364,6 @@ export default {
   border: 1px solid #4d4d4d;
   line-height: 30px;
   text-align: center;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 15px;
   border-radius: 3px;
@@ -393,7 +389,6 @@ export default {
   border: 1px solid #c49a6d;
   line-height: 30px;
   text-align: center;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 15px;
   border-radius: 3px;
@@ -412,7 +407,6 @@ export default {
   border: none;
   outline: none;
   text-indent: 15px;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
   height: 26px;
@@ -429,7 +423,6 @@ export default {
   text-decoration: underline;
   padding-left: 20px;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   position: relative;
@@ -448,7 +441,6 @@ export default {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   background: #e4e4e4;
@@ -467,7 +459,6 @@ export default {
   line-height: 30px;
   display: block;
   margin-right: 45px;
-  font-family: 'Normal';
   color: #333;
   font-size: 13px;
 }
@@ -475,7 +466,6 @@ export default {
   height: 30px;
   line-height: 30px;
   display: block;
-  font-family: 'Normal';
   color: #333;
   font-size: 13px;
   cursor: pointer;
@@ -494,7 +484,6 @@ export default {
   resize: none;
   outline: none;
   text-indent: 28px;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
   line-height: 26px;
@@ -506,7 +495,6 @@ export default {
   border: 1px solid #c49a6d;
   line-height: 30px;
   text-align: center;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 15px;
   border-radius: 3px;
@@ -543,7 +531,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -552,7 +539,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -570,7 +556,6 @@ export default {
   width: 100%;
   height: 40px;
   line-height: 40px;
-  font-family: 'Medium';
   color: #4d4d4d;
   font-size: 18px;
   margin:25px 0 15px;
@@ -601,7 +586,6 @@ export default {
   border: 1px solid #4d4d4d;
   line-height: 30px;
   text-align: center;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 15px;
   border-radius: 3px;
@@ -627,7 +611,6 @@ export default {
   border: 1px solid #c49a6d;
   line-height: 30px;
   text-align: center;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 15px;
   border-radius: 3px;
@@ -646,7 +629,6 @@ export default {
   border: none;
   outline: none;
   text-indent: 15px;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
   height: 26px;
@@ -663,7 +645,6 @@ export default {
   text-decoration: underline;
   padding-left: 20px;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   position: relative;
@@ -682,7 +663,6 @@ export default {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   background: #e4e4e4;
@@ -701,7 +681,6 @@ export default {
   line-height: 30px;
   display: block;
   margin-right: 45px;
-  font-family: 'Normal';
   color: #333;
   font-size: 13px;
 }
@@ -709,7 +688,6 @@ export default {
   height: 30px;
   line-height: 30px;
   display: block;
-  font-family: 'Normal';
   color: #333;
   font-size: 13px;
   cursor: pointer;
@@ -728,7 +706,6 @@ export default {
   resize: none;
   outline: none;
   text-indent: 28px;
-  font-family: 'Normal';
   color: #4d4d4d;
   font-size: 14px;
   line-height: 26px;
@@ -740,7 +717,6 @@ export default {
   border: 1px solid #c49a6d;
   line-height: 30px;
   text-align: center;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 15px;
   border-radius: 3px;

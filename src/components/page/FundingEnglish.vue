@@ -8,8 +8,9 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner3.png">
       <div class="aboutImgBox">
-        <div class="aboutChi">诉讼资助</div>
-        <div class="aboutEng">LITIGATION SUPPORT</div>
+        <div class="aboutChiPc">LITIGATION SUPPORT</div>
+        <div class="aboutChiH5">LawStone Litigation Support</div>
+        <div class="aboutEng"></div>
       </div>
       
     </div>
@@ -17,90 +18,92 @@
       <div class="litigationPcBox1">
         <div class="litigationPcBoxLeft">
           <img src="../../assets/images/pcLitigation1.png">
-          <span>垫付费用</span>
+          <span>Items for Litigation Funding</span>
         </div>
         <div class="litigationPcBoxCenter">
           <img src="../../assets/images/pcLitigation3.png">
         </div>
         <div class="litigationPcBoxRight">
-          <span>律师费</span>
-          <span>诉讼费、保全费</span>
-          <span>仲裁费</span>
-          <span>公证费</span>
-          <span>审计费</span>
-          <span>评估费、拍卖费</span>
-          <span>破产管理人报酬</span>
-          <span>破产管理人执行职务费用</span>
-          <span>司法鉴定费、专家证人费</span>
+          <span>Lawyers Fee</span>
+          <span>Litigation Cost, Preservation Fee</span>
+          <span>Arbitration Fee</span>
+          <span>Notary Fee</span>
+          <span>Audit Charges</span>
+          <span>Assessment Fee, Auction Fee</span>
+          <span>Bankruptcy Administrator Remunerations</span>
+          <span>Insolvency Administrator Compensations</span>
+          <span>Judicial Appraisal fee, Expert Witness Fee, etc.</span>
         </div>
       </div>
       <div class="litigationPcBox1">
         <div class="litigationPcBoxLeft">
           <img src="../../assets/images/pcLitigation2.png">
-          <span>案件类型</span>
+          <span>Case Types</span>
         </div>
         <div class="litigationPcBoxCenter">
           <img src="../../assets/images/pcLitigation3.png">
         </div>
         <div class="litigationPcBoxRight">
-          <span>商务合同</span>
-          <span>民商事纠纷</span>
-          <span>版权、商标、专利</span>
-          <span>环境保护</span>
-          <span>破产重整与清算</span>
-          <span>违反忠实义务</span>
-          <span>司法强制执行</span>
-          <span>侵权赔偿</span>
-          <span>国内和国际仲裁</span>
+          <span>Commercial Contracts</span>
+          <span>Civil and Commercial Disputes</span>
+          <span>Copyright, Trademark, Patent</span>
+          <span>Environmental Protection</span>
+          <span>Bankruptcy, Reorganization and Liquidation</span>
+          <span>Violation of Fiduciary Duty</span>
+          <span>Judicial Enforcement</span>
+          <span>Tort and Compensation</span>
+          <span>Domestic and International Arbitration</span>
         </div>
       </div>
     </div>
     <!-- 移动端案例列表 -->
     <ul class="caseListMobile">
       <li>
-          <div class="caseTitle">垫付费用</div>
+          <div class="caseTitle">Items for Litigation Funding</div>
           <img src="../../assets/images/caseImg.png">
-          <div class="caseContent">律师费、诉讼费、保全费、仲裁费、公证费、审计费、评估费、拍卖费、破产管理人报酬、破产管理人执行职务费用、司法鉴定费、专家证人费</div>
+          <div class="caseContent">Lawyers Fee,Litigation Cost, Preservation Fee,Arbitration Fee,Notary Fee,Audit Charges,Assessment Fee, Auction Fee,Bankruptcy Administrator Remunerations,Insolvency Administrator Compensations,Judicial Appraisal fee, Expert Witness Fee, etc.</div>
       </li>
       <li>
-          <div class="caseTitle">案件类型</div>
+          <div class="caseTitle">Case Types</div>
           <img src="../../assets/images/caseImg.png">
-          <div class="caseContent">商务合同、民商事纠纷、版权、商标、专利、信贷、资管、投融资、环境保护、破产重整与清算、违反忠实义务、司法强制执行、侵权赔偿、国内和国际仲裁</div>
+          <div class="caseContent">Commercial Contracts,Civil and Commercial Disputes,Copyright, Trademark, Patent,Environmental Protection,Bankruptcy, Reorganization and Liquidation,Violation of Fiduciary Duty,Judicial Enforcement,Tort and Compensation,Domestic and International Arbitration.</div>
       </li>
     </ul>
     <!-- 资助阶段 -->
+    <!-- h5 -->
     <div class="introduction introduction2">
-        <div class="introTitle">资助阶段</div>
+        <div class="introTitle">Litigation Phases</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">LITIGATION PHASES</div>
-      </div>
+        <div class="introEng"></div>
+    </div>
+    <!-- pc -->
     <div class="funding">
       <!-- <img src="../../assets/images/lightBg.png"> -->
       <div class="introduction">
-        <div class="introTitle">资助阶段</div>
+        <div class="introTitle">LITIGATION PHASES</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">LITIGATION PHASES</div>
+        <div class="introEng"></div>
       </div>
       <ul class="phase">
         <li class="phaseLine">————</li>
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase1.png"></li>
-            <li class="phaseTextActive">诉讼</li>
+            <li class="phaseTextActive">Litigations</li>
             <li>
-              <div class="phaseImgBig">诉讼</div>
+              <div class="phaseImgBig">Litigations</div>
               <div class="phaseImgSmall">
-                <span>一审</span><br>
-                <span>二审</span><br>
-                <span>再审</span>
+                <span>First instance</span><br>
+                <span>Second instance</span><br>
+                <span>Appeal and Retrial</span>
               </div>
             </li>
           </ul>
@@ -109,12 +112,11 @@
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase2.png"></li>
-            <li class="phaseTextActive">仲裁</li>
+            <li class="phaseTextActive">Arbitration</li>
             <li>
-              <div class="phaseImgBig">仲裁</div>
+              <div class="phaseImgBig">Arbitration</div>
               <div class="phaseImgSmall">
-                <span>国内</span><br>
-                <span>国际</span>
+                <span>domestic and international</span>
               </div>
             </li>
           </ul>
@@ -123,13 +125,11 @@
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase3.png"></li>
-            <li class="phaseTextActive">保全与执行</li>
+            <li class="phaseTextActive">Preservation and Enforcement</li>
             <li>
-              <div class="phaseImgBig">保全与执行</div>
+              <div class="phaseImgBig">Preservation and Enforcement</div>
               <div class="phaseImgSmall">
-                <span>公证债权文书执行</span><br>
-                <span>裁判文书执行</span><br>
-                <span>其他生效法律文书执行</span>
+                <span>Notarized Instrument of Creditor's Rights, Adjudicatory Instruments, Legal Instruments in Force</span>
               </div>
             </li>
           </ul>
@@ -138,14 +138,14 @@
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase4.png"></li>
-            <li class="phaseTextActive">破产重组与清算</li>
+            <li class="phaseTextActive">Bankruptcy and Liquidation</li>
             <li>
-              <div class="phaseImgBig">破产重组与清算</div>
+              <div class="phaseImgBig">Bankruptcy and Liquidation</div>
               <div class="phaseImgSmall">
-                <span>债务重组</span><br>
-                <span>破产重整</span><br>
-                <span>破产和解</span><br>
-                <span>破产清算</span>
+                <span>Debt Restructuring</span><br>
+                <span>Reorganization</span><br>
+                <span>Debt Settlement</span><br>
+                <span>Liquidation</span>
               </div>
             </li>
           </ul>
@@ -155,17 +155,17 @@
     </div>
     <!-- 风险告知 -->
     <div class="introduction introduction3">
-        <div class="introTitle">风险告知</div>
+        <div class="introTitle">RISK DISCLOSURE</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
           <span class="three"></span>
         </div>
-        <div class="introEng">RISK DISCLOSURE</div>
+        <div class="introEng"></div>
       </div>
     <div class="youKnow">
       <div class="youKnowBox">
-        诉讼有败诉、对方当事人持有未知证据、难以执行回款等潜在风险。律石所提供的服务不能改变案件的基本事实、证据情况或对方当事人的偿付能力。通过与律师、律所及专业人士紧密合作，律石向客户提供最佳诉讼策略安排及案件费用垫资，但不就案件的审理或执行结果提供任何承诺或保证。
+        There exist intrinsic risks in legal actions, such as losing the case, unknown evidence, obstruction of law enforcement, termination or liquidation of the other parties, etc. The services provided by LawStone cannot alter the basic facts, the evidence, or the solvency of the other parties. By working closely with leading attorneys, law firms and professionals, LawStone provides clients with optimized litigation strategies and flexible fee arrangements, while under no circumstances offer any commitments or warranties as to the outcomes of the cases or the execution results of the recourses.  
       </div>
     </div>
     <!-- 申请资助 -->
@@ -178,9 +178,9 @@
 </template>
 
 <script>
-import TopNavBlack from '@/components/common/TopNavBlack'
-import ApplyFunding from '@/components/common/ApplyFunding'
-import Bottom from '@/components/common/Bottom'
+import TopNavBlack from '@/components/common/TopNavBlackEng'
+import ApplyFunding from '@/components/common/ApplyFundingEng'
+import Bottom from '@/components/common/BottomEng'
 export default {
   name: 'AboutUs',
   data () {
@@ -222,21 +222,24 @@ export default {
   top: -89px;
 }
 .aboutImgBox{
-  width: 190px;
+  width: 250px;
   height: 60px;
   position: absolute;
   left: 50%;
   top: 40%;
-  margin-left: -90px;
+  margin-left: -125px;
 }
-.aboutChi{
-  width: 190px;
+.aboutChiPc{
+  width: 250px;
+  display: block;
   height: 30px;
   text-align: center;
-    font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
+}
+.aboutChiH5{
+  display: none;
 }
 .aboutEng{
   width: 190px;
@@ -263,12 +266,11 @@ export default {
   display: none;
 }
 .introduction3 .introLine span.two{
-  width: 150px;
+  width: 200px;
 }
 .introTitle{
   color: #c49a6d;
   font-size: 21px;
-  font-weight: bold;
 }
 .introLine{
   font-size: 0;
@@ -282,7 +284,7 @@ export default {
   margin-right: 10px;
 }
 .introLine span.two{
-  width: 180px;
+  width: 220px;
 }
 .introLine span.three{
   margin-right: 0;
@@ -386,7 +388,8 @@ export default {
   margin-bottom: 20px;
 }
 .litigationPcBoxLeft span{
-  width: 70px;
+  width: 76px;
+  margin-left: -3px;
   display: block;
   font-size: 14px;
   color: #c49a6d;
@@ -407,6 +410,7 @@ export default {
 .litigationPcBoxRight span{
   display: block;
   margin-bottom: 15px;
+  font-size: 14px;
 }
 .caseListMobile{
   display: none;
@@ -445,22 +449,26 @@ export default {
     top: -1px;
   }
   .aboutImgBox{
-    width: 180px;
+    width: 270px;
     height: 60px;
     position: absolute;
     left: 50%;
     top: 160px;
-    margin-left: -90px;
+    margin-left: -135px;
     padding-top: 35px;
   }
-  .aboutChi{
-    width: 180px;
+  .aboutChiH5{
+    width: 270px;
+    display: block;
     height: 30px;
     text-align: center;
     font-weight: bold;
-    color: #c49a6d;
+    color: #333;
     font-size: 18px;
     border-bottom: 1px solid #c49a6d;
+  }
+  .aboutChiPc{
+    display: none;
   }
   .aboutEng{
     width: 180px;
@@ -489,7 +497,7 @@ export default {
     display: block;
   }
   .introTitle{
-    color: #c49a6d;
+    color: #333;
     font-weight: bold;
     font-size: 22px;
   }
@@ -572,10 +580,9 @@ export default {
     margin-bottom: 20px;
   }
   .phaseTextActive{
-    color: #c49a6d;
+    color: #333;
     font-size: 15px;
     margin-bottom: 10px;
-    display: none;
   }
   .phaseImgBig{
     color: #000;
@@ -587,6 +594,7 @@ export default {
     font-size: 12px;
     line-height: 1.5;
     margin-top: 5px;
+    margin-bottom: 10px;
   }
   .litigationPcBox{
     display: none;
@@ -601,7 +609,7 @@ export default {
   .caseListMobile .caseTitle{
     margin-bottom: 5px;
     text-indent: 30px;
-    color: #333;
+    color: #c49a6d;
     font-weight: bold;
   }
   .caseListMobile img{
