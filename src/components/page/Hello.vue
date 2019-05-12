@@ -18,7 +18,7 @@
         <img src="../../assets/images/bannerRight.png"/>               
       </div>
       <ul class="dots">
-        <li v-for="(dot, index) in imgData" :key="index" :class="{dotted: index ===  mark}"      @click = "change(index)">
+        <li v-for="(dot, index) in imgData" :key="index" :class="{dotted: index ===  mark}"  data-swiper-autoplay="15000"    @click = "change(index)">
         </li>
       </ul>
     </div> -->
@@ -99,7 +99,7 @@
           <img src="../../assets/images/litigation.png" >
           <div class="lawyerTitle">诉讼垫资</div>
           <div class="lawyerBox lawyerBox1">
-            <span>垫付诉讼费、律师费、保全费、评估费、鉴定费、审计费...</span>
+            <span>垫付诉讼费、律师费<br/>、保全费、评估费、<br/>鉴定费、审计费...</span>
           </div>
           <div class="lawyerBox lawyerBox2">
             <span>垫付诉讼费、律师费<br/>、保全费、评估费、<br/>鉴定费、审计费...</span>
@@ -119,7 +119,38 @@
         <div class="introEng">COOPERATION PROCEDURES</div>
       </div>
       <div class="introListBox1">
-        <img src="../../assets/images/support1.png">
+        <ul>
+          <li>
+            <img class="img" src="../../assets/images/hello1.png"/>
+            <span>案情介绍</span>
+            <i>当事人、代理人介绍案情、提供证据资料</i>
+          </li>
+          <li><img class="line" src="../../assets/images/hello6.png"/></li>
+           <li>
+            <img class="img" src="../../assets/images/hello2.png"/>
+            <span>调查论证</span>
+            <i>律石对案件资料进行必要的前期调查和分析</i>
+          </li>
+          <li><img class="line line2" src="../../assets/images/hello6.png"/></li>
+           <li>
+            <img class="img" src="../../assets/images/hello3.png"/>
+            <span>风险评估</span>
+            <i>相关领域、所在地区的专家型律师评审通过案件合作</i>
+          </li>
+          <li><img class="line line3" src="../../assets/images/hello6.png"/></li>
+           <li>
+            <img class="img" src="../../assets/images/hello4.png"/>
+            <span>诉讼垫资</span>
+            <i>订立协议、提起诉讼<br/>，启动法律程序维权</i>
+          </li>
+          <li><img class="line line4" src="../../assets/images/hello6.png"/></li>
+           <li>
+            <img class="img" src="../../assets/images/hello5.png"/>
+            <span>胜诉汇款</span>
+            <i>一审、二审、和解、执行，案件回款时按照约定比例分配</i>
+          </li>
+        </ul>
+        
       </div>
       <div class="introListBox2">
         <img src="../../assets/images/support21.png">
@@ -190,7 +221,10 @@ export default {
       // 设置轮播图盒子高度
       // document.getElementById('#window').style.height = imgHeight+'px';
       let mySwiper = new Swiper('.swiper-container', {
-        autoplay: true,//可选选项，自动滑动
+        speed:300,
+        autoplay : {
+          delay:6000
+        },
         //分页器
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -469,9 +503,63 @@ export default {
 .introListBox1{
   width: 100%;
   position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url('../../assets/images/lightBg.png') no-repeat;
+  background-size: 100%;
 }
-.introListBox1 img{
-  width: 100%;
+.introListBox1 ul{
+  width: 810px;
+  margin: 0 auto;
+  display: flex;
+}
+.introListBox1 li{
+  // width: 90px;
+}
+.introListBox1 li .img{
+  height: 180px;
+  display: block;
+}
+.introListBox1 li .line{
+  width: 120px;
+  margin-left:  -40px;
+  margin-right: -15px;
+  margin-top: 170px;
+  display: block;
+}
+.introListBox1 li .line2{
+  margin-left:  -71px;
+  margin-right: -28px;
+}
+.introListBox1 li .line3{
+  margin-left:  -61px;
+  margin-right: -9px;
+}
+.introListBox1 li .line4{
+  margin-left:  -39px;
+  margin-right: -15px;
+}
+.introListBox1 li span{
+  width: 90px;
+  display: block;
+  color: #c49a6d;
+  text-align: center;
+  font-size: 18px;
+  font-family: Regular;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.introListBox1 li i{
+  font-style: normal;
+  width: 120px;
+  margin-left: -15px;
+  display: block;
+  color: #333;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  line-height: 21px;
+  font-family: Regular;
 }
 .introListBox1 .introListBox1List{
   width: 58%;

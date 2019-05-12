@@ -16,19 +16,52 @@
     <!-- 案例列表 -->
     <ul class="caseList">
       <li>
-        <img class="imgFirst" src="../../assets/images/case11.png">
+        <div class="caseListBox">
+          <div class="caseListBoxLeft">
+            <img class="imgFirst" src="../../assets/images/case01.jpg">
+          </div>
+          <div class="caseListBoxRight">
+            <div class="caseListBoxRightTitle">公司法 – 股东出资</div>
+            <div class="caseListBoxRightContent">某规模企业因投资在建工程陷入财务困境，需要对外清偿债务、资金周转困难。经查该企业历史情况复杂，前几届股东有巨额出资，后滚动撤资或安排交易转移，涉及大量调查取证和跨时间、跨地域交叉法律关系。律石诉讼资助为现有股东和公司提供了一揽子解决方案，由涉案所在地律师团队无缝隙对接，垫资启动司法救济，向原股东追索出资款和挪用资金，盘活了企业周转。</div>
+          </div>
+        </div>
         <img src="../../assets/images/case55.png">
       </li>
       <li>
-        <img class="imgFirst" src="../../assets/images/case22.png">
+        <div class="caseListBox">
+          <div class="caseListBoxLeft">
+            <img class="imgFirst" src="../../assets/images/case02.jpg">
+          </div>
+          <div class="caseListBoxRight">
+            <div class="caseListBoxRightTitle">知识产权 – 侵权与抗辩</div>
+            <div class="caseListBoxRightContent">某创业公司被诉核心技术知识产权侵权，而公司正处于融资和市场攻坚阶段，时间和成本、专业资源均难以应对。律石邀请资深专业知识产权律师分析和研判案情，为创始人安排了一应成本垫资及办案团队，使得创业公司得以集中有限的资源专注于业绩、市场、运营和融资谈判。诉讼中，律师代理创业公司成功抗辩、提起反诉并赢得赔偿。</div>
+          </div>
+        </div>
         <img src="../../assets/images/case55.png">
       </li>
       <li>
-        <img class="imgFirst" src="../../assets/images/case33.png">
+        <div class="caseListBox">
+          <div class="caseListBoxLeft">
+            <img class="imgFirst" src="../../assets/images/case03.jpg">
+          </div>
+          <div class="caseListBoxRight">
+            <div class="caseListBoxRightTitle">资本市场 – 股权纷争</div>
+            <div class="caseListBoxRightContent">某上市公司创始人猝然离世，所持控股股权在子女、管理层及数个期权平台实体间陷入纷争，非内部人一方被排除在股东会、董事会及公司经营之外，寻求律石诉讼资助。律石邀请公司法和资本市场专家型律师清理了该案前期创始人股东潜在的对赌、代持、低价转股承诺等风险，明晰和落实了法定继承股份权益及其证明文件，与现有管理层和意向投资方多方谈判，为客户实现二级市场解封变现退出。</div>
+          </div>
+        </div>
         <img src="../../assets/images/case55.png">
       </li>
       <li>
-        <img class="imgFirst" src="../../assets/images/case44.png">
+        <div class="caseListBox">
+          <div class="caseListBoxLeft">
+            <img class="imgFirst" src="../../assets/images/case04.jpg">
+          </div>
+          <div class="caseListBoxRight">
+            <div class="caseListBoxRightTitle">债务重组 – 破产重整</div>
+            <div class="caseListBoxRightContent">某矿业集团企业资产负债率高企，现金流无力支撑银行利息和财务费用，金融债权人组成债委会对其进行债务重组，谈判久拖不决。律石诉讼资助安排国内顶尖的重组专家团队介入后，为集团核心资产某大型露天煤矿提供了司法破产重整的解决方案，并根据最高人民法院相关规定垫付了管理人报酬和管理人执行职务费用。六个月后，重整计划经各类债权人表决通过执行，企业脱困重生。</div>
+          </div>
+        </div>
+        <img src="../../assets/images/case55.png">
       </li>
     </ul>
     <!-- 移动端案例列表 -->
@@ -137,7 +170,7 @@ export default {
 }
 /*案例列表*/
 .caseList{
-  width: 1200px;
+  width: 900px;
   height: auto;
   margin: 0 auto;
   padding-top: 50px;
@@ -147,6 +180,32 @@ export default {
   // display: flex;
   // border-bottom: 1px solid #ccc;
   margin-bottom: 30px;
+}
+.caseList li .caseListBox{
+  width: 100%;
+  display: flex;
+}
+.caseListBoxLeft{
+  width: 215px;
+  margin-right: 20px;
+}
+.caseListBoxLeft img{
+  // width: 100%;
+  display: block;
+  
+}
+.caseListBoxRight{
+  flex: 1;
+}
+.caseListBoxRight .caseListBoxRightTitle{
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 12px;
+  margin-bottom: 20px;
+}
+.caseListBoxRight .caseListBoxRightContent{
+  font-size: 14px;
+  line-height: 28px;
 }
 .caseList li .imgFirst{
   margin-bottom: 20px;
