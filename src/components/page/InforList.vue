@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 信息列表图片 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
@@ -134,7 +134,7 @@ export default {
       // ”ddesc”: 需求描述    string  
       // ”dReply”: 是否已回复  0 否  1 是    int
       // console.log(that);
-      axios.get(common.globalUrl+'exp/QuerylfDemand.do?page='+page+'&count=5')
+      axios.get(common.globalUrl+'/exp/QuerylfDemand.do?page='+page+'&count=5')
       .then(function (response) {
         // console.log(response.data);
         that.commandList = response.data.lfdl;
@@ -155,7 +155,7 @@ export default {
       var that = this;
       var confirm = window.confirm('确定要删除么？');
       if(confirm){
-        axios.post(common.globalUrl+'exp/DellfDemand.do',{
+        axios.post(common.globalUrl+'/exp/DellfDemand.do',{
           "lfdid": lfdid
         })
         .then(function(response){
@@ -204,6 +204,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*联系我们图片*/
 .aboutImg{
   width: 100%;
@@ -227,7 +233,6 @@ export default {
   width: 100px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -236,7 +241,6 @@ export default {
   width: 100px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -251,7 +255,6 @@ export default {
   height: 51px;
   line-height: 51px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Normal';
   color: #333;
   font-size: 16px;
   margin-bottom: 30px;
@@ -275,7 +278,6 @@ export default {
   width: 800px;
 }
 .infoListName{
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 18px;
   width: 50%;
@@ -283,7 +285,6 @@ export default {
   line-height: 30px;
 }
 .infoListNameRead{
-  font-family: 'Medium';
   color: #333;
   font-size: 18px;
   width: 50%;
@@ -291,7 +292,6 @@ export default {
   line-height: 30px;
 }
 .infoListTime{
-  font-family: 'Normal';
   color: #808080;
   font-size: 15px;
   display: inline-block;
@@ -300,7 +300,6 @@ export default {
   line-height: 30px;
 }
 .infoListContent{
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 24px;
@@ -314,7 +313,6 @@ export default {
   position: absolute;
   bottom: 20px;
   right: 0;
-  font-family: 'Normal';
   color: #f00;
   font-size: 15px;
   cursor: pointer;
@@ -339,7 +337,6 @@ export default {
   height: 25px;
   line-height: 25px;
   display: block;
-  font-family: 'Regular';
   color: #4d4d4d;
   font-size: 14px;
 }
@@ -348,8 +345,153 @@ export default {
   background: #c49a6d;
 }
 .pageList li.pageActive a{
-  font-family: 'Normal';
   color: #fff;
   font-size: 14px;
+}
+@media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
+/*联系我们图片*/
+.aboutImg{
+  width: 100%;
+  position: relative;
+  margin-bottom: -89px;
+}
+.aboutImg img{
+  width: 100%;
+  position: relative;
+  top: -89px;
+}
+.aboutImgBox{
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -50px;
+}
+.aboutChi{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  border-bottom: 1px solid #c49a6d;
+}
+.aboutEng{
+  width: 100px;
+  height: 22px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+/*信息列表*/
+.infoBox{
+  width: 985px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+.infoTitle{
+  width: 985px;
+  height: 51px;
+  line-height: 51px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.information{
+  color: #c49a6d
+}
+.infoList{
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+}
+.infoList li{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+.infoListTitle{
+  width: 800px;
+}
+.infoListName{
+  color: #c49a6d;
+  font-size: 18px;
+  width: 50%;
+  display: inline-block;
+  line-height: 30px;
+}
+.infoListNameRead{
+  color: #333;
+  font-size: 18px;
+  width: 50%;
+  display: inline-block;
+  line-height: 30px;
+}
+.infoListTime{
+  color: #808080;
+  font-size: 15px;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  line-height: 30px;
+}
+.infoListContent{
+  color: #333;
+  font-size: 15px;
+  line-height: 24px;
+}
+.infoListTel{
+  height: 35px;
+  display: block;
+  line-height: 30px;
+}
+.infoListDelete{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  color: #f00;
+  font-size: 15px;
+  cursor: pointer;
+}
+.pageList{
+  width: 500px;
+  height: 40px;
+  margin: 20px auto;
+  display: flex;
+}
+.pageList li{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  margin: 7px 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.pageList li a{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  color: #4d4d4d;
+  font-size: 14px;
+}
+.pageList li.pageActive{
+  border-radius: 12px;
+  background: #c49a6d;
+}
+.pageList li.pageActive a{
+  color: #fff;
+  font-size: 14px;
+}
 }
 </style>

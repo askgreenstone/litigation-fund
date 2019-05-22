@@ -33,7 +33,6 @@ export default {
   left: 24%;
   color: #fff;
   font-size: 26px;
-  font-family: 'Regular';
   top: 48%;
 }
 .applyButton{
@@ -45,7 +44,6 @@ export default {
   border-radius: 10px;
   color: #fff;
   font-size: 18px;
-  font-family: 'Regular';
   top: 48%;
   background: #c49a6d;
   text-align: center;
@@ -69,7 +67,6 @@ export default {
     left: 36px;
     color: #fff;
     font-size: 14px;
-    font-family: 'Regular';
     top: 63px;
   }
   .applyButton{
@@ -81,7 +78,6 @@ export default {
     border-radius: 8px;
     color: #fff;
     font-size: 14px;
-    font-family: 'Regular';
     top: 50px;
     background: #c49a6d;
     text-align: center;

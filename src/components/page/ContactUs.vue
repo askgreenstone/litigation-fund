@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <div id="contact">
       <!-- 联系我们图片 -->
       <div class="aboutImg">
@@ -37,11 +37,17 @@
             <input type="text" v-model.trim="clientSubject" name="" placeholder="诉讼标的">
           </div>
           <div class="rightTextarea">
-            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="案件情况和具体需求">
+            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="需求描述">
               
             </textarea>
           </div>
           <div class="rightButton" @click="submit">提交信息</div>
+        </div>
+        <div class="contactLeft2">
+          <div class="leftTitle">诉讼资助联系方式</div>
+          <div class="leftTitleEng">Contact Information</div>
+          <div class="leftMessage">电邮：business@green-stone.cn<br/>微信公众号：诉讼资助</div>
+          <div class="leftQrcode"><img src="../../assets/images/qrcode.png"></div>
         </div>
       </div>  
     </div>
@@ -133,6 +139,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*联系我们图片*/
 .aboutImg{
   width: 100%;
@@ -156,7 +168,7 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
+  font-weight: bold;
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -165,7 +177,7 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
+  font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -180,19 +192,19 @@ export default {
   width: 300px;
   float: left;
 }
+.contactLeft2{
+  display: none;
+}
 .leftTitle{
-  font-family: 'Medium';
   color: #333;
   font-size: 23px;
 }
 .leftTitleEng{
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 17px;
   margin-bottom: 25px;
 }
 .leftMessage{
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 2;
@@ -209,7 +221,6 @@ export default {
   float: left;
 }
 .rightTitle{
-  font-family: 'Medium';
   color: #333;
   font-size: 21px;
 }
@@ -224,7 +235,6 @@ export default {
   width: 478px;
   height: 27px;
   line-height: 28px;
-  font-family: 'Normal';
   color: #979797;
   font-size: 14px;
   text-indent: 10px;
@@ -241,7 +251,6 @@ export default {
   width: 476px;
   height: 166px;
   line-height: 22px;
-  font-family: 'Normal';
   color: #979797;
   text-indent: 10px;
   font-size: 14px;
@@ -252,7 +261,6 @@ export default {
   border: 1px solid #c49a6d;
   text-align: center;
   line-height: 35px;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 15px;
   background: #fff;
@@ -260,14 +268,24 @@ export default {
   border-radius: 5px;
 }
 @media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   /*联系我们图片*/
   .aboutImg{
     width: 100%;
+    height: 255px;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
     top: 0;
   }
@@ -276,55 +294,63 @@ export default {
     height: 60px;
     position: absolute;
     left: 50%;
-    top: 40%;
-    margin-left: -50px;
+    top: 160px;
+    margin-left: -40px;
+    padding-top: 35px;
   }
   .aboutChi{
-    width: 120px;
-    height: 30px;
+    width: 100px;
+    height: 24px;
     text-align: center;
-    font-family: 'Medium';
-    color: #fff;
-    font-size: 22px;
+  font-weight: bold;
+    color: #c49a6d;
+    font-size: 18px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
-    width: 120px;
+    width: 100px;
     height: 22px;
     text-align: center;
-    font-family: 'Regular';
-    color: #fff;
-    font-size: 16px;
+  font-weight: bold;
+    color: #333;
+    font-size: 12px;
   }
   /*联系我们*/
   .contactBox{
     width: 100%;
-    min-height: 725px;
+    min-height: 750px;
     margin: 0 auto;
     padding-top: 20px;
+    padding-bottom: 15px;
   }
   .contactLeft{
     width: 100%;
     padding: 0 15px 15px;
     box-sizing: border-box;
+    display: none;
+  }
+   .contactLeft2{
+    width: 100%;
+    padding: 0 15px 15px 37px;
+    box-sizing: border-box;
+    display: block;
   }
   .leftTitle{
-    font-family: 'Medium';
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
   }
   .leftTitleEng{
-    font-family: 'Normal';
     color: #c49a6d;
-    font-size: 17px;
-    margin-bottom: 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   .leftMessage{
-    font-family: 'Normal';
     color: #333;
     font-size: 15px;
-    line-height: 2;
-    margin-bottom: 12px;
+    line-height: 21px;
+    margin-bottom: 25px;
   }
   .leftQrcode{
     width: 110px;
@@ -338,31 +364,33 @@ export default {
     box-sizing: border-box;
   }
   .rightTitle{
-    font-family: 'Medium';
     color: #333;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 22px;
   }
   .rightInput{
     width: 300px;
-    height: 29px;
+    height: 36px;
     border: 1px solid #ccc;
-    margin: 15px auto;
+    margin: 15px 22px;
   }
   .rightInput input{
     border: none;
-    width: 298px;
-    height: 27px;
-    line-height: 28px;
-    font-family: 'Normal';
+    width: 280px;
+    height: 24px;
+    margin-top: 6px;
+    line-height: 24px;
     color: #979797;
     font-size: 14px;
-    text-indent: 10px;
+    text-indent: 8px;
+    padding: 0;
   }
   .rightTextarea{
     width: 300px;
     height: 170px;
     border: 1px solid #ccc;
-    margin: 15px auto;
+    margin: 15px 22px;
   }
   .rightTextarea textarea{
     border: none;
@@ -370,24 +398,22 @@ export default {
     width: 296px;
     height: 166px;
     line-height: 22px;
-    font-family: 'Normal';
     color: #979797;
     text-indent: 10px;
     font-size: 14px;
   }
   .rightButton{
-    width: 115px;
-    height: 35px;
-    margin: 0 auto;
-    border: 1px solid #c49a6d;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ccc;
     text-align: center;
-    line-height: 35px;
-    font-family: 'Normal';
+    line-height: 30px;
     color: #c49a6d;
-    font-size: 15px;
+    font-size: 13px;
     background: #fff;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
+    margin: 20px 0 25px 22px;
   }
 }
 </style>

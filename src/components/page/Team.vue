@@ -3,7 +3,7 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
     <!-- 团队／顾问 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
@@ -133,6 +133,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*关于我们图片*/
 .aboutImg{
   width: 100%;
@@ -156,7 +162,6 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
@@ -165,7 +170,6 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
   color: #fff;
   font-size: 16px;
 }
@@ -188,7 +192,6 @@ export default {
   padding-left: 10px;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #b1b1b1;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -200,7 +203,6 @@ export default {
   display: inline-block;
   border: 1px solid #c49a6d;
   line-height: 33px;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 14px;
   margin-left: 75px;
@@ -208,7 +210,6 @@ export default {
 }
 .teamIntroduction{
   width: 100%;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 27px;
@@ -224,7 +225,6 @@ export default {
   width: 850px;
   height: 30px;
   font-weight: normal;
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 24px;
   margin: 0 auto 30px;
@@ -279,7 +279,6 @@ export default {
   line-height: 40px;
   padding: 0 50px;
   box-sizing: border-box;
-  font-family: 'Regular';
   color: #fff;
   font-size: 18px;
 }
@@ -292,7 +291,6 @@ export default {
   position: relative;
 }
 .lawyerIntroduction{
-  font-family: 'Normal';
   color: #fff;
   font-size: 15px;
   line-height: 27px;
@@ -316,7 +314,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  font-family: 'Regular';
   color: #fff;
   font-size: 15px;
 }
@@ -327,8 +324,203 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  font-family: 'Regular';
   color: red;
   font-size: 15px;
+}
+@media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
+/*关于我们图片*/
+.aboutImg{
+  width: 100%;
+  position: relative;
+  margin-bottom: -89px;
+}
+.aboutImg img{
+  width: 100%;
+  position: relative;
+  top: -89px;
+}
+.aboutImgBox{
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -50px;
+}
+.aboutChi{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  border-bottom: 1px solid #c49a6d;
+}
+.aboutEng{
+  width: 120px;
+  height: 22px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+/*搜索框，新建按钮，团队介绍*/
+.searchBox{
+  width: 850px;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+}
+.search{
+  width: 100%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.searchInput{
+  width: 470px;
+  height: 35px;
+  line-height: 33px;
+  padding-left: 10px;
+  outline: none;
+  box-sizing: border-box;
+  color: #b1b1b1;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+.searchBtn{
+  width: 83px;
+  height: 33px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #c49a6d;
+  line-height: 33px;
+  color: #c49a6d;
+  font-size: 14px;
+  margin-left: 75px;
+  cursor: pointer;
+}
+.teamIntroduction{
+  width: 100%;
+  color: #333;
+  font-size: 15px;
+  line-height: 27px;
+  text-indent: 30px;
+}
+/*团队列表*/
+.lawyerBox{
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+}
+.lawyerTitle{
+  width: 850px;
+  height: 30px;
+  font-weight: normal;
+  color: #c49a6d;
+  font-size: 24px;
+  margin: 0 auto 30px;
+}
+.lawyerList{
+  width: 100%;
+}
+.lawyer{
+  width: 100%;
+  height: 250px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.lawyer:last-child{
+  margin-bottom: 0;
+}
+.lawyerBottom1{
+  width: 100%;
+  height: 115px;
+  background: #fff;
+}
+.lawyerBottom2{
+  width: 100%;
+  height: 135px;
+  background: #f5f5f5;
+}
+.lawyerContent{
+  width: 850px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -425px;
+  display: flex;
+}
+.lawyerLeft{
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+.lawyerLeft img{
+  width: 100%;
+  height: 100%;
+}
+.lawyerNameBox{
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  line-height: 40px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 18px;
+}
+.lawyerRight{
+  width: 595px;
+  height: 250px;
+  background: #c49a6d;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+.lawyerIntroduction{
+  color: #fff;
+  font-size: 15px;
+  line-height: 27px;
+  text-indent: 30px;
+}
+.lawyerEdit{
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  line-height: 40px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.editBtn{
+  float: right;
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+}
+.deleteBtn{
+  float: right;
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  color: red;
+  font-size: 15px;
+}
 }
 </style>

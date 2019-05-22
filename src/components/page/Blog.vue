@@ -3,13 +3,13 @@
     <!-- 顶部登录，中英文切换,顶部导航栏，左图右导航结构 -->
     <TopNavBlack></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
-    <div style="width:100%;height:115px;background:transparent;position:relative;"></div>
+    <div class="position"></div>
    <!-- 律石研究院 -->
     <div class="aboutImg">
       <img src="../../assets/images/banner4.png">
       <div class="aboutImgBox">
         <div class="aboutChi">律石研究院</div>
-        <div class="aboutEng">GS INSTITUTE</div>
+        <div class="aboutEng">LS INSTITUTE</div>
       </div>
     </div>
     <!-- 搜索框，新建按钮，团队介绍 -->
@@ -51,6 +51,10 @@
       </li>
       <li @click="gotoNext()"><a href="javascript:;">&gt;</a></li>
     </ol>
+    <div class="blogArticle">
+      <div class="title">律石诉讼资助</div>
+      <div class="content">诉讼资助的主要优势是不论当事方的财务状况如何，均可以通过外部资助启动司法救济程序，并且由资助方分担诉讼风险，使当事方能够将有限的流动资金集中在研发、生产等主营业务领域、创造更大产值，避免冗长的诉讼周期带来的资金、时间、精力上的损耗，并解决了当事人遴选律师团队的痛点、消除了代理人与被代理人之间的信任风险。</div>
+    </div>
     <!-- 首页底部 -->
     <Bottom></Bottom>
   </div>
@@ -304,6 +308,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.position{
+    width:100%;
+    height:115px;
+    background:#fff;
+    position:relative;
+  }
 /*关于我们图片*/
 .aboutImg{
   width: 100%;
@@ -327,8 +337,8 @@ export default {
   width: 120px;
   height: 30px;
   text-align: center;
-  font-family: 'Medium';
   color: #fff;
+  font-weight: bold;
   font-size: 22px;
   border-bottom: 1px solid #c49a6d;
 }
@@ -336,7 +346,7 @@ export default {
   width: 120px;
   height: 22px;
   text-align: center;
-  font-family: 'Regular';
+  font-weight: bold;
   color: #fff;
   font-size: 16px;
 }
@@ -358,7 +368,6 @@ export default {
   padding-left: 10px;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Normal';
   color: #b1b1b1;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -370,7 +379,6 @@ export default {
   display: inline-block;
   border: 1px solid #c49a6d;
   line-height: 33px;
-  font-family: 'Normal';
   color: #c49a6d;
   font-size: 14px;
   margin-left: 75px;
@@ -410,7 +418,6 @@ export default {
 .title{
   width: 50%;
   display: inline-block;
-  font-family: 'Medium';
   color: #c49a6d;
   font-size: 18px;
   text-decoration: underline;
@@ -419,13 +426,11 @@ export default {
   width: 49%;
   display: inline-block;
   text-align: right;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
 }
 .searchIntroduction{
   width: 100%;
-  font-family: 'Normal';
   color: #333;
   font-size: 15px;
   line-height: 27px;
@@ -448,7 +453,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 20px;
-  font-family: 'Regular';
   color: #333;
   font-size: 15px;
   cursor: pointer;
@@ -460,7 +464,6 @@ export default {
   display: inline-block;
   text-align: center;
   line-height: 20px;
-  font-family: 'Regular';
   color: red;
   font-size: 15px;
   cursor: pointer;
@@ -485,7 +488,6 @@ export default {
   height: 25px;
   line-height: 25px;
   display: block;
-  font-family: 'Regular';
   color: #4d4d4d;
   font-size: 14px;
 }
@@ -494,21 +496,33 @@ export default {
   background: #c49a6d;
 }
 .pageList li.pageActive a{
-  font-family: 'Normal';
   color: #fff;
   font-size: 14px;
 }
+.blogArticle{
+  display: none;
+}
 @media screen and (max-width:414px){
+  .position{
+    width:100%;
+    height:40px;
+    background:#fff;
+    position:relative;
+  }
   /*关于我们图片*/
   .aboutImg{
     width: 100%;
+    height: 280px;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .aboutImg img{
-    width: 100%;
+    width: auto;
+    height: 160px;
+    left: -60px;
     position: relative;
-    top: 0;
+    top: -1px;
   }
   .aboutImgBox{
     width: 120px;
@@ -517,23 +531,26 @@ export default {
     left: 50%;
     top: 40%;
     margin-left: -60px;
+    top: 160px;
+    padding-top: 50px;
   }
   .aboutChi{
     width: 120px;
-    height: 30px;
+    height: 26px;
     text-align: center;
-    font-family: 'Medium';
-    color: #fff;
-    font-size: 22px;
+  font-weight: bold;
+    color: #c49a6d;
+    font-size: 16px;
     border-bottom: 1px solid #c49a6d;
   }
   .aboutEng{
     width: 120px;
     height: 22px;
+    line-height: 22px;
     text-align: center;
-    font-family: 'Regular';
-    color: #fff;
-    font-size: 16px;
+  font-weight: bold;
+    color: #333;
+    font-size: 13px;
   }
   /*搜索框，新建按钮，团队介绍*/
   .searchBox{
@@ -541,6 +558,7 @@ export default {
     margin: 0 auto;
     padding-top: 20px;
     position: relative;
+    display: none;
   }
   .search{
     width: 100%;
@@ -555,7 +573,6 @@ export default {
     padding-left: 10px;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Normal';
     color: #b1b1b1;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -567,7 +584,6 @@ export default {
     display: inline-block;
     border: 1px solid #c49a6d;
     line-height: 33px;
-    font-family: 'Normal';
     color: #c49a6d;
     font-size: 14px;
     margin-left: 0;
@@ -578,6 +594,7 @@ export default {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    display: none;
   }
   .searchLi{
     padding: 20px 0;
@@ -607,7 +624,6 @@ export default {
   .title{
     width: 50%;
     display: inline-block;
-    font-family: 'Medium';
     color: #c49a6d;
     font-size: 18px;
     text-decoration: underline;
@@ -616,13 +632,11 @@ export default {
     width: 49%;
     display: inline-block;
     text-align: right;
-    font-family: 'Normal';
     color: #333;
     font-size: 15px;
   }
   .searchIntroduction{
     width: 100%;
-    font-family: 'Normal';
     color: #333;
     font-size: 15px;
     line-height: 27px;
@@ -645,7 +659,6 @@ export default {
     display: inline-block;
     text-align: center;
     line-height: 20px;
-    font-family: 'Regular';
     color: #333;
     font-size: 15px;
     cursor: pointer;
@@ -657,16 +670,13 @@ export default {
     display: inline-block;
     text-align: center;
     line-height: 20px;
-    font-family: 'Regular';
-    color: red;
-    font-size: 15px;
-    cursor: pointer;
   }
   .pageList{
     width: 500px;
     height: 40px;
     margin: 20px auto;
     display: flex;
+    display: none;
   }
   .pageList li{
     width: 25px;
@@ -682,7 +692,6 @@ export default {
     height: 25px;
     line-height: 25px;
     display: block;
-    font-family: 'Regular';
     color: #4d4d4d;
     font-size: 14px;
   }
@@ -691,9 +700,33 @@ export default {
     background: #c49a6d;
   }
   .pageList li.pageActive a{
-    font-family: 'Normal';
     color: #fff;
     font-size: 14px;
+  }
+  .blogArticle{
+    width: 100%;
+    display: block;
+    background: #fff;
+    padding: 20px 20px 40px;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+  .blogArticle .title{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #c49a6d;
+    font-size: 16px;
+    margin: 0 auto 20px;
+    text-decoration: none;
+    
+  }
+  .blogArticle .content{
+    line-height: 20px;
+    color: #333;
+    font-size: 13px;
+    text-indent: 26px;
   }
 }
 </style>
