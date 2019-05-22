@@ -14,11 +14,11 @@
 			}
 		},
 		beforeRouteEnter:(to,from,next)=>{
-			console.log('route in');
+			// console.log('route in');
 			next();
 		},
 		beforeRouteLeave:(to,from,next)=>{
-			console.log('route out');
+			// console.log('route out');
 			next();
 		}
 	}

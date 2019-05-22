@@ -18,21 +18,21 @@
       <div class="litigationPcBox1">
         <div class="litigationPcBoxLeft">
           <img src="../../assets/images/pcLitigation1.png">
-          <span>Items for Litigation Funding</span>
+          <span>Funding Items</span>
         </div>
         <div class="litigationPcBoxCenter">
           <img src="../../assets/images/pcLitigation3.png">
         </div>
         <div class="litigationPcBoxRight">
           <span>Lawyers Fee</span>
-          <span>Litigation Cost, Preservation Fee</span>
+          <span>Litigation Cost, Preservation Fee </span>
           <span>Arbitration Fee</span>
           <span>Notary Fee</span>
           <span>Audit Charges</span>
           <span>Assessment Fee, Auction Fee</span>
           <span>Bankruptcy Administrator Remunerations</span>
           <span>Insolvency Administrator Compensations</span>
-          <span>Judicial Appraisal fee, Expert Witness Fee, etc.</span>
+          <span>Judicial Appraisal fee, Expert Witness Fee</span>
         </div>
       </div>
       <div class="litigationPcBox1">
@@ -59,20 +59,20 @@
     <!-- 移动端案例列表 -->
     <ul class="caseListMobile">
       <li>
-          <div class="caseTitle">Items for Litigation Funding</div>
+          <div class="caseTitle">Funding Items</div>
           <img src="../../assets/images/caseImg.png">
-          <div class="caseContent">Lawyers Fee,Litigation Cost, Preservation Fee,Arbitration Fee,Notary Fee,Audit Charges,Assessment Fee, Auction Fee,Bankruptcy Administrator Remunerations,Insolvency Administrator Compensations,Judicial Appraisal fee, Expert Witness Fee, etc.</div>
+          <div class="caseContent">Lawyers Fee,Litigation Cost, Preservation Fee ,Arbitration Fee,Notary Fee,Audit Charges,Assessment Fee, Auction Fee,Bankruptcy Administrator Remunerations,Insolvency Administrator Compensations,Judicial Appraisal fee, Expert Witness Fee</div>
       </li>
       <li>
           <div class="caseTitle">Case Types</div>
           <img src="../../assets/images/caseImg.png">
-          <div class="caseContent">Commercial Contracts,Civil and Commercial Disputes,Copyright, Trademark, Patent,Environmental Protection,Bankruptcy, Reorganization and Liquidation,Violation of Fiduciary Duty,Judicial Enforcement,Tort and Compensation,Domestic and International Arbitration.</div>
+          <div class="caseContent">Commercial Contracts,Civil and Commercial Disputes,Copyright, Trademark, Patent,Environmental Protection,Bankruptcy, Reorganization and Liquidation,Violation of Fiduciary Duty,Judicial Enforcement,Tort and Compensation,Domestic and International Arbitration</div>
       </li>
     </ul>
     <!-- 资助阶段 -->
     <!-- h5 -->
     <div class="introduction introduction2">
-        <div class="introTitle">Litigation Phases</div>
+        <div class="introTitle">Funding Phases</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
@@ -84,7 +84,7 @@
     <div class="funding">
       <!-- <img src="../../assets/images/lightBg.png"> -->
       <div class="introduction">
-        <div class="introTitle">LITIGATION PHASES</div>
+        <div class="introTitle">FUNDING PHASES</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
@@ -101,8 +101,8 @@
             <li>
               <div class="phaseImgBig">Litigations</div>
               <div class="phaseImgSmall">
-                <span>First instance</span><br>
-                <span>Second instance</span><br>
+                <span>First Instance</span><br>
+                <span>Second Instance</span><br>
                 <span>Appeal and Retrial</span>
               </div>
             </li>
@@ -116,7 +116,8 @@
             <li>
               <div class="phaseImgBig">Arbitration</div>
               <div class="phaseImgSmall">
-                <span>domestic and international</span>
+                <span>Domestic</span><br>
+                <span>International</span>
               </div>
             </li>
           </ul>
@@ -143,9 +144,9 @@
               <div class="phaseImgBig">Bankruptcy and Liquidation</div>
               <div class="phaseImgSmall">
                 <span>Debt Restructuring</span><br>
-                <span>Reorganization</span><br>
-                <span>Debt Settlement</span><br>
-                <span>Liquidation</span>
+                <span>Bankruptcy Reorganization</span><br>
+                <span>Bankruptcy Settlement</span><br>
+                <span>Winding-up and Liquidation</span>
               </div>
             </li>
           </ul>
@@ -165,7 +166,7 @@
       </div>
     <div class="youKnow">
       <div class="youKnowBox">
-        There exist intrinsic risks in legal actions, such as losing the case, unknown evidence, obstruction of law enforcement, termination or liquidation of the other parties, etc. The services provided by LawStone cannot alter the basic facts, the evidence, or the solvency of the other parties. By working closely with leading attorneys, law firms and professionals, LawStone provides clients with optimized litigation strategies and flexible fee arrangements, while under no circumstances offer any commitments or warranties as to the outcomes of the cases or the execution results of the recourses.  
+        Intrinsic risks in legal actions exist, such as losing the case, unknown evidence, obstruction of enforcement, termination or liquidation of the counter parties, etc. The services provided by LawStone cannot alter the basic facts, the evidence, or the solvency of the counter parties. By working closely with leading attorneys, law firms and professionals, LawStone provides clients with optimized litigation strategies and flexible fee arrangements, while under no circumstances offer any commitments or warranties as to the outcomes of the cases or the execution results of the recourses.    
       </div>
     </div>
     <!-- 申请资助 -->
@@ -361,7 +362,7 @@ export default {
 }
 .phaseImgSmall{
   color: #4d4d4d;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .litigationPcBox{

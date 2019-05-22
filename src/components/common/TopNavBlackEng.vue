@@ -38,13 +38,12 @@
         <img v-else src="../../assets/images/logoBottom.png"/>
       </router-link>
       <ul class="topNav">
-        <router-link to="/Index-en" tag="li" exact >Home Page</router-link>
+        <router-link to="/Index-en" tag="li" exact >Home</router-link>
         <router-link to="/AboutUs-en" tag="li" exact >About Us</router-link>
-        <router-link to="/Funding-en" tag="li" exact >Our Service</router-link>
-        <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
+        <router-link to="/Funding-en" tag="li" exact >Our Services</router-link>
         <router-link to="/Coverage-en" tag="li" exact >Professional Network</router-link>
         <router-link to="/Blog-en" tag="li" >LawStone Institute</router-link>
-        <router-link to="/Scenarios-en" tag="li" exact >Case Applications</router-link>
+        <router-link to="/Scenarios-en" tag="li" exact >Applications</router-link>
         <router-link to="/Contact-en" tag="li" >Contact Us</router-link>
       </ul>
     </div>  
@@ -57,10 +56,9 @@
         <router-link to="/Index-en" tag="li" exact >Home</router-link>
         <router-link to="/AboutUs-en" tag="li" exact >About Us</router-link>
         <router-link to="/Funding-en" tag="li" exact >Our Services</router-link>
-        <router-link to="/Team" style="display:none" tag="li" >团队/顾问</router-link>
-        <router-link to="/Coverage-en" tag="li" exact >National Network</router-link>
-        <router-link to="/Blog-en" tag="li" >LS Institute</router-link>
-        <router-link to="/Scenarios-en" tag="li" exact >Case Applications</router-link>
+        <router-link to="/Coverage-en" tag="li" exact >Professional Network</router-link>
+        <router-link to="/Blog-en" tag="li" >LawStone Institute</router-link>
+        <router-link to="/Scenarios-en" tag="li" exact >Applications</router-link>
         <router-link to="/Contact-en" tag="li" >Contact Us</router-link>
         <li @click="selectLanguage(2)">中文</li>
       </ul>
@@ -94,7 +92,7 @@ export default {
         
         
       ],
-      languageId: 2
+      languageId: 1
     }
   },
   props: ['bgColor'],
@@ -133,7 +131,7 @@ export default {
       if(data.id === 0){
         return
       }
-      console.log(window.location.pathname)
+      // console.log(window.location.pathname)
       let pathname = window.location.pathname
       let newPathname = ''
       if(pathname.indexOf('-en') > -1){
@@ -142,11 +140,13 @@ export default {
         }else{
           newPathname = pathname.replace('-en','')
         }
-        
+        this.languageId = 2
       }else{
         newPathname = pathname === '/' ? '/Index-en' : pathname + '-en'
+        this.languageId = 1
       }
-      console.log(this.$router)
+      // console.log(this.$router)
+      // console.log(this.languageId)
       this.$router.push({//你需要接受路由的参数再跳转
             path: newPathname
           });
@@ -168,19 +168,19 @@ export default {
     // 在渲染该组件的对应路由被 confirm 前调用
     // 不！能！获取组件实例 `this`
     // 因为当钩子执行前，组件实例还没被创建
-    console.log(to);
+    // console.log(to);
   },
   beforeRouteUpdate (to, from, next) {
     // 在当前路由改变，但是该组件被复用时调用
     // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
     // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
     // 可以访问组件实例 `this`
-    console.log(from);
+    // console.log(from);
   },
   beforeRouteLeave (to, from, next) {
     // 导航离开该组件的对应路由时调用
     // 可以访问组件实例 `this`
-    console.log(next);
+    // console.log(next);
   }
 
 }
@@ -454,7 +454,7 @@ export default {
     margin-right: 0;
   } 
   .mobileNavBox .topNavList{
-    width: 144px;
+    width: 170px;
     height: 280px;
     position: fixed;
     right: 0;

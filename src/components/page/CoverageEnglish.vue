@@ -24,8 +24,8 @@
       <img class="earthMobile" src="../../assets/images/earthMobileEnglish.png">
       <ul class="address1">
         <li>
-          <div class="addTop">Regions of The Six Circuit Courts of Supreme People’s Court</div>
-          <div class="addBottom">Shenzhen, Shenyang, Zhengzhou, Nanjing, Chongqing, Xi ' an</div>
+          <div class="addTop">Regions of The Six Circuit Courts of Supreme People's Court</div>
+          <div class="addBottom">Shenzhen, Shenyang, Zhengzhou, Nanjing, Chongqing, Xi 'an</div>
         </li>
         <li class="addressBox">
           <div class="addressLeft">

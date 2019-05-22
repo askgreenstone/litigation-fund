@@ -4,24 +4,6 @@
     <TopNavBlack v-bind:bgColor="bgColor"></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
     <div class="position"></div>
-    <!-- 图片轮播部分 -->
-    <!-- <div class="window" id="#window" @mouseover="stop" @mouseout="play">
-      <transition-group tag="ul" class="container" name="image">
-        <li v-for="(image,index) in imgData" :key="image" v-show="index===mark">
-          <img name="banner" :src="image">
-        </li>
-      </transition-group>
-      <div class="left" @click="left" >
-        <img src="../../assets/images/bannerLeft.png"/> 
-      </div>
-      <div class="right" @click="right">
-        <img src="../../assets/images/bannerRight.png"/>               
-      </div>
-      <ul class="dots">
-        <li v-for="(dot, index) in imgData" :key="index" :class="{dotted: index ===  mark}"  data-swiper-autoplay="15000"    @click = "change(index)">
-        </li>
-      </ul>
-    </div> -->
      <!-- pc端图片轮播 -->
     <div id="window">
       <div class="swiper-container">
@@ -48,7 +30,7 @@
         <span class="three"></span>
       </div>
       <div class="introEng">LITIGATION SUPPORT</div>
-      <div class="introMessage">如果您有民商事诉讼、仲裁、执行领域的重大、疑难案件，或司法破产重整、清算事项，因当事人财力有限，或不符合现有代理人的专业领域、地域范畴，启动司法救济的门槛高企，请联系我们。律石以诉讼资助、全国网络覆盖和资深律师、专家、顾问团队，提供领先的一揽子解决方案，实现胜诉和回款。</div>
+      <div class="introMessage">如果您有民商事诉讼、仲裁、执行领域的重大、疑难案件，或司法破产重整、清算事项，因当事人财力有限，或不符合现有代理人的专业领域、地域范畴，启动司法程序的门槛高企，请联系我们。律石以诉讼资助、全国网络覆盖和资深律师、专家、顾问团队，提供领先的一揽子解决方案，实现胜诉和回款。</div>
       <div class="introMessage">律石诉讼资助以卓越的专业能力，在争议解决中为当事人和代理律师提供团队、专业和启动费用方面的帮助，来释放合法诉权的潜在价值。已有越来越多的财富500强公司、上市公司、企业和个人从中受益。诉讼资助日益成为民商事诉讼、仲裁、执行、破产重整领域的主流趋势。</div>
       <div class="introMessage">争议解决涉及的专业门槛高、诉讼周期长，应收款长期挂账，甚至最终超过诉讼时效而不得不予以核销，严重影响现金流周转。当事人对律师行业和司法体系的生疏，也可能导致其合理合法的诉权主张被迫推迟或放弃追索。</div>
       <div class="introMessage">当事人之间，财务资源、法律专业资源可能存在着巨大差异，这将一定程度给其自身的司法救济带来障碍，甚至出现现金流紧张的当事人无法接近司法公平。因此，诉讼资助应运而生，创造价值，增益共赢。</div>
@@ -823,6 +805,7 @@ export default {
     padding: 15px 0 30px 25px;
     background: url('../../assets/images/lightBg2.png');
     background-size: cover;
+    background-position: right;
   }
   .introListBox2 img{
     display: block;

@@ -5,8 +5,8 @@
       <li class="bottomListLogo">
         <div><img src="../../assets/images/logoBlank.png"></div>
         <div>
-          <span class="bottomListLogoTitle">Disclaimer of Liability</span><br>
-          <span>The information contained herein may have content obtained through various public and private channels, and this website does not guarantee the authenticity, accuracy, completeness, real-time or originality of the content resourced from third parties. Audiences shall bear any and all aftermath and liabilities on their own for transactions or decisions based on the foregoing information.</span>
+          <span class="bottomListLogoTitle">Disclaimer</span><br>
+          <span>The information contained herein may have content obtained through various public and private channels, and this website does not guarantee the authenticity, accuracy, completeness, timeliness or originality of the content resourced from third parties. Audiences shall bear any and all aftermath and liabilities on their own for transactions or decisions based on the foregoing information.</span>
         </div>
       </li>
       <!-- pc -->
@@ -60,7 +60,7 @@ export default {
     },
     // 选择语言
     selectLanguage: function(){
-      console.log(window.location.pathname)
+      // console.log(window.location.pathname)
       let pathname = window.location.pathname
       let newPathname = ''
       if(pathname.indexOf('-en') > -1){

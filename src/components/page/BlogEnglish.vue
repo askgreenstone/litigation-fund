@@ -9,7 +9,7 @@
       <img src="../../assets/images/banner4.png">
       <div class="aboutImgBox">
         <div class="aboutChiPc">LS INSTITUTE</div>
-        <div class="aboutChiH5">LawStone Institute</div>
+        <div class="aboutChiH5">LS INSTITUTE</div>
         <div class="aboutEng"></div>
       </div>
     </div>
@@ -53,8 +53,8 @@
       <li @click="gotoNext()"><a href="javascript:;">&gt;</a></li>
     </ol>
     <div class="blogArticle">
-      <div class="title">LawStone Litigation Support</div>
-      <div class="content">The main advantage of litigation funding is that, regardless of the financial position of the parties, judicial relief can be reached through external funding, and the risk of litigation will be shared by the funders, so that the parties can concentrate their limited liquidity and resources in their main business areas such as research and development, production and marketing, thereby to create greater value and avoid consumption of limited capital, time and energies. It solves the pain point of attorney selection and mitigates the trust problem that might exist between the clients and the agents. </div>
+      <div class="title">LawStone Litigation Funding</div>
+      <div class="content">The advantage of litigation funding is that, regardless of the financial positions of the parties, judicial relief can be obtained through external funding, and the risks of litigation are shared by the funders, so that the parties can concentrate their limited liquidity and resources in their main business areas such as research and development, production and marketing, thereby to create greater value and avoid consumption of limited capital, time and energies. It solves the pain point of attorney selection and mitigates the trust problem that might exist between the clients and the agents.</div>
     </div>
     <!-- 首页底部 -->
     <Bottom></Bottom>

@@ -51,7 +51,7 @@ export default {
     },
     // 选择语言
     selectLanguage: function(){
-      console.log(window.location.pathname)
+      // console.log(window.location.pathname)
       let pathname = window.location.pathname
       let newPathname = ''
       if(pathname.indexOf('-en') > -1){

@@ -24,7 +24,7 @@
           <div class="leftQrcode"><img src="../../assets/images/qrcode.png"></div>
         </div>
         <div class="contactRight">
-          <div class="rightTitle">Please leave your message here, we'll get back to you within 24 hours </div>
+          <div class="rightTitle">Please leave your messages, we'll get back to you within 24 hours. </div>
           <div class="rightInput">
             <input type="text" v-model.trim="clientName" name="" placeholder="Name">
           </div>

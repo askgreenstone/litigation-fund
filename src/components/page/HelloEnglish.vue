@@ -4,24 +4,6 @@
     <TopNavBlack v-bind:bgColor="bgColor"></TopNavBlack>
     <!-- 顶部不占位，做一个占位空白 -->
     <div class="position"></div>
-    <!-- 图片轮播部分 -->
-    <!-- <div class="window" id="#window" @mouseover="stop" @mouseout="play">
-      <transition-group tag="ul" class="container" name="image">
-        <li v-for="(image,index) in imgData" :key="image" v-show="index===mark">
-          <img name="banner" :src="image">
-        </li>
-      </transition-group>
-      <div class="left" @click="left" >
-        <img src="../../assets/images/bannerLeft.png"/> 
-      </div>
-      <div class="right" @click="right">
-        <img src="../../assets/images/bannerRight.png"/>               
-      </div>
-      <ul class="dots">
-        <li v-for="(dot, index) in imgData" :key="index" :class="{dotted: index ===  mark}"  data-swiper-autoplay="15000"    @click = "change(index)">
-        </li>
-      </ul>
-    </div> -->
      <!-- pc端图片轮播 -->
     <div id="window">
       <div class="swiper-container">
@@ -48,10 +30,10 @@
         <span class="three"></span>
       </div>
       <div class="introEng"></div>
-      <div class="introMessage">Where major and complicated civil or commercial legal actions, law enforcements or bankruptcy, reorganization, liquidation events are concerned and the parties cannot afford initiating or participating in the judicial proceedings due to limited financial circumstances, or the matter falls out of the fields or geographical areas of the existing counsels, please contact LawStone. With litigation funding, national network coverage and a profound industrial resource of leading lawyers, experts and specialists, LawStone provides one-stop dispute resolution services for clients to achieve winning outcomes. </div>
-      <div class="introMessage">By providing prominent professional teams, fees, cost and specialized risk management services to clients and lawyers in dispute resolution situations, LawStone unlocks the potential value of legal claims. A growing number of Fortune 500 companies, listed companies, enterprises and individuals have benefited from LawStone Litigation Support. It has increasingly become the mainstream trend in the fields of civil and commercial litigation, arbitration, enforcement, bankruptcy and debt restructuring in China.</div>
-      <div class="introMessage">Dispute resolution involves a high threshold of expertise, cost, time and resources. From time to time aged pending accounts of receivables exceeds statute of limitations and have to be written off, adversely affecting cash flow and turnover performance. The unfamiliarity of legal profession and judicial system may also result in delay or even waiver of sound legal claims by the right holders. </div>
-      <div class="introMessage">The financial status and legal resources among the parties may vary remarkably, which will to a certain extent bring obstacles to the access to judicial relief,  those with short cash flows can hardly afford a legal action. LawStone Litigation Support thereby came into being to create value and gain a win-win result for clients.</div>
+      <div class="introMessage">If you find yourself or your company involved in complicated civil or commercial legal issues, such as litigation, enforcements, bankruptcy, reorganization, liquidation events etc., and your parties cannot afford initiating or participating in the judicial proceedings due to limited financial resources, or the matter falls out of the fields or geographical areas of the existing counsels, please contact LawStone. With litigation funding, nationwide network coverage and a rich industrial resource of leading lawyers and specialists, LawStone provides one-stop dispute resolution services for clients to achieve winning outcomes.  </div>
+      <div class="introMessage">With our outstanding professional teams, specialized risk management services, as well as our financing to cover fees and initial costs, LawStone helps clients and lawyers in dispute resolution situations unlock the potential value of their legal claims. A growing number of Fortune 500 companies, public companies, enterprises and individuals have benefited from LawStone Litigation Funding, which has become an increasing development in the fields of civil and commercial litigations, arbitrations, enforcements, bankruptcies and debt restructuring in China.</div>
+      <div class="introMessage">Dispute resolution involves a high threshold of expertise and cost in time and resources. From time to time prolonged pending account receivables exceed statute of limitations and have to be written off, adversely affecting cashflows and turnover performance. For some, the inexperience with legal profession and judicial systems may also result in delay or even surrender of sound legal claims. </div>
+      <div class="introMessage">The financial situations and legal resources among the parties involved may vary considerably, which will, to a certain extent, become obstacles to access to judicial relief. Those with tight cashflows can hardly afford legal actions. LawStone Litigation Funding is here to add value and gain a win-win result for our clients.</div>
     </div>
     <!-- 客户/律师 -->
     <!-- h5 -->
@@ -80,31 +62,31 @@
           <img src="../../assets/images/professionalService.png" >
           <div class="lawyerTitle">Specialized Services</div>
           <div class="lawyerBox">
-            <span>Provide for clients or lawyers with expertise and technical support in relevant legal fields</span>
+            <span>We provide clients or lawyers with expertise and technical support in legal fields</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/coveringCountry.png" >
-          <div class="lawyerTitle">National Coverage</div>
+          <div class="lawyerTitle">Nationwide Coverage</div>
           <div class="lawyerBox">
-            <span>A network of over 50 cities and regions of China (including Taiwan and Hong Kong)</span>
+            <span>A network of over 50 cities and regions in China (including Taiwan and Hong Kong)</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/resourceSupport.png" >
           <div class="lawyerTitle">Quality Services</div>
           <div class="lawyerBox">
-            <span>Integral risk control services throughout initial due diligence to prosecution, trial and execution</span>
+            <span>Integral risk control services from initial due diligence to prosecution, trial and execution</span>
           </div>
         </li>
         <li>
           <img src="../../assets/images/litigation.png" >
           <div class="lawyerTitle">Litigation Funding</div>
           <div class="lawyerBox lawyerBox1">
-            <span>Advanced payment for litigation cost, lawyers’ fee, preservation, assessment, appraisal and audit fees, etc.</span>
+            <span>Payment advance for litigation cost, lawyers' fee, preservation, assessment, appraisal and audit fees, etc.</span>
           </div>
           <div class="lawyerBox lawyerBox2">
-            <span>Advanced payment for litigation cost, lawyers’ fee, preservation, assessment, appraisal and audit fees, etc.</span>
+            <span>Payment advance for litigation cost, lawyers' fee, preservation, assessment, appraisal and audit fees, etc.</span>
           </div>
         </li>
       </ul>
@@ -125,20 +107,20 @@
         <ul>
           <li>
             <img class="img" src="../../assets/images/hello1.png"/>
-            <span>Introduction of Facts</span>
+            <span>Introduction of the Facts</span>
             <i style="margin-left: -19px;">Provide evidence and materials, introduce the case by clients or lawyers</i>
           </li>
           <li><img class="line" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello2.png"/>
             <span>Due Diligence and Analysis</span>
-            <i>LawStone carry out initial investigation and analysis upon the case materials and facts </i>
+            <i>LawStone carry out initial investigation and analysis on the case materials and facts</i>
           </li>
           <li><img class="line line2" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello3.png"/>
             <span style="margin-left: 0px;">Risk Evaluation</span>
-            <i style="margin-left: 0px;">Expert lawyers of relevant regions and fields evaluate and approve litigation funding and cooperation</i>
+            <i style="margin-left: 0px;">Expert lawyers of subject regions and fields evaluate and approve litigation funding and cooperation</i>
           </li>
           <li><img class="line line3" src="../../assets/images/hello6.png"/></li>
            <li>
@@ -150,7 +132,7 @@
            <li>
             <img class="img" src="../../assets/images/hello5.png"/>
             <span style="margin-left: -14px;">Win and Execution</span>
-            <i style="margin-left: -33px;width:160px">Get paid during the stages of the first instance, second instance or law enforcement, distribute the proceeds in accordance with a previously agreed commission rate. </i>
+            <i style="margin-left: -33px;width:160px">Get paid during the stages of the first instance, second instance or enforcement, distribute the proceeds in accordance with a previously agreed commission rate</i>
           </li>
         </ul>
         
@@ -160,13 +142,13 @@
         <img src="../../assets/images/support21eng.png">
         <ul class="introListBox1List">
           <li>Provide evidence and materials, introduce the case by clients or lawyers</li>
-          <li>LawStone carry out initial investigation and analysis upon the case materials and facts</li>
-          <li>Expert lawyers of relevant regions and fields evaluate and approve litigation funding and cooperation</li>
+          <li>LawStone carry out initial investigation and analysis on the case materials and facts</li>
+          <li>Expert lawyers of subject regions and fields evaluate and approve litigation funding and cooperation</li>
         </ul>
         <img class="img2" src="../../assets/images/support22eng.png">
         <ul class="introListBox1List2">
           <li>Sign litigation funding agreements, file the case and initiate the legal proceedings to safeguard lawful rights and interests</li>
-          <li>Get paid during the stages of the first instance, second instance or law enforcement, distribute the proceeds in accordance with a previously agreed commission rate.</li>
+          <li>Get paid during the stages of the first instance, second instance or enforcement, distribute the proceeds in accordance with a previously agreed commission rate</li>
         </ul>
       </div>  
     </div>

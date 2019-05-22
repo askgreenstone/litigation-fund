@@ -17,39 +17,39 @@
       <img class="litigationImg" src="../../assets/images/logo3.png">
       <div class="paragraph2">About LawStone</div>
       <div class="paragraph1">
-        LawStone is a leading litigation support service organization established by prominent legal and financial professionals
+        LawStone is a leading litigation service provider established by prominent legal and financial professionals
       </div>
       <div class="paragraph1">
-        We converge outstanding legal professionals and resources in civil and commercial litigation, arbitration, enforcement, mediation, bankruptcy restructuring and liquidation matters, engage in-depth analyses and demonstrations, formulate litigation strategies, manage risk control process, and provide financial support upon litigation cost, attorney fees and relevant expenditures involved in dispute resolutions. If the case wins and the losses are restored, we withdraw a certain service fees from the proceeds in accordance with a previously agreed commission rate. If the case loses, we bear the expenses without recourse, thereby effectively resolve the potential loss of litigation cost for the parties.
+        We draw together outstanding legal professionals and resources in areas of civil and commercial litigations, arbitrations, enforcements, mediations, bankruptcy restructuring and liquidation matters, perform in-depth analyses of the cases, formulate litigation strategies, manage risks, and provide financial support on litigation costs, attorney fees and other expenses in dispute resolutions. If the case wins and the losses are recovered, we withhold our service fees from the proceeds according to previously agreed upon compensation rates. If the case loses, we bear the expenses without recourses, thereby effectively protect our clients from potential loss of litigation expenses.
       </div>
       <div class="paragraph1">
-        We work closely with law firms, experts and specialists to provide more flexible fee arrangements and an one-stop litigation service model in civil and commercial judicial matters, reduce operational risks and litigation costs, and enhance the qualities of legal service for individual and enterprise clients. 
+        We work closely with law firms, experts and specialists to provide flexible fee arrangements under a one-stop shopping litigation service package in civil and commercial judicial matters, reduce operational risks and litigation costs, and enhance the quality of legal services for individual and enterprise clients.
       </div>
-      <div class="paragraph2">Merits of LawStone Litigation Support</div>
+      <div class="paragraph2">Merits of LawStone Litigation Funding</div>
       <div class="paragraph1">
         For complex or intractable situations exceeding the calibers of the in-house or local lawyers, LawStone recommends and provides outstanding professional teams that cover various regions and specialties to resolve the problems.
       </div>
       <div class="paragraph1">
-        Provide distressed clients with advanced attorney fees and litigation cost, achieving legal risk control and balance of financials.
+        Litigation financing provides distressed clients with advances in attorney fees and litigation costs, keeping the legal risk under control with balanced financials of the clients.
       </div>
       <div class="paragraph1">
-        Inject leading professional expertise into dispute resolutions, increase the capacities of the clients under high pressures to prevent unnecessary or premature transfer of rights and interests, forced concessions or compromises. 
+        We bring leading professional expertise into dispute resolutions, increase the capacities of our clients under high pressure and prevent unnecessary or premature transfer of rights and interests, or forced concessions or compromises. 
       </div>
       <div class="paragraph1">
-        Give leeway to the financial arrangements of individuals and enterprises, accelerate account receivable recoveries, minimize economic losses, and ensure that limited liquidity is not squeezed by litigation costs, so that to improve accounting and financial performance. 
+        LawStone Litigation Funding facilitates the financial arrangements of individuals and enterprises, accelerates account receivable recoveries, minimizes economic impacts, and ensures that liquidity is not squeezed by litigation costs, in order to improve accounting and financial performance. 
       </div>
       <div class="paragraph1">
-        Effectively transfer litigation cost, optimize legal team composition, resolve litigation risks, and boost trust and confidence in dispute resolutions.
+        LawStone effectively transfers litigation costs, optimizes legal team composition, resolves litigation risks, and builds trust and confidence of our clients in dispute resolutions.
       </div>
       
       <div class="paragraph2">Top Professionals</div>
-      <div class="paragraph3">LawStone works closely with leading experts, lawyers and specialists to provide clients with a packaged solution of litigation affairs.</div>
+      <div class="paragraph3">LawStone works closely with leading experts, lawyers and specialists to provide clients with a packaged solution of litigation affairs, including:</div>
       <div class="paragraph4">
         <ul>
           <li><i>-  </i><span>Senior litigation lawyers</span></li>
           <li><i>-  </i><span>Heads of law firm litigation departments</span></li>
           <li><i>-  </i><span>In-house, general counsels</span></li>
-          <li><i>-  </i><span>Former judicial staff</span></li>
+          <li><i>-  </i><span>Former staff of the judicial system</span></li>
           <li><i>-  </i><span>Solicitors of international arbitration</span></li>
           <li><i>-  </i><span>Bankruptcy, reorganization and liquidation specialists</span></li>
         </ul>
@@ -57,25 +57,14 @@
           <li><i>-  </i><span>Legal experts, famed professors</span></li>
           <li><i>-  </i><span>Investment bankers, senior financial professionals</span></li>
           <li><i>-  </i><span>Accounting, tax experts</span></li>
-          <li><i>-  </i><span>Leading lawyers and counsels in the fields of intellectual property, maritime and marine, infrastructure and construction, mining and energy, media, environment, medical and health, tort and compensation, etc.</span></li>
+          <li><i>-  </i><span>Leading lawyers and counsels in the fields of intellectual property, maritime and marine, infrastructure and construction, mining and energy, media, environment, medical and health, tort and compensation, etc</span></li>
         </ul>
       </div>
       <div class="paragraph1 paragraph7">
-        Rooted in China's booming legal services market, LawStone is committed to be a leading litigation support and service provider in the global market place. We respond to clients’ needs at the first place and take the same as our tenet, what we provide is not limited to case funding. We carry out in-depth investigations, detailed analyses and insight evaluations of cases and projects, bring up specialized and innovative solutions to our clients, help to balance the cost of judicial relief, advise on risk control and legal process. Professionals Lead to Win. 
-      </div>
-      
-      <div class="paragraph5" style="display:none">Items of LawStone Litigation Support include without limitation: </div>
-      <div class="paragraph4" style="display:none">
-        <ul>
-          <li><i>-  </i><span>Lawyers Fee</span></li>
-          <li><i>-  </i><span>Litigation Cost, Preservation Fee </span></li>
-          <li><i>-  </i><span>Arbitration Fee</span></li>
-          <li><i>-  </i><span>Notary Fee</span></li>
-          <li><i>-  </i><span>Audit Charges</span></li>
-        </ul>
+        Rooted in China's booming legal services market, LawStone is committed to be the leading litigation financing and service provider in the global market place. Client’s needs are our top priority. What we provide is not limited to case funding. We carry out in-depth investigations and evaluations of the cases, bring specialized and innovative solutions to our clients, help to mitigate the cost of judicial proceedings, advise on risk control and legal process. We help our clients to Win.
       </div>
       <div class="paragraph6">
-        <div class="more">More information, please download LawStone </div>
+        <div class="more">Download LawStone Litigation Support Brochure</div>
         <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">Download</a>
       </div>
     </div>

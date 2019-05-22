@@ -127,9 +127,9 @@
             <li>
               <div class="phaseImgBig">保全与执行</div>
               <div class="phaseImgSmall">
-                <span>公证债权文书执行</span><br>
-                <span>裁判文书执行</span><br>
-                <span>其他生效法律文书执行</span>
+                <span>公证债权文书</span><br>
+                <span>裁判文书</span><br>
+                <span>其他生效法律文书</span>
               </div>
             </li>
           </ul>
