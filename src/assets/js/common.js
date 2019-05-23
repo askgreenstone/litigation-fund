@@ -13,7 +13,6 @@ if(str.indexOf('localhost')>-1){
 }
 
 
-
 export default {
   globalUrl : globalUrl,
   globalMshare : globalMshare

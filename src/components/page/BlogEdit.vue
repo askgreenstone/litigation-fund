@@ -58,6 +58,7 @@ import Bottom from '@/components/common/Bottom'
 import {mapState,mapMutations} from 'vuex';
 import store from '@/vuex/store';
 import axios from 'axios';
+import { Loading } from 'element-ui'
 
 export default {
   name: 'BlogEdit',
@@ -72,7 +73,8 @@ export default {
       nDocName : '',
       baiduDocID : '',
       extDocType : '',
-      dts: ''
+      dts: '',
+      ossFileName: '',
     }
   },
   computed: {
@@ -120,23 +122,54 @@ export default {
         return;
       } 
       r.onloadend = function(e) {
-          var data = e.target.result;
-          var fd = new FormData();
-          fd.append('fileToUpload', f);
-          fd.append('filename', f.name);
-          // console.log(fd);
-          // console.log(fd.fileToUpload);
-          axios.post(common.globalUrl + '/data/UploadBaiDuDoc.do',fd)
-          .then(function(response){
-            // console.log(response.data);
-            if(response.data.c === 1000){
-              that.baiduDocID = response.data.bdid;
-              that.extDocType = response.data.bdt;
-            }
-          })
-          .catch(function(error){
-            alert('网络连接错误或服务器异常！')
-          })
+        
+
+        var data = e.target.result;
+        var fd = new FormData();
+        fd.append('fileToUpload', f);
+        fd.append('filename', f.name);
+        // console.log(fd);
+        const options = {
+          lock: true,
+          text: '上传中',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        }
+        let loadingInstance = Loading.service(options);
+        Loading.service(options);
+        axios.post(common.globalUrl + '/data/upload',fd)
+        .then(function(response){
+          // console.log(response.data);
+          if(response.data.c === 1000){
+            that.ossFileName = response.data.on
+            var data2 = e.target.result;
+            var fd2 = new FormData();
+            fd2.append('fileToUpload', f);
+            fd2.append('filename', f.name);
+            // console.log(fd);
+            // console.log(fd.fileToUpload);
+            axios.post(common.globalUrl + '/data/UploadBaiDuDoc.do',fd)
+            .then(function(response){
+              // console.log(response.data);
+              if(response.data.c === 1000){
+                that.baiduDocID = response.data.bdid;
+                that.extDocType = response.data.bdt;
+                loadingInstance.close();
+                alert('上传成功！')
+              }else{
+                loadingInstance.close();
+              }
+            })
+            .catch(function(error){
+              alert('网络连接错误或服务器异常！')
+              loadingInstance.close();
+            })
+          }
+        })
+        .catch(function(error){
+          alert('网络连接错误或服务器异常！')
+          loadingInstance.close();
+        })
       };
       r.readAsDataURL(f);
       this.nDocName = e.target.files[0].name;
@@ -183,6 +216,7 @@ export default {
         fd.append('fileToUpload', f);
         fd.append('filename', f.name);
         // console.log(fd);
+
         axios.post(common.globalUrl + '/data/upload',fd)
         .then(function(response){
           // console.log(response.data);
@@ -198,6 +232,18 @@ export default {
       };
       r.readAsDataURL(f);
     },
+    // loading
+    openFullScreen2() {
+        const loading = this.$loading({
+          lock: true,
+          text: 'Loading',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
+        setTimeout(() => {
+          loading.close();
+        }, 2000);
+      },
     // textarea转换保留空格和换行
     textareaTo: function(str){
       var reg=new RegExp("\n","g");
@@ -249,6 +295,7 @@ export default {
         nDocName : that.nDocName,
         baiduDocID : that.baiduDocID,
         extDocType : that.extDocType,
+        nOSSDocName : that.ossFileName
       })
       .then(function(response){
         // console.log(response.data);
