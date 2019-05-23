@@ -14,6 +14,7 @@
     </div>
     <!-- 律石研究院文章详情 -->
     <div v-if="nDocName" class="contentBox">
+      <a :href=nOSSDocName download>点击下载pdf</a>
       <div id="reader"></div>
     </div>
     <div v-else class="contentBox">
@@ -52,9 +53,10 @@ export default {
       nContent : '',
       nPicture : '',
       nDocName : '',
+      nOSSDocName : '',
       baiduDocID : '',
       extDocType : '',
-      dts: ''
+      dts: '',
     }
   },
   computed:{
@@ -89,6 +91,7 @@ export default {
         that.nContent = that.textareaTo(data.nContent);
         that.nPicture = data.nPicture;
         that.nDocName = data.nDocName;
+        that.nOSSDocName = common.globalMshare + data.nOSSDocName;
         that.baiduDocID = data.baiduDocID;
         that.extDocType = data.extDocType;
         that.dts = new Date(data.ts).Format('yyyy-MM-dd hh:mm');
