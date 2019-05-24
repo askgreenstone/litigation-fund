@@ -10,7 +10,7 @@
         <img src="../../assets/images/banner2.png">
         <div class="aboutImgBox">
           <div class="aboutChiPc">CONTACT US</div>
-          <div class="aboutChiH5">Contact Us</div>
+          <div class="aboutChiH5">CONTACT US</div>
           <div class="aboutEng"></div>
         </div>
         
@@ -38,7 +38,7 @@
             <input type="text" v-model.trim="clientSubject" name="" placeholder="Claim Value">
           </div>
           <div class="rightTextarea">
-            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="Description of Facts">
+            <textarea cols="5" rows="3" v-model.trim="clientDemand" placeholder="Description of facts">
               
             </textarea>
           </div>
@@ -85,19 +85,19 @@ export default {
     },
     submit: function(event) {
       if(!this.clientName){
-        alert('请输入您的姓名！');
+        alert('Please enter your name!');
         return;
       }else if(!this.clientTel){
-        alert('请输入您的电话！');
+        alert('Please enter your telephone number!');
         return;
       }else if(this.clientTel.length != 11){
-        alert('电话号码位数不正确');
+        alert('Please enter your phone number!');
         return;
       }else if(!this.clientSubject){
-        alert('请输入诉讼标的！');
+        alert('Please enter your claim value!');
         return;
       }else if(!this.clientDemand){
-        alert('请输入需求描述！');
+        alert('Please enter your description of facts!');
         return;
       }
       // ”lfdid”:诉讼基金ID   可空   int
@@ -119,10 +119,10 @@ export default {
       })
       .then(function (success) {
         // console.log(success);
-        alert('提交成功！')
+        alert('Submitted successfully!')
       })
       .catch(function (error) {
-        alert('网络连接错误或服务器异常！');
+        alert('Network connection error or server exception!');
       });
 
     }
@@ -303,7 +303,7 @@ export default {
     padding-top: 35px;
   }
   .aboutChiH5{
-    width: 100px;
+    width: 130px;
     display: block;
     height: 24px;
     text-align: center;
@@ -311,6 +311,7 @@ export default {
     color: #333;
     font-size: 18px;
     border-bottom: 1px solid #c49a6d;
+    margin-left: -15px;
   }
   .aboutChiPc{
     display: none;

@@ -94,7 +94,7 @@
       </div>
       <ul class="phase">
         <li class="phaseLine">————</li>
-        <li class="phaseImg">
+        <li class="phaseImg phaseImgLeft">
           <ul>
             <li><img src="../../assets/images/phase1.png"></li>
             <li class="phaseTextActive">Litigations</li>
@@ -109,7 +109,7 @@
           </ul>
         </li>
         <li class="phaseLine">————</li>
-        <li class="phaseImg">
+        <li class="phaseImg phaseImgRight">
           <ul>
             <li><img src="../../assets/images/phase2.png"></li>
             <li class="phaseTextActive">Arbitration</li>
@@ -123,7 +123,7 @@
           </ul>
         </li>
         <li class="phaseLine">————</li>
-        <li class="phaseImg">
+        <li class="phaseImg phaseImgLeft">
           <ul>
             <li><img src="../../assets/images/phase3.png"></li>
             <li class="phaseTextActive">Preservation and Enforcement</li>
@@ -136,7 +136,7 @@
           </ul>
         </li>
         <li class="phaseLine">————</li>
-        <li class="phaseImg">
+        <li class="phaseImg phaseImgRight">
           <ul>
             <li><img src="../../assets/images/phase4.png"></li>
             <li class="phaseTextActive">Bankruptcy and Liquidation</li>
@@ -366,13 +366,13 @@ export default {
   line-height: 1.5;
 }
 .litigationPcBox{
-  width: 800px;
+  width: 860px;
   height: 450px;
   margin: 0 auto;
   display: flex;
 }
 .litigationPcBox1{
-  width: 400px;
+  width: 430px;
   height: 450px;
   display: flex;
   padding-top: 65px;
@@ -463,7 +463,7 @@ export default {
     display: block;
     height: 30px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     color: #333;
     font-size: 18px;
     border-bottom: 1px solid #c49a6d;
@@ -499,7 +499,7 @@ export default {
   }
   .introTitle{
     color: #333;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 22px;
   }
   .introLine{
@@ -567,6 +567,12 @@ export default {
   .phaseImg ul{
     width: 150px;
     text-align: center;
+  }
+  .phaseImgLeft{
+    margin-left: -10px;
+  }
+  .phaseImgRight{
+    margin-left: 30px;
   }
   .phaseImg img{
     width: 80px;

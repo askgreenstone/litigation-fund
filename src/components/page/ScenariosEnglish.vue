@@ -19,7 +19,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case01.jpg">
+            <img class="imgFirst" src="../../assets/images/case01eng.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">Corporate Law – Shareholder Contribution</div>
@@ -31,7 +31,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case02.jpg">
+            <img class="imgFirst" src="../../assets/images/case02eng.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">Intellectual Property – Infringement and Defense</div>
@@ -43,7 +43,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case03.jpg">
+            <img class="imgFirst" src="../../assets/images/case03eng.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">Civil Tort – Environment Protection</div>
@@ -55,7 +55,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case04.jpg">
+            <img class="imgFirst" src="../../assets/images/case04eng.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">Debt Restructuring – Bankruptcy Reorganization</div>
@@ -210,6 +210,7 @@ export default {
 }
 .caseList li .imgFirst{
   margin-bottom: 20px;
+  width: 100%;
 }
 .caseList li:last-child{
   border-bottom: 0;

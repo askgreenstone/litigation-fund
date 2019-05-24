@@ -8,13 +8,13 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
       <div class="aboutImgBox">
-        <div class="aboutChi">律石研究院</div>
-        <div class="aboutEng">LS INSTITUTE</div>
+        <div class="aboutChi">LS INSTITUTE</div>
+        <div class="aboutEng"></div>
       </div>
     </div>
     <!-- 律石研究院文章详情 -->
     <div v-if="nDocName" class="contentBox">
-      <a :href=nOSSDocName download>点击下载 PDF</a>
+      <a :href=nOSSDocName download>download PDF</a>
       <div id="reader"></div>
     </div>
     <div v-else class="contentBox">
@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import TopNavBlack from '@/components/common/TopNavBlack'
-import Bottom from '@/components/common/Bottom'
+import TopNavBlack from '@/components/common/TopNavBlackEng'
+import Bottom from '@/components/common/BottomEng'
 import store from '@/vuex/store';
 import {mapState,mapMutations} from 'vuex';
 import axios from 'axios';
@@ -85,7 +85,7 @@ export default {
       var that = this;
       axios.get(common.globalUrl + '/exp/QuerylfNewsDetail.do?lfnid='+lfnid)
       .then(function(response){
-        // console.log(response.data);
+        console.log(response.data);
         var data = response.data;
         that.nTitle = data.nTitle;
         that.nContent = that.textareaTo(data.nContent);
@@ -95,10 +95,10 @@ export default {
         that.baiduDocID = data.baiduDocID;
         that.extDocType = data.extDocType;
         that.dts = new Date(data.ts).Format('yyyy-MM-dd hh:mm');
-        that.baiduDocID && that.initBaiduDoc(data.baiduDocID);
+        data.baiduDocID && that.initBaiduDoc(data.baiduDocID);
       })
       .catch(function(error){
-        console.log(error)
+          console.log(error)
         // alert('网络连接错误或服务器异常!!！')
       })
     },
@@ -167,15 +167,15 @@ export default {
   top: -89px;
 }
 .aboutImgBox{
-  width: 100px;
+  width: 150px;
   height: 60px;
   position: absolute;
   left: 50%;
   top: 40%;
-  margin-left: -50px;
+  margin-left: -75px;
 }
 .aboutChi{
-  width: 120px;
+  width: 150px;
   height: 30px;
   text-align: center;
   color: #fff;
@@ -183,7 +183,7 @@ export default {
   border-bottom: 1px solid #c49a6d;
 }
 .aboutEng{
-  width: 120px;
+  width: 150px;
   height: 22px;
   text-align: center;
   color: #fff;

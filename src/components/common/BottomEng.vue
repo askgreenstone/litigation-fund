@@ -21,8 +21,8 @@
       <li class="bottomListTel bottomListTelH5">
         <div>
           <span class="bottomListContactUs">Contact Us</span><br>
-          <span>Email :<br/> business@green-stone.cn</span><br>
-          <span>WeChat Official Account : <br/>Litigation Support</span>
+          <span style="position: relative;top: 5px;">Email :<br/> business@green-stone.cn</span><br>
+          <span style="position: relative;top: 20px;">WeChat Official Account : <br/>Litigation Support</span>
         </div>
       </li>
       <li class="bottomListQrcode">

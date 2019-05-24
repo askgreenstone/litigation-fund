@@ -3,7 +3,7 @@
   <div class="applyFunding">
     <img src="../../assets/images/applyFunding.png">
     <div class="applyTitle">Let Us Resolve Your Litigation Risks</div>
-    <router-link tag="div" to="/Contact" class="applyButton">Apply for Litigation Funding</router-link>
+    <router-link tag="div" to="/Contact-en" class="applyButton">Apply for Litigation Funding</router-link>
   </div>
 </template>
 

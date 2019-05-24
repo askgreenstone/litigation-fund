@@ -286,7 +286,7 @@ export default {
     width: 100%;
   }
   .litigationImg{
-    height: 50px;
+    height: 45px;
     display: block;
     margin: 40px auto;
   }
@@ -310,7 +310,7 @@ export default {
     margin: 20px auto 30px;
     color: #c49a6d;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
   }
   .paragraph3{
     width: 100%;

@@ -4,8 +4,8 @@
     <div class="topMenu">
       <div class="topMenuBox">
         <span class="welcome">您好，欢迎来到律石诉讼资助！</span>
-        <!-- <span class="login" v-show="!username" @click="showLogin">登录</span>
-        <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link> -->
+        <span class="login" v-show="!username" @click="showLogin">登录</span>
+        <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link>
         <span class="language">
           <span v-for="item in languageList" @click="selectLanguage(item)" :class="item.id == languageId ? 'active' : ''" :key="item.id">{{item.name}}</span>
           <!-- <span>English</span>/<span class="active">中文</span> -->
@@ -82,10 +82,6 @@ export default {
           name: '中文',
           id: 2
         },
-         {
-          name: '/',
-          id: 0
-        },
         {
           name: 'English',
           id: 1
@@ -127,21 +123,19 @@ export default {
     },
     // 选择语言
     selectLanguage: function(data){
-      if(data.id === 0){
-        return
-      }
       // console.log(window.location.pathname)
       let pathname = window.location.pathname
+      let search = window.location.search
       let newPathname = ''
       if(pathname.indexOf('-en') > -1){
         if(pathname.indexOf('Index') > -1){
           newPathname = '/'
         }else{
-          newPathname = pathname.replace('-en','')
+          newPathname = pathname.replace('-en','') + search
         }
         this.languageId = 2
       }else{
-        newPathname = pathname === '/' ? '/Index-en' : pathname + '-en'
+        newPathname = pathname === '/' ? '/Index-en' : pathname + '-en' + search
         this.languageId = 1
       }
       // console.log(this.$router)
@@ -200,6 +194,7 @@ export default {
 .topMenuBox{
   width: 1200px;
   margin: 0 auto;
+  display: flex;
 }
 .topMenu span{
   height: 26px;
@@ -213,7 +208,6 @@ export default {
   color: #333;
 }
 .login{
-  margin-left: 2.5%;
   font-size: 12px;
   color: #c49a6d;
   cursor: pointer;
