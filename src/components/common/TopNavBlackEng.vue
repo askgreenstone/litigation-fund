@@ -3,10 +3,15 @@
     <!-- 顶部欢迎菜单包括登录按钮，中英文切换 -->
     <div class="topMenu">
       <div class="topMenuBox">
-
+         
         <span class="welcome">Welcome To LawStone Litigation Support</span>
+
+        <!--登录模块 manager 打包时需要放开注释，公开版需要注释 -->
         <span class="login" v-show="!username" @click="showLogin">login</span>
         <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link>
+
+
+        
         <span class="language">
           <span v-for="item in languageList" @click="selectLanguage(item)" :class="item.id == languageId ? 'active' : ''" :key="item.id">{{item.name}}</span>
           <!-- <span>English</span>/<span class="active">中文</span> -->

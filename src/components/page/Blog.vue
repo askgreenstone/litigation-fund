@@ -152,7 +152,8 @@ export default {
       // baiduDocID :  百度附件ID    String
       // extDocType :  附件扩展名    String
       // console.log(that);
-      axios.get(common.globalUrl+'/exp/QuerylfNews.do?page=0&count=5&keyWord='+that.keyword)
+       //  enorcn  1中文  2英文
+      axios.get(common.globalUrl+'/exp/QuerylfNews.do?enorcn=1&page=0&count=5&keyWord='+that.keyword)
       .then(function (response) {
         // console.log(response.data);
         that.newsList = response.data.lfnl;
@@ -217,7 +218,7 @@ export default {
       // baiduDocID :  百度附件ID    String
       // extDocType :  附件扩展名    String
       // console.log(that);
-      axios.get(common.globalUrl+'/exp/QuerylfNews.do?page='+page+'&count=5')
+      axios.get(common.globalUrl+'/exp/QuerylfNews.do?enorcn=1&page='+page+'&count=5')
       .then(function (response) {
         // console.log(response.data);
         that.newsList = response.data.lfnl;

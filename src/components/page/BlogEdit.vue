@@ -43,7 +43,11 @@
       <div class="content">
         <textarea placeholder="请输入内容" v-model="nContent"></textarea>
       </div>
-      <div class="submit" @click="gotoUpload">发布</div>
+      <div class="submitBox">
+        <div class="submit" @click="gotoUpload(1)">发布中文版</div>
+        <div class="submit" @click="gotoUpload(2)">发布英文版</div>
+      </div>
+      
     </div>
     <!-- 首页底部 -->
     <Bottom></Bottom>
@@ -261,7 +265,8 @@ export default {
       return str;
     },
     // 提交上传标题，附件，内容
-    gotoUpload: function(){
+    gotoUpload: function(index){
+       //  enorcn  1中文  2英文
       var that = this;
       if(!this.nPicture){
         alert('请上传图片！');
@@ -295,7 +300,8 @@ export default {
         nDocName : that.nDocName,
         baiduDocID : that.baiduDocID,
         extDocType : that.extDocType,
-        nOSSDocName : that.ossFileName
+        nOSSDocName : that.ossFileName,
+        enorcn : index
       })
       .then(function(response){
         // console.log(response.data);
@@ -536,6 +542,9 @@ export default {
   line-height: 26px;
   box-sizing: border-box;
 }
+.submitBox{
+  display: flex;
+}
 .submit{
   width: 106px;
   height: 30px;
@@ -547,6 +556,7 @@ export default {
   border-radius: 3px;
   cursor: pointer;
   margin-bottom: 50px;
+  margin-right: 30px;
 }
 @media screen and (max-width:414px){
   .position{

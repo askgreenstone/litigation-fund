@@ -4,8 +4,12 @@
     <div class="topMenu">
       <div class="topMenuBox">
         <span class="welcome">您好，欢迎来到律石诉讼资助！</span>
+
+        <!--登录模块 manager 打包时需要放开注释，公开版需要注释 -->
         <span class="login" v-show="!username" @click="showLogin">登录</span>
         <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link>
+
+
         <span class="language">
           <span v-for="item in languageList" @click="selectLanguage(item)" :class="item.id == languageId ? 'active' : ''" :key="item.id">{{item.name}}</span>
           <!-- <span>English</span>/<span class="active">中文</span> -->

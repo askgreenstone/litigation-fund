@@ -83,7 +83,8 @@ export default {
     // 获取某条新闻详细信息
     getInforDetail: function(lfnid){
       var that = this;
-      axios.get(common.globalUrl + '/exp/QuerylfNewsDetail.do?lfnid='+lfnid)
+       //  enorcn  1中文  2英文
+      axios.get(common.globalUrl + '/exp/QuerylfNewsDetail.do?enorcn=2&lfnid='+lfnid)
       .then(function(response){
         console.log(response.data);
         var data = response.data;
