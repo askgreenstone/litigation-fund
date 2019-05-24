@@ -19,6 +19,7 @@ import Blog from '@/components/page/Blog'
 import BlogEnglish from '@/components/page/BlogEnglish'
 import BlogEdit from '@/components/page/BlogEdit'
 import BlogDetail from '@/components/page/BlogDetail'
+import BlogDetailEnglish from '@/components/page/BlogDetailEnglish'
 import InforList from '@/components/page/InforList'
 import InforDetail from '@/components/page/InforDetail'
 import Error from '@/components/page/Error'
@@ -92,6 +93,10 @@ export default new Router({
     {
       path: '/Blog/BlogDetail',
       component: BlogDetail
+    },
+    {
+      path: '/Blog/BlogDetail-en',
+      component: BlogDetailEnglish
     },
     {
       path: '/Contact',

@@ -18,7 +18,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case01.jpg">
+            <img class="imgFirst" src="../../assets/images/case01.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">公司法 – 股东出资</div>
@@ -30,7 +30,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case02.jpg">
+            <img class="imgFirst" src="../../assets/images/case02.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">知识产权 – 侵权与抗辩</div>
@@ -42,7 +42,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case03.jpg">
+            <img class="imgFirst" src="../../assets/images/case03.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">民事侵权 – 环境保护</div>
@@ -54,7 +54,7 @@
       <li>
         <div class="caseListBox">
           <div class="caseListBoxLeft">
-            <img class="imgFirst" src="../../assets/images/case04.jpg">
+            <img class="imgFirst" src="../../assets/images/case04.png">
           </div>
           <div class="caseListBoxRight">
             <div class="caseListBoxRightTitle">债务重组 – 破产重整</div>

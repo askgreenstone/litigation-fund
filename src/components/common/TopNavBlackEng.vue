@@ -5,8 +5,8 @@
       <div class="topMenuBox">
 
         <span class="welcome">Welcome To LawStone Litigation Support</span>
-        <!-- <span class="login" v-show="!username" @click="showLogin">登录</span>
-        <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link> -->
+        <span class="login" v-show="!username" @click="showLogin">login</span>
+        <router-link tag="span" to="/Contact/InforList" class="login" v-show="username" >{{username}}</router-link>
         <span class="language">
           <span v-for="item in languageList" @click="selectLanguage(item)" :class="item.id == languageId ? 'active' : ''" :key="item.id">{{item.name}}</span>
           <!-- <span>English</span>/<span class="active">中文</span> -->
@@ -82,10 +82,6 @@ export default {
           id: 2
         },
         {
-          name: '/',
-          id: 0
-        },
-        {
           name: 'English',
           id: 1
         },
@@ -128,21 +124,19 @@ export default {
     },
     // 选择语言
     selectLanguage: function(data){
-      if(data.id === 0){
-        return
-      }
       // console.log(window.location.pathname)
       let pathname = window.location.pathname
+      let search = window.location.search
       let newPathname = ''
       if(pathname.indexOf('-en') > -1){
         if(pathname.indexOf('Index') > -1){
           newPathname = '/'
         }else{
-          newPathname = pathname.replace('-en','')
+          newPathname = pathname.replace('-en','') + search
         }
         this.languageId = 2
       }else{
-        newPathname = pathname === '/' ? '/Index-en' : pathname + '-en'
+        newPathname = pathname === '/' ? '/Index-en' : pathname + '-en' + search
         this.languageId = 1
       }
       // console.log(this.$router)
@@ -201,6 +195,7 @@ export default {
 .topMenuBox{
   width: 1200px;
   margin: 0 auto;
+  display: flex;
 }
 .topMenu span{
   height: 26px;
@@ -213,7 +208,6 @@ export default {
   color: #333;
 }
 .login{
-  margin-left: 2.5%;
   font-size: 12px;
   color: #c49a6d;
   cursor: pointer;
@@ -353,8 +347,8 @@ export default {
   width: 20%;
   height: 85px;
   float: left;
-  margin-left: 8%;
-  margin-right: 4%;
+  margin-left: 4%;
+  margin-right: 2%;
   cursor: pointer;
 }
 .topNavLeft img{
@@ -363,19 +357,20 @@ export default {
   margin-top: 17px; 
 }
 .topNav{
-  width: 66%;
+  width: 74%;
   float: left;
   padding-top: 20px;
   line-height: 65px;
 }
 .topNav li{
   float: left;
-  margin: 0 1%;
+  margin: 0 2%;
   font-size: 14px;
   border-bottom: 2px solid transparent;
   text-align: center;
   cursor: pointer;
   color: #fff;
+  width: auto;
 }
 .topNavBoxWhite li{
   color: #333;
@@ -400,8 +395,7 @@ export default {
 
 @media screen and (min-width: 1200px) and (max-width:1360px){
   .topNav li{
-    width: 12.5%;
-    margin: 0;
+    width: auto;
   }
 
 }
@@ -419,8 +413,7 @@ export default {
     width: 217px;
   }
   .topNav li{
-    width: 12.5%;
-    margin: 0;
+    width: auto;
   }
   
 }
@@ -628,7 +621,7 @@ export default {
   .topNav li{
     float: left;
     width: 9%;
-    margin: 0 1%;
+    margin: 0 2%;
     font-size: 14px;
     border-bottom: 2px solid transparent;
     text-align: center;

@@ -119,7 +119,7 @@
           <li><img class="line line2" src="../../assets/images/hello6.png"/></li>
            <li>
             <img class="img" src="../../assets/images/hello3.png"/>
-            <span style="margin-left: 0px;">Risk Evaluation</span>
+            <span style="margin-left: 0px;">Risk<br/>Evaluation</span>
             <i style="margin-left: 0px;">Expert lawyers of subject regions and fields evaluate and approve litigation funding and cooperation</i>
           </li>
           <li><img class="line line3" src="../../assets/images/hello6.png"/></li>
@@ -141,13 +141,13 @@
       <div class="introListBox2">
         <img src="../../assets/images/support21eng.png">
         <ul class="introListBox1List">
-          <li>Provide evidence and materials, introduce the case by clients or lawyers</li>
+          <li style="margin-left:20px;">Provide evidence and materials, introduce the case by clients or lawyers</li>
           <li>LawStone carry out initial investigation and analysis on the case materials and facts</li>
           <li>Expert lawyers of subject regions and fields evaluate and approve litigation funding and cooperation</li>
         </ul>
         <img class="img2" src="../../assets/images/support22eng.png">
         <ul class="introListBox1List2">
-          <li>Sign litigation funding agreements, file the case and initiate the legal proceedings to safeguard lawful rights and interests</li>
+          <li style="margin-left:10px;">Sign litigation funding agreements, file the case and initiate the legal proceedings to safeguard lawful rights and interests</li>
           <li>Get paid during the stages of the first instance, second instance or enforcement, distribute the proceeds in accordance with a previously agreed commission rate</li>
         </ul>
       </div>  
@@ -759,7 +759,7 @@ export default {
     line-height: 33px;
   }
   .lawyerList{
-    width: 280px;
+    width: 320px;
     display: flex;
     height: auto;
     flex-wrap: wrap;
@@ -768,10 +768,17 @@ export default {
   }
   .lawyerList li{
     width: 80px;
-    margin: 0 30px 30px 30px;
+    margin: 0 40px 30px 40px;
+  }
+  .lawyerList li:nth-child(even){
+    margin-left: 90px;
+    margin-right: 10px;
+  }
+  .lawyerList li:nth-child(odd){
+    margin-left: 10px;
   }
   .lawyerList li img{
-    width: 80px;
+    width: 70px;
     display: block;
   }
   .lawyerTitle{
@@ -810,15 +817,15 @@ export default {
     display: block;
     padding: 15px 0 30px 25px;
     background: url('../../assets/images/lightBg2.png');
-    background-size: cover;
+    background-size: contain;
   }
   .introListBox2 img{
     display: block;
-    width: 100%;
+    width: 90%;
   }
   .introListBox2 img.img2{
     display: block;
-    width: 66.6%;
+    width: 60%;
     margin-top: 15px;
   }
   .introListBox2 .introListBox1List{
