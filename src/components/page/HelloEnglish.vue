@@ -23,7 +23,7 @@
 
     <!-- 诉讼资助简介 -->
     <div class="introduction">
-      <div class="introTitle">LawStone Litigation Support</div>
+      <div class="introTitle">Litigation Support</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
@@ -199,13 +199,6 @@ export default {
   },
   methods:{
     init:function(){
-      // 设置图片轮播容器高度 图片原尺寸：1366*570
-      // var windowWidth = window.innerWidth;
-      // 获取图片高度
-      // var imgHeight = (570/1366)*windowWidth;
-      // console.log(imgHeight);
-      // 设置轮播图盒子高度
-      // document.getElementById('#window').style.height = imgHeight+'px';
       let mySwiper = new Swiper('.swiper-container', {
         speed:300,
         autoplay : {
@@ -219,53 +212,10 @@ export default {
     })
 
     },
-    // 通过底部按钮切换图片
-    change:function(index){
-      this.mark = index;
-    },
-    // 图片轮播自动播放
-    autoPlay:function(){
-      this.mark++;
-      // console.log(window);
-      // console.log(this.mark);
-      if(this.mark == 2){
-        this.mark = 0
-        return
-      }
-    },
-    // 图片轮播播放
-    play: function(){
-      this.timer = setInterval(this.autoPlay,5000)
-    },
-    // 图片轮播停止
-    stop: function(event){
-      clearInterval(this.timer);
-    },
-    // 向左滑动
-    left:function(){
-      clearInterval(this.timer);
-      this.mark -=1;
-      if(this.mark == -1){
-        this.mark = 1
-        return
-      }
-    },
-    // 向右滑动
-    right:function(){
-      clearInterval(this.timer);
-      this.mark +=1;
-      if(this.mark == 2){
-        this.mark = 0
-        return
-      }
-    }
   },
   mounted: function(){
     this.init();
   },
-  created: function(){
-    this.play();
-  }
 }
 </script>
 
@@ -398,7 +348,7 @@ export default {
   margin-right: 10px;
 }
 .introLine span.two{
-  width: 320px;
+  width: 200px;
 }
 .introduction2 .introLine span.two{
   width: 350px;

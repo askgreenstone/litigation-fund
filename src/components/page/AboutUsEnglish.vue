@@ -27,7 +27,7 @@
       </div>
       <div class="paragraph2">Merits of LawStone Litigation Funding</div>
       <div class="paragraph1">
-        For complex or intractable situations exceeding the calibers of the in-house or local lawyers, LawStone recommends and provides outstanding professional teams that cover various regions and specialties to resolve the problems.
+        For complex situations exceeding the calibers of in-house or local lawyers, LawStone recommends and provides outstanding professional teams that cover various regions in China with specialties to resolve the problems. 
       </div>
       <div class="paragraph1">
         Litigation financing provides distressed clients with advances in attorney fees and litigation costs, keeping the legal risk under control with balanced financials of the clients.
@@ -65,7 +65,7 @@
       </div>
       <div class="paragraph6">
         <div class="more">Download LawStone Litigation Support Brochure</div>
-        <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">Download</a>
+        <a href="http://dist.green-stone.cn/common/font/litigationSupportEnglish.pdf" download="text" class="download">Download</a>
       </div>
     </div>
     <!-- 申请资助 -->

@@ -252,7 +252,7 @@ export default {
   height: 166px;
   line-height: 22px;
   color: #979797;
-  text-indent: 10px;
+  text-indent: 8px;
   font-size: 14px;
 }
 .rightButton{
@@ -399,7 +399,7 @@ export default {
     height: 166px;
     line-height: 22px;
     color: #979797;
-    text-indent: 10px;
+    text-indent: 8px;
     font-size: 14px;
   }
   .rightButton{

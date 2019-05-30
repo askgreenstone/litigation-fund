@@ -256,7 +256,7 @@ export default {
   height: 166px;
   line-height: 22px;
   color: #979797;
-  text-indent: 10px;
+  text-indent: 8px;
   font-size: 14px;
 }
 .rightButton{
@@ -400,6 +400,10 @@ export default {
     height: 170px;
     border: 1px solid #ccc;
     margin: 15px 22px;
+
+
+
+    
   }
   .rightTextarea textarea{
     border: none;
@@ -408,7 +412,7 @@ export default {
     height: 166px;
     line-height: 22px;
     color: #979797;
-    text-indent: 10px;
+    text-indent: 8px;
     font-size: 14px;
   }
   .rightButton{

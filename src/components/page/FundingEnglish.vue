@@ -93,11 +93,11 @@
         <div class="introEng"></div>
       </div>
       <ul class="phase">
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg phaseImgLeft">
           <ul>
             <li><img src="../../assets/images/phase1.png"></li>
-            <li class="phaseTextActive">Litigations</li>
+            <li class="phaseTextActive">Litigations<br/></li>
             <li>
               <div class="phaseImgBig">Litigations</div>
               <div class="phaseImgSmall">
@@ -108,7 +108,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg phaseImgRight">
           <ul>
             <li><img src="../../assets/images/phase2.png"></li>
@@ -122,7 +122,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg phaseImgLeft">
           <ul>
             <li><img src="../../assets/images/phase3.png"></li>
@@ -130,12 +130,14 @@
             <li>
               <div class="phaseImgBig">Preservation and Enforcement</div>
               <div class="phaseImgSmall">
-                <span>Notarized Instrument of Creditor's Rights, Adjudicatory Instruments, Legal Instruments in Force</span>
+                <span>Notarized Instrument of Creditor's Rights</span><br>
+                <span> Adjudicatory Instruments</span><br>
+                <span> Legal Instruments in Force</span>
               </div>
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg phaseImgRight">
           <ul>
             <li><img src="../../assets/images/phase4.png"></li>
@@ -151,7 +153,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
       </ul>
     </div>
     <!-- 风险告知 -->
@@ -321,25 +323,25 @@ export default {
   margin-bottom: 40px;
 }
 .phase{
-  width: 1100px;
+  width: 1000px;
   height: 300px;
   display: flex;
   margin: 0 auto;
 }
 .phaseLine{
   width: 80px;
-  height: 100px;
+  height: 2px;
   line-height: 100px;
-  color: #ccc;
+  background: #ccc;
+  margin: 49px 20px;
 }
 .phaseImg ul{
-  width: 175px;
+  width: 100px;
   text-align: center;
 }
 .phaseImg img{
   width: 100px;
   height: 100px;
-  margin-left: 37px;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -349,6 +351,9 @@ export default {
   margin-bottom: 20px;
 }
 .phaseTextActive{
+  width: 150px;
+  height: 52px;
+  margin-left: -25px;
   color: #c49a6d;
   font-size: 17px;
   margin-bottom: 20px;
@@ -361,18 +366,21 @@ export default {
   display: none;
 }
 .phaseImgSmall{
+  width: 190px;
+  margin-left: -45px;
   color: #4d4d4d;
   font-size: 14px;
   line-height: 1.5;
 }
 .litigationPcBox{
-  width: 860px;
+  width: 1100px;
   height: 450px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
 }
 .litigationPcBox1{
-  width: 430px;
+  // width: 430px;
   height: 450px;
   display: flex;
   padding-top: 65px;
@@ -422,7 +430,7 @@ export default {
   padding: 30px 0;
 }
 .youKnow .youKnowBox{
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
   color: #333;
   line-height: 2;

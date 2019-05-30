@@ -16,7 +16,7 @@ export default {
 html,body,#app{
   margin: 0;
   padding: 0;
-  font-family: 'Source Han Sans CN';
+  font-family: "Noto Sans CJK SC", "Source Han Sans CN";
 }
 @media screen and (min-width: 1200px) and (max-width:1360px){
   html,body,#app{
@@ -54,6 +54,7 @@ input{
 }
 textarea{
   outline: none;
+  font-family: "Noto Sans CJK SC", "Source Han Sans CN";
 }
 #app {
   -webkit-font-smoothing: antialiased;

@@ -90,7 +90,7 @@
         <div class="introEng">LITIGATION PHASES</div>
       </div>
       <ul class="phase">
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase1.png"></li>
@@ -105,7 +105,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase2.png"></li>
@@ -119,7 +119,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase3.png"></li>
@@ -134,7 +134,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
         <li class="phaseImg">
           <ul>
             <li><img src="../../assets/images/phase4.png"></li>
@@ -150,7 +150,7 @@
             </li>
           </ul>
         </li>
-        <li class="phaseLine">————</li>
+        <li class="phaseLine"></li>
       </ul>
     </div>
     <!-- 风险告知 -->
@@ -318,25 +318,25 @@ export default {
   margin-bottom: 40px;
 }
 .phase{
-  width: 1100px;
+  width: 1000px;
   height: 300px;
   display: flex;
   margin: 0 auto;
 }
 .phaseLine{
   width: 80px;
-  height: 100px;
+  height: 2px;
   line-height: 100px;
-  color: #ccc;
+  background: #ccc;
+  margin: 49px 20px;
 }
 .phaseImg ul{
-  width: 175px;
+  width: 100px;
   text-align: center;
 }
 .phaseImg img{
   width: 100px;
   height: 100px;
-  margin-left: 37px;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -346,6 +346,8 @@ export default {
   margin-bottom: 20px;
 }
 .phaseTextActive{
+  width: 140px;
+  margin-left: -20px;
   color: #c49a6d;
   font-size: 17px;
   margin-bottom: 20px;
