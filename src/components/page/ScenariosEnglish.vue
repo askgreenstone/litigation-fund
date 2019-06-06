@@ -8,8 +8,8 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner2.png">
       <div class="aboutImgBox">
-        <div class="aboutChiPc">CASE AND APPLICATIONS</div>
-        <div class="aboutChiH5">CASE AND APPLICATIONS</div>
+        <div class="aboutChiPc">Case and Applications</div>
+        <div class="aboutChiH5">Case and Applications</div>
         <div class="aboutEng"></div>
       </div>
       

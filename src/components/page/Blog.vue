@@ -33,7 +33,7 @@
           </div>
           <div class="searchIntroduction">
             <pre>
-              {{item.nContent.length>72?item.nContent.substr(0,72)+'...':item.nContent}} 
+              {{item.nContent.length>120?item.nContent.substr(0,120)+'...':item.nContent}} 
             </pre>
           </div>
           <div v-if="username" class="searchEdit">

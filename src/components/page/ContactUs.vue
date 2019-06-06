@@ -25,7 +25,7 @@
         <div class="contactRight">
           <div class="rightTitle">请填写您的需求，我们将尽快与您联系</div>
           <div class="rightInput">
-            <input type="text" v-model.trim="clientName" name="" placeholder="您的姓名">
+            <input type="text" v-model.trim="clientName" name="" placeholder="姓名">
           </div>
           <div class="rightInput">
             <input type="text" v-model="clientTel" name="" placeholder="电话">

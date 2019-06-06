@@ -301,7 +301,7 @@ export default {
     margin-bottom: 25px;
   }
   .paragraph7{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
   .paragraph2{
     width: 100%;
@@ -357,10 +357,8 @@ export default {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-    margin: 10px auto;
-    border-top: 1px solid #ccc;
-    padding-top: 30px;
-    display: none;
+    margin: 50px auto 30px;
+    border-top: 0;
   }
   .more{
     width: 100%;

@@ -38,7 +38,7 @@
     <!-- 客户/律师 -->
     <!-- h5 -->
     <div class="introduction introduction2 introduction3">
-      <div class="introTitle">Provide For Clients And Lawyers</div>
+      <div class="introTitle">Provide for Clients and Lawyers</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
@@ -49,7 +49,7 @@
     <!-- pc -->
     <div class="lawyer">
       <div class="introduction introduction2 ">
-        <div class="introTitle">Provide For Clients And Lawyers</div>
+        <div class="introTitle">Provide for Clients and Lawyers</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>

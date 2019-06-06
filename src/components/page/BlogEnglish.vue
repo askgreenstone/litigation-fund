@@ -8,8 +8,8 @@
     <div class="aboutImg">
       <img src="../../assets/images/banner4.png">
       <div class="aboutImgBox">
-        <div class="aboutChiPc">LS INSTITUTE</div>
-        <div class="aboutChiH5">LS INSTITUTE</div>
+        <div class="aboutChiPc">LawStone Institute</div>
+        <div class="aboutChiH5">LawStone Institute</div>
         <div class="aboutEng"></div>
       </div>
     </div>
@@ -34,7 +34,7 @@
           </div>
           <div class="searchIntroduction">
             <pre>
-              {{item.nContent.length>72?item.nContent.substr(0,72)+'...':item.nContent}} 
+              {{item.nContent.length>190?item.nContent.substr(0,190)+'...':item.nContent}} 
             </pre>
           </div>
           <div v-if="username" class="searchEdit">

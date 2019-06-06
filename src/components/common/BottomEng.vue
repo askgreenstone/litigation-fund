@@ -6,7 +6,7 @@
         <div><img src="../../assets/images/logoBlank.png"></div>
         <div>
           <span class="bottomListLogoTitle">Disclaimer</span><br>
-          <span>The information contained herein may have content obtained through various public and private channels, and this website does not guarantee the authenticity, accuracy, completeness, timeliness or originality of the content resourced from third parties. Audiences shall bear any and all aftermath and liabilities on their own for transactions or decisions based on the foregoing information.</span>
+          <span>The information contained herein may have content obtained through various public and private channels, and this website does not guarantee the authenticity, accuracy, completeness, timeliness or originality of the content sourced from third parties. Audiences shall bear any and all aftermath and liabilities on their own for transactions or decisions based on the foregoing information.</span>
         </div>
       </li>
       <!-- pc -->

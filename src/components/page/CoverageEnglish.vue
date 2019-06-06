@@ -9,8 +9,8 @@
       <img src="../../assets/images/banner2.png">
     </div>
     <div class="introduction">
-      <div class="introTitlePc">COVERAGE</div>
-      <div class="introTitleH5">COVERAGE</div>
+      <div class="introTitlePc">Coverage</div>
+      <div class="introTitleH5">Coverage</div>
       <div class="introLine">
         <span></span>
         <span class="two"></span>
@@ -43,7 +43,7 @@
         </li>
         <li>
           <div class="addTop">Other Regions</div>
-          <div class="addBottom">Fujian (Xiamen, Fuzhou), Jiangxi (Nanchang), Hunan (Changsha), Guangxi (Nanning), Hainan (Haikou), Sichuan (Chengdu), Chongqing, Guizhou (Guiyang), Yunnan (Kunming), Heilongjiang (Harbin), Jilin (Changchun, Jilin), Liaoning (Dalian, Shenyang), Inner Mongolia (Hohhot), Xinjiang (Urumqi), Shaanxi (xi ' an), Gansu (Lanzhou), Qinghai (Xining), Ningxia (Yinchuan), Henan (Zhengzhou), Shanxi (Taiyuan), Shandong (Jinan, Qingdao), Hubei (Wuhan, Yellowstone), Tibet (Lhasa), Hong Kong, Taipei</div>
+          <div class="addBottom">Fujian (Xiamen, Fuzhou), Jiangxi (Nanchang), Hunan (Changsha), Guangxi (Nanning), Hainan (Haikou), Sichuan (Chengdu), Chongqing, Guizhou (Guiyang), Yunnan (Kunming), Heilongjiang (Harbin), Jilin (Changchun, Jilin), Liaoning (Dalian, Shenyang), Inner Mongolia (Hohhot), Xinjiang (Urumqi), Shaanxi (xi ' an), Gansu (Lanzhou), Qinghai (Xining), Ningxia (Yinchuan), Henan (Zhengzhou), Shanxi (Taiyuan), Shandong (Jinan, Qingdao), Hubei (Wuhan, Huangshi), Tibet (Lhasa), Hong Kong, Taipei</div>
         </li>
       </ul>
     </div>

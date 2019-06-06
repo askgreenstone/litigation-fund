@@ -9,8 +9,8 @@
       <div class="aboutImg">
         <img src="../../assets/images/banner2.png">
         <div class="aboutImgBox">
-          <div class="aboutChiPc">CONTACT US</div>
-          <div class="aboutChiH5">CONTACT US</div>
+          <div class="aboutChiPc">Contact US</div>
+          <div class="aboutChiH5">Contact US</div>
           <div class="aboutEng"></div>
         </div>
         

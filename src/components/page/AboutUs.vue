@@ -43,7 +43,7 @@
       </div>
       
       <div class="paragraph2">顶级团队</div>
-      <div class="paragraph3">律石与一流的专家型律师、顾问合作，为客户提供一揽子诉讼法律事务解决方案：</div>
+      <div class="paragraph3">律石与一流的专家、律师、顾问合作，为客户提供一揽子诉讼法律事务解决方案：</div>
       <div class="paragraph4">
         <ul>
           <li><i>-  </i><span>资深诉讼律师</span></li>
@@ -76,7 +76,7 @@
       </div>
       <div class="paragraph6">
         <div class="more">更多资料请下载宣传册查看</div>
-        <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">律石诉讼资助宣传册</a>
+        <a href="http://dist.green-stone.cn/common/font/litigationSupport.pdf" download="text" class="download">下载</a>
       </div>
     </div>
     <!-- 申请资助 -->
@@ -313,7 +313,7 @@ export default {
     margin-bottom: 25px;
   }
   .paragraph7{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
   .paragraph2{
     width: 100%;
@@ -369,10 +369,9 @@ export default {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-    margin: 10px auto;
-    border-top: 1px solid #ccc;
-    padding-top: 30px;
-    display: none;
+    margin: 50px auto 30px;
+    border-top: 0;
+    padding-top: 0;
   }
   .more{
     width: 100%;
@@ -390,7 +389,7 @@ export default {
     color: #fff;
     font-size: 12px;
     background: #c49a6d;
-    margin: 10px auto 50px;
+    margin: 10px auto 20px;
     cursor: pointer;
   }
 }

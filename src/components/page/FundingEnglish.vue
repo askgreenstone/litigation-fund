@@ -84,7 +84,7 @@
     <div class="funding">
       <!-- <img src="../../assets/images/lightBg.png"> -->
       <div class="introduction">
-        <div class="introTitle">FUNDING PHASES</div>
+        <div class="introTitle">Funding Phases</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
@@ -130,7 +130,8 @@
             <li>
               <div class="phaseImgBig">Preservation and Enforcement</div>
               <div class="phaseImgSmall">
-                <span>Notarized Instrument of Creditor's Rights</span><br>
+                <span>Notarized Instrument of</span><br>
+                <span>Creditor's Rights</span><br>
                 <span> Adjudicatory Instruments</span><br>
                 <span> Legal Instruments in Force</span>
               </div>
@@ -158,7 +159,7 @@
     </div>
     <!-- 风险告知 -->
     <div class="introduction introduction3">
-        <div class="introTitle">RISK DISCLOSURE</div>
+        <div class="introTitle">Risk Disclosure</div>
         <div class="introLine">
           <span></span>
           <span class="two"></span>
@@ -386,7 +387,7 @@ export default {
   padding-top: 65px;
 }
 .litigationPcBoxLeft{
-  width: 70px;
+  width: 120px;
   height: 150px;
   margin-right: 10px;
 }
@@ -397,7 +398,7 @@ export default {
   margin-bottom: 20px;
 }
 .litigationPcBoxLeft span{
-  width: 76px;
+  width: 120px;
   margin-left: -3px;
   display: block;
   font-size: 14px;
@@ -597,7 +598,9 @@ export default {
   .phaseTextActive{
     color: #333;
     font-size: 15px;
+    margin-left: 0px;
     margin-bottom: 10px;
+    height: 40px;
   }
   .phaseImgBig{
     color: #000;
@@ -609,6 +612,7 @@ export default {
     font-size: 12px;
     line-height: 1.5;
     margin-top: 5px;
+    margin-left: -20px;
     margin-bottom: 10px;
   }
   .litigationPcBox{
@@ -618,7 +622,6 @@ export default {
     display: block;
     width:100%;
     padding: 20px;
-    margin: 20px auto 0;
     box-sizing: border-box;
   }
   .caseListMobile .caseTitle{
