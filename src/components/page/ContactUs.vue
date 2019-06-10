@@ -399,7 +399,7 @@ export default {
     height: 166px;
     line-height: 22px;
     color: #979797;
-    text-indent: 8px;
+    text-indent: 6px;
     font-size: 14px;
   }
   .rightButton{

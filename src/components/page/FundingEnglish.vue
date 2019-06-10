@@ -97,7 +97,7 @@
         <li class="phaseImg phaseImgLeft">
           <ul>
             <li><img src="../../assets/images/phase1.png"></li>
-            <li class="phaseTextActive">Litigations<br/></li>
+            <li class="phaseTextActive phaseTextActiveMobile">Litigations<br/></li>
             <li>
               <div class="phaseImgBig">Litigations</div>
               <div class="phaseImgSmall">
@@ -112,7 +112,7 @@
         <li class="phaseImg phaseImgRight">
           <ul>
             <li><img src="../../assets/images/phase2.png"></li>
-            <li class="phaseTextActive">Arbitration</li>
+            <li class="phaseTextActive phaseTextActiveMobile">Arbitration</li>
             <li>
               <div class="phaseImgBig">Arbitration</div>
               <div class="phaseImgSmall">
@@ -601,6 +601,9 @@ export default {
     margin-left: 0px;
     margin-bottom: 10px;
     height: 40px;
+  }
+  .phaseTextActiveMobile{
+    height: 20px;
   }
   .phaseImgBig{
     color: #000;

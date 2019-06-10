@@ -9,8 +9,8 @@
       <div class="aboutImg">
         <img src="../../assets/images/banner2.png">
         <div class="aboutImgBox">
-          <div class="aboutChiPc">Contact US</div>
-          <div class="aboutChiH5">Contact US</div>
+          <div class="aboutChiPc">Contact Us</div>
+          <div class="aboutChiH5">Contact Us</div>
           <div class="aboutEng"></div>
         </div>
         
@@ -412,7 +412,7 @@ export default {
     height: 166px;
     line-height: 22px;
     color: #979797;
-    text-indent: 8px;
+    text-indent: 6px;
     font-size: 14px;
   }
   .rightButton{

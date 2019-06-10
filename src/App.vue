@@ -51,6 +51,7 @@ a {
 }
 input{
   outline: none;
+  font-family: "Noto Sans CJK SC", "Source Han Sans CN";
 }
 textarea{
   outline: none;

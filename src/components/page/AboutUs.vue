@@ -51,12 +51,12 @@
           <li><i>-  </i><span>公司法务总监</span></li>
           <li><i>-  </i><span>离职司法工作人员</span></li>
           <li><i>-  </i><span>国际仲裁专家律师</span></li>
-          <li><i>-  </i><span>破产重整/清算专业团队</span></li>
+          <li><i>-  </i><span>破产重整、清算专业团队</span></li>
         </ul>
         <ul>
           <li><i>-  </i><span>法学专家、知名高校教授</span></li>
           <li><i>-  </i><span>投行、金融资深人士</span></li>
-          <li><i>-  </i><span>财会/税务专业团队</span></li>
+          <li><i>-  </i><span>财会、税务专业团队</span></li>
           <li><i>-  </i><span>领先的知识产权、海事海商、建筑工程、矿业能源、文化传媒、环境保护、医疗健康、反垄断、侵权赔偿等各专业领域的学科带头律师和顾问</span></li>
         </ul>
       </div>

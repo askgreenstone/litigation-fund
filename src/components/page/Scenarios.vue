@@ -202,7 +202,7 @@ export default {
 }
 .caseListBoxRight .caseListBoxRightContent{
   font-size: 14px;
-  line-height: 28px;
+  line-height: 34px;
 }
 .caseList li .imgFirst{
   margin-bottom: 20px;
