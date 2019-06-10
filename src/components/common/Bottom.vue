@@ -17,7 +17,7 @@
         </div>
       </li>
       <li class="bottomListQrcode">
-        <div><img src="../../assets/images/qrcode.png"></div>
+        <div><img src="../../assets/images/qrcodeBlank.png"></div>
       </li>
     </ul>
     <ul class="topNavList">

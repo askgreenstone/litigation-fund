@@ -374,6 +374,8 @@ export default {
     height: 36px;
     border: 1px solid #ccc;
     margin: 15px 22px;
+    padding-left: 10px;
+    box-sizing: border-box;
   }
   .rightInput input{
     border: none;
@@ -383,7 +385,7 @@ export default {
     line-height: 24px;
     color: #979797;
     font-size: 14px;
-    text-indent: 8px;
+    text-indent: 0;
     padding: 0;
   }
   .rightTextarea{
@@ -391,16 +393,19 @@ export default {
     height: 170px;
     border: 1px solid #ccc;
     margin: 15px 22px;
+    padding-left: 10px;
+    box-sizing: border-box;
   }
   .rightTextarea textarea{
     border: none;
     resize: none;
-    width: 296px;
-    height: 166px;
+    width: 280px;
+    height: 160px;
     line-height: 22px;
     color: #979797;
-    text-indent: 6px;
+    text-indent: 0;
     font-size: 14px;
+    padding: 0;
   }
   .rightButton{
     width: 80px;
