@@ -33,7 +33,7 @@
         <li @click="selectLanguage()">English</li>
       </ul>
     <div class="bottomLine"></div>
-    <div class="bottomText">2019 深圳律石资本有限公司 版权所有</div>
+    <!-- <div class="bottomText">2019 深圳律石资本有限公司 版权所有</div> -->
   </div>
 </template>
 

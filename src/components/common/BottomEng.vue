@@ -42,7 +42,7 @@
         <li @click="selectLanguage()">中文</li>
       </ul>
     <div class="bottomLine"></div>
-    <div class="bottomText">2019 Shenzhen LawStone Capital Co., Ltd.  Copyright Reserved.</div>
+     <!-- <div class="bottomText">2019 Shenzhen LawStone Capital Co., Ltd.  Copyright Reserved.</div> -->
   </div>
 </template>
 
